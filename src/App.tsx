@@ -1,6 +1,7 @@
-import { type ReactNode, useMemo, useState } from "react";
+import { type ReactNode, useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
+  ArrowLeft,
   ArrowDownRight,
   ArrowUpRight,
   Download,
@@ -55,12 +56,34 @@ type RankedAuthor = AuthorStat & {
 };
 
 type SortKey = "score" | "views" | "likes" | "posts";
+type PostSortKey = "latest" | "views" | "likes";
+
+type AuthorPost = {
+  id: string;
+  url: string;
+  description: string;
+  createdAt: string;
+  timestamp: number;
+  replies: number;
+  reposts: number;
+  quotes: number;
+  likes: number;
+  views: number;
+  score: number;
+  hashtags: string[];
+};
 
 const sortOptions: Array<{ key: SortKey; label: string }> = [
   { key: "score", label: "V + L" },
   { key: "views", label: "Views" },
   { key: "likes", label: "Likes" },
   { key: "posts", label: "Posts" },
+];
+
+const postSortOptions: Array<{ key: PostSortKey; label: string }> = [
+  { key: "latest", label: "Latest" },
+  { key: "views", label: "Views" },
+  { key: "likes", label: "Likes" },
 ];
 
 const numberFormatter = new Intl.NumberFormat("en-US");
@@ -147,6 +170,10 @@ function parseCsv(text: string): PostRow[] {
 export default function App() {
   const [query, setQuery] = useState("");
   const [sortBy, setSortBy] = useState<SortKey>("score");
+  const [postSortBy, setPostSortBy] = useState<PostSortKey>("latest");
+  const [selectedUsername, setSelectedUsername] = useState(() =>
+    getUsernameFromHash(),
+  );
 
   const {
     data = [],
@@ -162,6 +189,21 @@ export default function App() {
   const rankedAuthors = useMemo(
     () => rankAuthors(authors, sortBy),
     [authors, sortBy],
+  );
+  const selectedAuthor = useMemo(
+    () =>
+      selectedUsername
+        ? rankedAuthors.find(
+            (author) =>
+              author.authorUsername.toLowerCase() ===
+              selectedUsername.toLowerCase(),
+          )
+        : undefined,
+    [rankedAuthors, selectedUsername],
+  );
+  const selectedAuthorPosts = useMemo(
+    () => buildAuthorPosts(data, selectedUsername, postSortBy),
+    [data, postSortBy, selectedUsername],
   );
   const normalizedQuery = query.trim().toLowerCase();
   const filteredAuthors = useMemo(() => {
@@ -210,6 +252,30 @@ export default function App() {
     totals.views > 0 ? (totalEngagement / totals.views) * 100 : 0;
   const latestPostDate = useMemo(() => formatLatestDate(authors), [authors]);
   const shareUrl = buildShareUrl(topAuthor, totals.views);
+
+  useEffect(() => {
+    const syncFromHash = () => setSelectedUsername(getUsernameFromHash());
+
+    window.addEventListener("hashchange", syncFromHash);
+    window.addEventListener("popstate", syncFromHash);
+    return () => {
+      window.removeEventListener("hashchange", syncFromHash);
+      window.removeEventListener("popstate", syncFromHash);
+    };
+  }, []);
+
+  function selectAuthor(username: string) {
+    const nextHash = `#u=${encodeURIComponent(username)}`;
+    setSelectedUsername(username);
+    window.history.pushState(null, "", nextHash);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function clearSelectedAuthor() {
+    setSelectedUsername("");
+    window.history.pushState(null, "", window.location.pathname);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
     <main className="site-shell overflow-x-hidden text-foreground">
@@ -330,55 +396,6 @@ export default function App() {
           />
         </div>
 
-        <div className="glass-panel taste-reveal mt-7 rounded-md p-4 [animation-delay:140ms]">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                Users
-              </p>
-              <h2 className="mt-1 font-display text-3xl font-black tracking-normal">
-                Leaderboard
-              </h2>
-            </div>
-
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <div className="relative sm:w-72">
-                <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                <Input
-                  value={query}
-                  onChange={(event) => setQuery(event.target.value)}
-                  placeholder="Search author or tag"
-                  className="pl-9"
-                />
-              </div>
-
-              <div className="glass-control grid grid-cols-4 gap-1 rounded-md p-1">
-                {sortOptions.map((option) => (
-                  <button
-                    key={option.key}
-                    type="button"
-                    onClick={() => setSortBy(option.key)}
-                    className={cn(
-                      "h-11 rounded-[5px] px-3 text-xs font-extrabold uppercase tracking-[0.08em] transition-colors sm:h-10",
-                      sortBy === option.key
-                        ? "glass-fill-primary"
-                        : "text-muted-foreground hover:bg-white/24 hover:text-foreground",
-                    )}
-                  >
-                    {option.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-4 grid gap-3 border-t border-white/20 pt-4 text-sm font-semibold text-muted-foreground sm:grid-cols-3">
-            <InlineFact label="CSV posts" value={formatNumber(totals.posts)} />
-            <InlineFact label="Latest post" value={latestPostDate} />
-            <InlineFact label="Sorted by" value={metricLabels[sortBy]} />
-          </div>
-        </div>
-
         {isError ? (
           <div className="glass-panel mt-5 rounded-md p-4 text-sm font-semibold text-foreground">
             Failed to load{" "}
@@ -386,37 +403,103 @@ export default function App() {
           </div>
         ) : null}
 
-        <div className="glass-panel taste-reveal mt-5 overflow-hidden rounded-md [animation-delay:180ms]">
-          <div className="glass-row hidden grid-cols-[76px_minmax(260px,1fr)_160px_320px_96px] items-center border-b border-white/20 px-4 py-3 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:grid">
-            <span>Rank</span>
-            <span>Author</span>
-            <span className="text-right">{metricLabels[sortBy]}</span>
-            <span className="text-right">Reach mix</span>
-            <span className="text-right">Posts</span>
-          </div>
+        {selectedUsername ? (
+          <AuthorDetail
+            author={selectedAuthor}
+            isLoading={isLoading}
+            onBack={clearSelectedAuthor}
+            posts={selectedAuthorPosts}
+            postSortBy={postSortBy}
+            setPostSortBy={setPostSortBy}
+          />
+        ) : (
+          <>
+            <div className="glass-panel taste-reveal mt-7 rounded-md p-4 [animation-delay:140ms]">
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                    Users
+                  </p>
+                  <h2 className="mt-1 font-display text-3xl font-black tracking-normal">
+                    Leaderboard
+                  </h2>
+                </div>
 
-          {isLoading ? (
-            <div className="p-6 text-sm font-semibold text-muted-foreground">
-              Loading rankings...
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <div className="relative sm:w-72">
+                    <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                    <Input
+                      value={query}
+                      onChange={(event) => setQuery(event.target.value)}
+                      placeholder="Search author or tag"
+                      className="pl-9"
+                    />
+                  </div>
+
+                  <div className="glass-control grid grid-cols-4 gap-1 rounded-md p-1">
+                    {sortOptions.map((option) => (
+                      <button
+                        key={option.key}
+                        type="button"
+                        onClick={() => setSortBy(option.key)}
+                        className={cn(
+                          "h-11 rounded-[5px] px-3 text-xs font-extrabold uppercase tracking-[0.08em] transition-colors sm:h-10",
+                          sortBy === option.key
+                            ? "glass-fill-primary"
+                            : "text-muted-foreground hover:bg-white/24 hover:text-foreground",
+                        )}
+                      >
+                        {option.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-4 grid gap-3 border-t border-white/20 pt-4 text-sm font-semibold text-muted-foreground sm:grid-cols-3">
+                <InlineFact
+                  label="CSV posts"
+                  value={formatNumber(totals.posts)}
+                />
+                <InlineFact label="Latest post" value={latestPostDate} />
+                <InlineFact label="Sorted by" value={metricLabels[sortBy]} />
+              </div>
             </div>
-          ) : null}
 
-          {!isLoading && filteredAuthors.length === 0 ? (
-            <div className="p-6 text-sm font-semibold text-muted-foreground">
-              No authors matched that search.
+            <div className="glass-panel taste-reveal mt-5 overflow-hidden rounded-md [animation-delay:180ms]">
+              <div className="glass-row hidden grid-cols-[76px_minmax(260px,1fr)_160px_320px_96px] items-center border-b border-white/20 px-4 py-3 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:grid">
+                <span>Rank</span>
+                <span>Author</span>
+                <span className="text-right">{metricLabels[sortBy]}</span>
+                <span className="text-right">Reach mix</span>
+                <span className="text-right">Posts</span>
+              </div>
+
+              {isLoading ? (
+                <div className="p-6 text-sm font-semibold text-muted-foreground">
+                  Loading rankings...
+                </div>
+              ) : null}
+
+              {!isLoading && filteredAuthors.length === 0 ? (
+                <div className="p-6 text-sm font-semibold text-muted-foreground">
+                  No authors matched that search.
+                </div>
+              ) : null}
+
+              {!isLoading &&
+                filteredAuthors.map((author) => (
+                  <AuthorRow
+                    key={author.authorUsername || author.authorName}
+                    author={author}
+                    sortBy={sortBy}
+                    maxSignalScore={maxSignalScore}
+                    onSelect={selectAuthor}
+                  />
+                ))}
             </div>
-          ) : null}
-
-          {!isLoading &&
-            filteredAuthors.map((author) => (
-              <AuthorRow
-                key={author.authorUsername || author.authorName}
-                author={author}
-                sortBy={sortBy}
-                maxSignalScore={maxSignalScore}
-              />
-            ))}
-        </div>
+          </>
+        )}
       </section>
     </main>
   );
@@ -506,14 +589,275 @@ function rankAuthors(authors: AuthorStat[], sortBy: SortKey): RankedAuthor[] {
     }));
 }
 
+function buildAuthorPosts(
+  posts: PostRow[],
+  username: string,
+  sortBy: PostSortKey,
+): AuthorPost[] {
+  const normalizedUsername = username.trim().toLowerCase();
+
+  return posts
+    .filter(
+      (post) => post.author_username.trim().toLowerCase() === normalizedUsername,
+    )
+    .map((post) => {
+      const replies = toNumber(post.replies);
+      const reposts = toNumber(post.reposts);
+      const quotes = toNumber(post.quotes);
+      const likes = toNumber(post.likes);
+      const views = toNumber(post.views);
+
+      return {
+        id: post.id,
+        url: post.url,
+        description: post.description.trim(),
+        createdAt: post.created_at,
+        timestamp: parsePostDate(post.created_at),
+        replies,
+        reposts,
+        quotes,
+        likes,
+        views,
+        score: views + likes,
+        hashtags: post.hashtags
+          .split(",")
+          .map((tag) => tag.trim())
+          .filter(Boolean),
+      };
+    })
+    .sort((first, second) => {
+      if (sortBy === "views") {
+        return second.views - first.views || second.timestamp - first.timestamp;
+      }
+
+      if (sortBy === "likes") {
+        return second.likes - first.likes || second.timestamp - first.timestamp;
+      }
+
+      return second.timestamp - first.timestamp || second.score - first.score;
+    });
+}
+
+function AuthorDetail({
+  author,
+  isLoading,
+  onBack,
+  posts,
+  postSortBy,
+  setPostSortBy,
+}: {
+  author: RankedAuthor | undefined;
+  isLoading: boolean;
+  onBack: () => void;
+  posts: AuthorPost[];
+  postSortBy: PostSortKey;
+  setPostSortBy: (key: PostSortKey) => void;
+}) {
+  if (isLoading) {
+    return (
+      <div className="glass-panel mt-7 rounded-md p-6 text-sm font-semibold text-muted-foreground">
+        Loading author profile...
+      </div>
+    );
+  }
+
+  if (!author) {
+    return (
+      <div className="glass-panel mt-7 rounded-md p-6">
+        <Button type="button" variant="secondary" onClick={onBack}>
+          <ArrowLeft />
+          Back
+        </Button>
+        <p className="mt-6 text-sm font-semibold text-muted-foreground">
+          This author was not found in the current CSV.
+        </p>
+      </div>
+    );
+  }
+
+  const xProfileUrl = `https://x.com/${author.authorUsername}`;
+
+  return (
+    <div className="taste-reveal mt-7 space-y-5">
+      <div className="glass-panel overflow-hidden rounded-md">
+        <div className="flex flex-col gap-6 border-b border-white/20 p-5 lg:grid lg:grid-cols-[minmax(0,1fr)_220px] lg:p-7">
+          <div className="min-w-0">
+            <Button type="button" variant="secondary" onClick={onBack}>
+              <ArrowLeft />
+              Back to leaderboard
+            </Button>
+
+            <div className="mt-7 flex min-w-0 flex-col gap-5 sm:flex-row sm:items-end">
+              <Avatar author={author} size="xl" />
+              <div className="min-w-0">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-muted-foreground">
+                  Rank #{author.rank}
+                </p>
+                <h2 className="mt-2 break-words font-display text-4xl font-black leading-none tracking-normal sm:text-6xl">
+                  {author.authorName}
+                </h2>
+                <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-bold text-muted-foreground">
+                  <span>@{author.authorUsername}</span>
+                  <span>#{author.topTag}</span>
+                  <span>{formatNumber(author.posts)} posts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-between gap-4 lg:items-end">
+            <p className="font-display text-6xl font-black leading-none">
+              #{author.rank}
+            </p>
+            <Button asChild variant="default">
+              <a href={xProfileUrl} target="_blank" rel="noreferrer">
+                Open X profile
+                <ArrowUpRight />
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        <div className="grid border-b border-white/20 sm:grid-cols-2 lg:grid-cols-4">
+          <ProfileMetric icon={<Eye />} label="Views" value={author.views} />
+          <ProfileMetric icon={<Heart />} label="Likes" value={author.likes} />
+          <ProfileMetric
+            icon={<Repeat2 />}
+            label="Reposts + quotes"
+            value={author.reposts + author.quotes}
+          />
+          <ProfileMetric
+            icon={<MessageCircle />}
+            label="Replies"
+            value={author.replies}
+          />
+        </div>
+      </div>
+
+      <div className="glass-panel rounded-md p-4">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-muted-foreground">
+              Author posts
+            </p>
+            <h3 className="mt-1 font-display text-4xl font-black tracking-normal">
+              POSTS
+            </h3>
+          </div>
+
+          <div className="glass-control grid grid-cols-3 gap-1 rounded-md p-1">
+            {postSortOptions.map((option) => (
+              <button
+                key={option.key}
+                type="button"
+                onClick={() => setPostSortBy(option.key)}
+                className={cn(
+                  "h-11 rounded-[5px] px-3 text-xs font-extrabold uppercase tracking-[0.08em] transition-colors sm:h-10",
+                  postSortBy === option.key
+                    ? "glass-fill-primary"
+                    : "text-muted-foreground hover:bg-white/24 hover:text-foreground",
+                )}
+              >
+                {option.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-4 grid gap-3 border-t border-white/20 pt-4 sm:grid-cols-3">
+          <InlineFact label="Indexed posts" value={formatNumber(posts.length)} />
+          <InlineFact
+            label="Top post"
+            value={formatCompact(Math.max(0, ...posts.map((post) => post.score)))}
+          />
+          <InlineFact
+            label="Latest"
+            value={formatPostDate(author.latestTimestamp)}
+          />
+        </div>
+      </div>
+
+      <div className="grid gap-4 lg:grid-cols-2">
+        {posts.map((post) => (
+          <PostCard key={post.id || post.url} post={post} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ProfileMetric({
+  icon,
+  label,
+  value,
+}: {
+  icon: ReactNode;
+  label: string;
+  value: number;
+}) {
+  return (
+    <div className="border-b border-white/20 p-5 last:border-b-0 sm:border-r sm:last:border-r-0 lg:border-b-0">
+      <div className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-muted-foreground">
+        <span className="[&_svg]:h-4 [&_svg]:w-4">{icon}</span>
+        <span>{label}</span>
+      </div>
+      <p className="mt-4 font-display text-4xl font-black leading-none sm:text-5xl">
+        {formatCompact(value)}
+      </p>
+    </div>
+  );
+}
+
+function PostCard({ post }: { post: AuthorPost }) {
+  return (
+    <article className="glass-panel flex min-h-[260px] flex-col rounded-md p-5">
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="text-sm font-black text-muted-foreground">
+            {formatPostDate(post.timestamp)}
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {post.hashtags.slice(0, 3).map((tag) => (
+              <Badge key={tag} variant="outline">
+                #{tag}
+              </Badge>
+            ))}
+          </div>
+        </div>
+        <Button asChild variant="secondary" size="icon">
+          <a href={post.url} target="_blank" rel="noreferrer" aria-label="Open post on X">
+            <ArrowUpRight />
+          </a>
+        </Button>
+      </div>
+
+      <p className="mt-5 flex-1 text-base font-semibold leading-7 text-foreground/80">
+        {post.description || "No post text available."}
+      </p>
+
+      <div className="mt-6 grid grid-cols-2 gap-3 border-t border-white/20 pt-4 sm:grid-cols-4">
+        <MiniMetric icon={<Eye />} value={formatCompact(post.views)} />
+        <MiniMetric icon={<Heart />} value={formatCompact(post.likes)} />
+        <MiniMetric
+          icon={<Repeat2 />}
+          value={formatCompact(post.reposts + post.quotes)}
+        />
+        <MiniMetric icon={<MessageCircle />} value={formatCompact(post.replies)} />
+      </div>
+    </article>
+  );
+}
+
 function AuthorRow({
   author,
   maxSignalScore,
   sortBy,
+  onSelect,
 }: {
   author: RankedAuthor;
   maxSignalScore: number;
   sortBy: SortKey;
+  onSelect: (username: string) => void;
 }) {
   const rankTone = getRankTone(author.rank);
   const scoreWidth =
@@ -538,23 +882,31 @@ function AuthorRow({
       </div>
 
       <div className="min-w-0">
-        <div className="flex min-w-0 items-center gap-3">
+        <button
+          type="button"
+          onClick={() => onSelect(author.authorUsername)}
+          className="group flex min-w-0 items-center gap-3 text-left"
+        >
           <Avatar author={author} />
           <div className="min-w-0">
-            <a
-              href={author.latestPostUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="group inline-flex max-w-full items-center gap-2 font-display text-xl font-black leading-tight hover:text-accent"
-            >
+            <span className="inline-flex max-w-full items-center gap-2 font-display text-xl font-black leading-tight group-hover:text-accent">
               <span className="truncate">{author.authorName}</span>
-              <ArrowUpRight className="h-4 w-4 shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
-            </a>
-            <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm font-semibold text-muted-foreground">
-              <span>@{author.authorUsername}</span>
-              <span>#{author.topTag}</span>
-            </div>
+              <ArrowDownRight className="h-4 w-4 shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
+            </span>
           </div>
+        </button>
+        <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 pl-14 text-sm font-semibold text-muted-foreground">
+          <span>@{author.authorUsername}</span>
+          <span>#{author.topTag}</span>
+          <a
+            href={author.latestPostUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 hover:text-foreground"
+          >
+            Latest post
+            <ArrowUpRight className="h-3.5 w-3.5" />
+          </a>
         </div>
       </div>
 
@@ -675,15 +1027,21 @@ function Avatar({
   size = "md",
 }: {
   author: Pick<AuthorStat, "authorName" | "authorUsername">;
-  size?: "md" | "lg";
+  size?: "md" | "lg" | "xl";
 }) {
   const avatarUrl = getAvatarUrl(author.authorUsername);
+  const sizeClass =
+    size === "xl"
+      ? "h-24 w-24 text-2xl"
+      : size === "lg"
+        ? "h-14 w-14 text-base"
+        : "h-11 w-11 text-sm";
 
   return (
     <span
       className={cn(
         "glass-control relative grid shrink-0 place-items-center overflow-hidden rounded-md font-display font-black text-secondary-foreground",
-        size === "lg" ? "h-14 w-14 text-base" : "h-11 w-11 text-sm",
+        sizeClass,
       )}
     >
       <span>{getInitials(author.authorName)}</span>
@@ -798,6 +1156,18 @@ function formatLatestDate(authors: AuthorStat[]) {
   }).format(latest);
 }
 
+function formatPostDate(timestamp: number) {
+  if (!timestamp) {
+    return "Unknown date";
+  }
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(timestamp);
+}
+
 function formatNumber(value: number) {
   return numberFormatter.format(Math.round(value));
 }
@@ -815,4 +1185,15 @@ function buildShareUrl(
     : "Proof of Renaiss from public X posts.";
 
   return `https://x.com/intent/tweet?text=${encodeURIComponent(text)}`;
+}
+
+function getUsernameFromHash() {
+  if (typeof window === "undefined") {
+    return "";
+  }
+
+  const hash = window.location.hash.replace(/^#/, "");
+  const params = new URLSearchParams(hash);
+
+  return params.get("u") ?? "";
 }

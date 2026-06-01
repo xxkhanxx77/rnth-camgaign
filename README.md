@@ -4,6 +4,9 @@ React dashboard for ranking Renaiss campaign authors from `public/renaiss_posts.
 Authors are ranked by `views + likes` by default, with alternate sorting for views,
 likes, and post count.
 
+Click any author in the leaderboard to open a CSV-backed profile view with that
+author's totals, post history, and original X status links.
+
 ## Stack
 
 - Vite
@@ -53,14 +56,44 @@ public/renaiss_posts.csv
 
 Required CSV columns:
 
+- `id`
 - `author_name`
 - `author_username`
+- `description`
+- `created_at`
 - `views`
 - `likes`
 - `replies`
 - `reposts`
 - `quotes`
 - `url`
+
+## Author Detail Pages
+
+Author detail pages are handled inside the React app with hash routes:
+
+```text
+/#u={author_username}
+```
+
+Example:
+
+```text
+/#u=nununana0706
+```
+
+The detail view is generated from the same CSV rows and includes:
+
+- profile avatar and rank
+- total views, likes, replies, reposts, and quotes
+- post cards sorted by latest, views, or likes
+- direct links to the original X status URL from the `url` column
+
+For example, the `nununana0706` detail page links to:
+
+```text
+https://x.com/nununana0706/status/2061086713263566947
+```
 
 After replacing or updating the CSV, refresh the avatar cache before deploying.
 
