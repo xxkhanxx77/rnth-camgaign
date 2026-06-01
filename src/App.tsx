@@ -12,7 +12,6 @@ import {
   Share2,
   Trophy,
   Users,
-  Zap,
 } from "lucide-react";
 import { Badge } from "./components/ui/badge";
 import { Button } from "./components/ui/button";
@@ -213,20 +212,22 @@ export default function App() {
   const shareUrl = buildShareUrl(topAuthor, totals.views);
 
   return (
-    <main className="min-h-screen overflow-x-hidden text-foreground">
-      <section className="glass-panel border-b border-white/20">
-        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+    <main className="site-shell overflow-x-hidden text-foreground">
+      <section className="relative overflow-hidden border-b border-white/40 bg-white/42">
+        <div className="mx-auto flex max-w-7xl flex-col gap-9 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
           <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-3">
-              <div className="glass-control glass-fill-primary grid h-10 w-10 place-items-center rounded-md">
-                <Zap className="h-5 w-5" />
-              </div>
+              <img
+                src="/renaiss-mark.png"
+                alt=""
+                className="h-8 w-7 rounded-sm object-cover"
+              />
               <div>
-                <p className="font-display text-lg font-black uppercase leading-none tracking-[0.04em]">
-                  Renaiss Signal
+                <p className="font-display text-lg font-black leading-none tracking-normal">
+                  renaiss Protocol
                 </p>
                 <p className="text-sm font-semibold text-muted-foreground">
-                  Author ranking from X posts
+                  Campaign traction dashboard
                 </p>
               </div>
             </div>
@@ -247,53 +248,58 @@ export default function App() {
             </div>
           </header>
 
-          <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-end">
-            <div className="min-w-0 max-w-4xl">
+          <div className="relative grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_440px] lg:items-end">
+            <div className="taste-reveal min-w-0 max-w-4xl py-3 lg:py-10">
               <Badge variant="accent">Open beta buzz map</Badge>
-              <h1 className="mt-5 max-w-full break-words font-display text-4xl font-black leading-[0.94] tracking-normal text-foreground sm:text-6xl lg:text-7xl">
-                <span className="block sm:inline">Proof of Renaiss</span>{" "}
-                <span className="block sm:inline">hype.</span>
+              <h1 className="mt-6 max-w-full break-words font-display text-5xl font-black leading-[0.88] tracking-normal text-foreground sm:text-7xl lg:text-8xl">
+                <span className="block">OUR</span>
+                <span className="block">TRACTIONS</span>
               </h1>
-              <p className="mt-5 max-w-full text-sm font-medium leading-7 text-muted-foreground sm:max-w-2xl sm:text-lg">
-                A ranked view of the people carrying Renaiss across X, ordered
-                by views plus likes with replies, reposts, and quotes shown as
-                context.
+
+              <p className="mt-3 max-w-full text-base font-semibold leading-7 text-muted-foreground sm:max-w-xl">
+                Public community posts ranked by views plus likes, with replies
+                and reposts kept visible for context.
               </p>
             </div>
 
-            <div className="glass-panel min-w-0 overflow-hidden rounded-md p-5 text-foreground">
-              <div className="flex items-center justify-between gap-4">
-                <div className="min-w-0">
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                    Top rank
-                  </p>
-                  <div className="mt-3 flex min-w-0 items-center gap-3">
-                    {topAuthor ? <Avatar author={topAuthor} size="lg" /> : null}
-                    <div className="min-w-0">
-                      <h2 className="break-words font-display text-2xl font-black leading-none sm:text-3xl">
-                        {topAuthor ? topAuthor.authorName : "Loading"}
-                      </h2>
-                      <p className="mt-2 text-sm font-semibold text-muted-foreground">
-                        {topAuthor
-                          ? `@${topAuthor.authorUsername}`
-                          : "Reading CSV"}
-                      </p>
+            <div className="relative lg:min-h-[400px]">
+              <PrismStage />
+              <div className="glass-panel taste-reveal relative z-10 min-w-0 overflow-hidden rounded-md p-5 text-foreground [animation-delay:90ms] sm:ml-auto lg:mt-28">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="min-w-0">
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                      Top rank
+                    </p>
+                    <div className="mt-3 flex min-w-0 items-center gap-3">
+                      {topAuthor ? (
+                        <Avatar author={topAuthor} size="lg" />
+                      ) : null}
+                      <div className="min-w-0">
+                        <h2 className="break-words font-display text-2xl font-black leading-none sm:text-3xl">
+                          {topAuthor ? topAuthor.authorName : "Loading"}
+                        </h2>
+                        <p className="mt-2 text-sm font-semibold text-muted-foreground">
+                          {topAuthor
+                            ? `@${topAuthor.authorUsername}`
+                            : "Reading CSV"}
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  <div className="glass-control glass-fill-orange grid h-16 w-16 shrink-0 place-items-center rounded-md">
+                    <Trophy className="h-8 w-8" />
+                  </div>
                 </div>
-                <div className="glass-control glass-fill-orange grid h-16 w-16 shrink-0 place-items-center rounded-md">
-                  <Trophy className="h-8 w-8" />
+                <div className="mt-6 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
+                  <TopSignalMetric
+                    label="Views + likes"
+                    value={formatCompact(topAuthor?.score ?? 0)}
+                  />
+                  <TopSignalMetric
+                    label="Views"
+                    value={formatCompact(topAuthor?.views ?? 0)}
+                  />
                 </div>
-              </div>
-              <div className="mt-6 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
-                <TopSignalMetric
-                  label="Views + likes"
-                  value={formatCompact(topAuthor?.score ?? 0)}
-                />
-                <TopSignalMetric
-                  label="Views"
-                  value={formatCompact(topAuthor?.views ?? 0)}
-                />
               </div>
             </div>
           </div>
@@ -306,29 +312,25 @@ export default function App() {
             icon={<Eye />}
             label="Total views"
             value={formatCompact(totals.views)}
-            tone="violet"
           />
           <StatTile
             icon={<Heart />}
             label="Total likes"
             value={formatCompact(totals.likes)}
-            tone="coral"
           />
           <StatTile
             icon={<Users />}
             label="Ranked authors"
             value={formatNumber(authors.length)}
-            tone="mint"
           />
           <StatTile
             icon={<MessageCircle />}
             label="Engagement rate"
             value={`${engagementRate.toFixed(2)}%`}
-            tone="lemon"
           />
         </div>
 
-        <div className="glass-panel mt-7 rounded-md p-4">
+        <div className="glass-panel taste-reveal mt-7 rounded-md p-4 [animation-delay:140ms]">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
@@ -357,7 +359,7 @@ export default function App() {
                     type="button"
                     onClick={() => setSortBy(option.key)}
                     className={cn(
-                      "h-9 rounded-[5px] px-3 text-xs font-extrabold uppercase tracking-[0.08em] transition-colors",
+                      "h-11 rounded-[5px] px-3 text-xs font-extrabold uppercase tracking-[0.08em] transition-colors sm:h-10",
                       sortBy === option.key
                         ? "glass-fill-primary"
                         : "text-muted-foreground hover:bg-white/24 hover:text-foreground",
@@ -378,13 +380,13 @@ export default function App() {
         </div>
 
         {isError ? (
-          <div className="glass-panel mt-5 rounded-md bg-coral/10 p-4 text-sm font-semibold text-foreground">
+          <div className="glass-panel mt-5 rounded-md p-4 text-sm font-semibold text-foreground">
             Failed to load{" "}
             <span className="font-black">/renaiss_posts.csv</span>.
           </div>
         ) : null}
 
-        <div className="glass-panel mt-5 overflow-hidden rounded-md">
+        <div className="glass-panel taste-reveal mt-5 overflow-hidden rounded-md [animation-delay:180ms]">
           <div className="glass-row hidden grid-cols-[76px_minmax(260px,1fr)_160px_320px_96px] items-center border-b border-white/20 px-4 py-3 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:grid">
             <span>Rank</span>
             <span>Author</span>
@@ -613,36 +615,34 @@ function TopSignalMetric({ label, value }: { label: string; value: string }) {
   );
 }
 
+function PrismStage() {
+  return (
+    <div className="prism-stage hidden lg:block" aria-hidden="true">
+      <div className="prism-slab" />
+      <div className="prism-ribbon" />
+      <div className="prism-sheet" />
+      <div className="prism-ring" />
+      <div className="prism-orb" />
+    </div>
+  );
+}
+
 function StatTile({
   icon,
   label,
-  tone,
   value,
 }: {
   icon: ReactNode;
   label: string;
-  tone: "violet" | "coral" | "mint" | "lemon";
   value: string;
 }) {
-  const toneClasses = {
-    violet: "glass-fill-violet",
-    coral: "glass-fill-coral",
-    mint: "glass-fill-mint",
-    lemon: "glass-fill-lemon",
-  };
-
   return (
     <div className="glass-panel rounded-md p-5">
       <div className="flex items-center justify-between gap-4">
         <p className="text-xs font-black uppercase tracking-[0.18em] text-muted-foreground">
           {label}
         </p>
-        <div
-          className={cn(
-            "grid h-9 w-9 place-items-center rounded-md [&_svg]:h-4 [&_svg]:w-4",
-            toneClasses[tone],
-          )}
-        >
+        <div className="glass-fill-orange grid h-9 w-9 place-items-center rounded-md [&_svg]:h-4 [&_svg]:w-4">
           {icon}
         </div>
       </div>
@@ -693,7 +693,6 @@ function Avatar({
           src={avatarUrl}
           data-h={author.authorName}
           alt=""
-          crossOrigin="anonymous"
           referrerPolicy="no-referrer"
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"
@@ -728,11 +727,11 @@ function getRankTone(rank: number) {
   }
 
   if (rank === 2) {
-    return "glass-fill-violet";
+    return "glass-fill-primary";
   }
 
   if (rank === 3) {
-    return "glass-fill-mint";
+    return "glass-fill-orange-soft";
   }
 
   return "text-secondary-foreground";
@@ -752,7 +751,10 @@ function getInitials(name: string) {
 function getAvatarUrl(username: string) {
   const handle = username.trim().replace(/^@/, "");
 
-  return (avatarMap as Record<string, string>)[handle] ?? "";
+  return (
+    (avatarMap as Record<string, string>)[handle] ??
+    `https://unavatar.io/x/${encodeURIComponent(handle)}`
+  );
 }
 
 function toNumber(value: string | undefined) {
