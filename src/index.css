@@ -73,18 +73,18 @@ body {
   .site-shell::before {
     content: "";
     position: fixed;
-    right: clamp(-180px, -8vw, -60px);
-    top: clamp(78px, 14vh, 180px);
-    width: clamp(420px, 58vw, 900px);
+    right: clamp(-220px, -10vw, -64px);
+    top: clamp(84px, 13vh, 164px);
+    width: clamp(460px, 56vw, 860px);
     aspect-ratio: 1;
     z-index: -1;
     pointer-events: none;
-    background-image: url("/renaiss-thai-mark.svg");
+    background-image: url("/sticker.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.18;
-    filter: blur(0.2px) saturate(1.05);
+    opacity: 0.14;
+    filter: blur(0.25px) saturate(1.08);
     mix-blend-mode: multiply;
   }
 
