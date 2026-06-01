@@ -618,7 +618,6 @@ function TopSignalMetric({ label, value }: { label: string; value: string }) {
 function PrismStage() {
   return (
     <div className="prism-stage hidden lg:block" aria-hidden="true">
-      <div className="prism-slab" />
       <div className="prism-ribbon" />
       <div className="prism-sheet" />
       <div className="prism-ring" />
