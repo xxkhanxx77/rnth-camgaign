@@ -1,0 +1,5032 @@
+{
+  "tweets": [
+    {
+      "type": "tweet",
+      "id": "2061961435648078172",
+      "url": "https://x.com/sw010504/status/2061961435648078172",
+      "twitterUrl": "https://twitter.com/sw010504/status/2061961435648078172",
+      "text": "Renaiss X KCCF!!!\n\n양재 at센터에서 6월 6~7일동안 KCCF 카드쇼가 열립니다! 많은 부스들 중에 르네시스도 참여한다는 소식이니 안 갈 수가 없죠?! 가셔서 카드도 구경하고 많은 이벤트 같이 참여해봐요!\nhttps://t.co/ulIyVjHjOe\n\n#Renaiss #KCCF2026",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 0,
+      "likeCount": 1,
+      "quoteCount": 0,
+      "viewCount": 59,
+      "createdAt": "Wed Jun 03 00:01:30 +0000 2026",
+      "lang": "ko",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061961435648078172",
+      "displayTextRange": [0, 167],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "sw010504",
+        "url": "https://x.com/sw010504",
+        "twitterUrl": "https://twitter.com/sw010504",
+        "id": "727410212689203200",
+        "name": "canttuna",
+        "isVerified": false,
+        "isBlueVerified": false,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1885705185990934528/9BTaBVg4_normal.jpg",
+        "coverPicture": "",
+        "description": "",
+        "location": "",
+        "followers": 407,
+        "following": 530,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Tue May 03 08:11:24 +0000 2016",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 1539,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 66,
+        "statusesCount": 2430,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": [],
+        "profile_bio": {
+          "description": "한 청년의 바둥거림 모음집",
+          "entities": { "description": {} }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {},
+      "card": {
+        "binding_values": [
+          {
+            "key": "photo_image_full_size_large",
+            "value": {
+              "image_value": {
+                "height": 419,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=800x419",
+                "width": 800
+              }
+            }
+          },
+          {
+            "key": "thumbnail_image",
+            "value": {
+              "image_value": {
+                "height": 147,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=280x150",
+                "width": 280
+              }
+            }
+          },
+          {
+            "key": "description",
+            "value": {
+              "string_value": "✨국내 최대 카드쇼 KccF의 Renaiss 부스에 여러분들을 초대합니다✨ Renaiss가 6월 6일부터 7일까지 열리는 국내 최대 카드쇼 KccF에 메인 부스로 참가합니다! 이번 KccF 카드쇼에 참가하며 다양한 분들이 즐기실 수 있도록 참여형 이벤트들을 준비했습니다. 또한 기존…"
+            }
+          },
+          { "key": "domain", "value": { "string_value": "luma.com" } },
+          {
+            "key": "thumbnail_image_large",
+            "value": {
+              "image_value": {
+                "height": 315,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=600x600",
+                "width": 600
+              }
+            }
+          },
+          {
+            "key": "summary_photo_image_small",
+            "value": {
+              "image_value": {
+                "height": 202,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=386x202",
+                "width": 386
+              }
+            }
+          },
+          {
+            "key": "thumbnail_image_original",
+            "value": {
+              "image_value": {
+                "height": 420,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=orig",
+                "width": 800
+              }
+            }
+          },
+          {
+            "key": "photo_image_full_size_small",
+            "value": {
+              "image_value": {
+                "height": 202,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=386x202",
+                "width": 386
+              }
+            }
+          },
+          {
+            "key": "summary_photo_image_large",
+            "value": {
+              "image_value": {
+                "height": 419,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=800x419",
+                "width": 800
+              }
+            }
+          },
+          {
+            "key": "thumbnail_image_small",
+            "value": {
+              "image_value": {
+                "height": 76,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=144x144",
+                "width": 144
+              }
+            }
+          },
+          {
+            "key": "thumbnail_image_x_large",
+            "value": {
+              "image_value": {
+                "height": 420,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=png&name=2048x2048_2_exp",
+                "width": 800
+              }
+            }
+          },
+          {
+            "key": "photo_image_full_size_original",
+            "value": {
+              "image_value": {
+                "height": 420,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=orig",
+                "width": 800
+              }
+            }
+          },
+          {
+            "key": "vanity_url",
+            "value": { "scribe_key": "vanity_url", "string_value": "luma.com" }
+          },
+          {
+            "key": "photo_image_full_size",
+            "value": {
+              "image_value": {
+                "height": 314,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=600x314",
+                "width": 600
+              }
+            }
+          },
+          {
+            "key": "thumbnail_image_color",
+            "value": {
+              "image_color_value": {
+                "palette": [
+                  {
+                    "percentage": 77.19,
+                    "rgb": { "blue": 65, "green": 37, "red": 180 }
+                  },
+                  {
+                    "percentage": 17.91,
+                    "rgb": { "blue": 250, "green": 250, "red": 250 }
+                  },
+                  {
+                    "percentage": 2.4,
+                    "rgb": { "blue": 144, "green": 126, "red": 211 }
+                  },
+                  {
+                    "percentage": 0.58,
+                    "rgb": { "blue": 57, "green": 57, "red": 57 }
+                  },
+                  {
+                    "percentage": 0.45,
+                    "rgb": { "blue": 188, "green": 177, "red": 229 }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "key": "title",
+            "value": { "string_value": "Renaiss x KccF · Luma" }
+          },
+          {
+            "key": "summary_photo_image_color",
+            "value": {
+              "image_color_value": {
+                "palette": [
+                  {
+                    "percentage": 77.19,
+                    "rgb": { "blue": 65, "green": 37, "red": 180 }
+                  },
+                  {
+                    "percentage": 17.91,
+                    "rgb": { "blue": 250, "green": 250, "red": 250 }
+                  },
+                  {
+                    "percentage": 2.4,
+                    "rgb": { "blue": 144, "green": 126, "red": 211 }
+                  },
+                  {
+                    "percentage": 0.58,
+                    "rgb": { "blue": 57, "green": 57, "red": 57 }
+                  },
+                  {
+                    "percentage": 0.45,
+                    "rgb": { "blue": 188, "green": 177, "red": 229 }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "key": "summary_photo_image_x_large",
+            "value": {
+              "image_value": {
+                "height": 420,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=png&name=2048x2048_2_exp",
+                "width": 800
+              }
+            }
+          },
+          {
+            "key": "summary_photo_image",
+            "value": {
+              "image_value": {
+                "height": 314,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=600x314",
+                "width": 600
+              }
+            }
+          },
+          {
+            "key": "photo_image_full_size_color",
+            "value": {
+              "image_color_value": {
+                "palette": [
+                  {
+                    "percentage": 77.19,
+                    "rgb": { "blue": 65, "green": 37, "red": 180 }
+                  },
+                  {
+                    "percentage": 17.91,
+                    "rgb": { "blue": 250, "green": 250, "red": 250 }
+                  },
+                  {
+                    "percentage": 2.4,
+                    "rgb": { "blue": 144, "green": 126, "red": 211 }
+                  },
+                  {
+                    "percentage": 0.58,
+                    "rgb": { "blue": 57, "green": 57, "red": 57 }
+                  },
+                  {
+                    "percentage": 0.45,
+                    "rgb": { "blue": 188, "green": 177, "red": 229 }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "key": "photo_image_full_size_x_large",
+            "value": {
+              "image_value": {
+                "height": 420,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=png&name=2048x2048_2_exp",
+                "width": 800
+              }
+            }
+          },
+          {
+            "key": "card_url",
+            "value": {
+              "scribe_key": "card_url",
+              "string_value": "https://t.co/ulIyVjHjOe"
+            }
+          },
+          {
+            "key": "summary_photo_image_original",
+            "value": {
+              "image_value": {
+                "height": 420,
+                "url": "https://pbs.twimg.com/card_img/2060697798442643456/Sx8aUmET?format=jpg&name=orig",
+                "width": 800
+              }
+            }
+          }
+        ],
+        "card_platform": {
+          "platform": {
+            "audience": { "name": "production" },
+            "device": { "name": "iPhone", "version": "13" }
+          }
+        },
+        "name": "summary_large_image",
+        "url": "https://t.co/ulIyVjHjOe",
+        "user_refs_results": []
+      },
+      "place": {},
+      "entities": {
+        "hashtags": [
+          { "indices": [149, 157], "text": "Renaiss" },
+          { "indices": [158, 167], "text": "KCCF2026" }
+        ],
+        "urls": [
+          {
+            "display_url": "luma.com/8s2f613x",
+            "expanded_url": "https://luma.com/8s2f613x",
+            "indices": [124, 147],
+            "url": "https://t.co/ulIyVjHjOe"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2060698525437223296",
+        "url": "https://x.com/renaissxyz/status/2060698525437223296",
+        "twitterUrl": "https://twitter.com/renaissxyz/status/2060698525437223296",
+        "text": "Renaiss is heading to KCCF 🇰🇷\n\nThis June 6–7, we’ll be joining @kccf_kr KCCF 2026, one of Korea’s biggest card culture events.\n\nJoin us on-site for booth activities, community missions, content campaigns, and special moments from the event floor.\n\nCollectors, players, and builders, come meet us in Seoul.\n\n📍 Event: KCCF 2026\n📅 Date: June 6–7\n\n📝 Join here:\nhttps://t.co/sWgTiyyO0E\n\nSee you at KCCF.",
+        "source": "Twitter for iPhone",
+        "retweetCount": 39,
+        "replyCount": 32,
+        "likeCount": 153,
+        "quoteCount": 109,
+        "viewCount": 520663,
+        "createdAt": "Sat May 30 12:23:09 +0000 2026",
+        "lang": "en",
+        "bookmarkCount": 11,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2060698525437223296",
+        "displayTextRange": [0, 272],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "renaissxyz",
+          "url": "https://x.com/renaissxyz",
+          "twitterUrl": "https://twitter.com/renaissxyz",
+          "id": "1605761701806080000",
+          "name": "Renaiss Protocol",
+          "isVerified": false,
+          "isBlueVerified": false,
+          "verifiedType": "Business",
+          "profilePicture": "https://pbs.twimg.com/profile_images/2007024678469353472/Ay7MsqaN_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1605761701806080000/1762192481",
+          "description": "",
+          "location": "RWA",
+          "followers": 65905,
+          "following": 3174,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Thu Dec 22 03:06:50 +0000 2022",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 18984,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 7291,
+          "statusesCount": 10924,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["2054383644383625332"],
+          "profile_bio": {
+            "description": "First Liquidity Infrastructure of Physical Collectibles. @BNBCHAIN 🔶 Powered by @RenaissCLTB & @Renaiss_cmty, Graduated @EASYResidency S3 backed by @yzilabs.",
+            "entities": {
+              "description": {
+                "user_mentions": [
+                  {
+                    "id_str": "",
+                    "indices": [57, 66],
+                    "name": "",
+                    "screen_name": "BNBCHAIN"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [80, 92],
+                    "name": "",
+                    "screen_name": "RenaissCLTB"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [95, 108],
+                    "name": "",
+                    "screen_name": "Renaiss_cmty"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [120, 134],
+                    "name": "",
+                    "screen_name": "EASYResidency"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [148, 156],
+                    "name": "",
+                    "screen_name": "yzilabs"
+                  }
+                ]
+              },
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "linktr.ee/renaissxyz",
+                    "expanded_url": "https://linktr.ee/renaissxyz",
+                    "indices": [0, 23],
+                    "url": "https://t.co/BmCBaaiqbj"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "display_url": "pic.twitter.com/29vuJnieeI",
+              "expanded_url": "https://twitter.com/renaissxyz/status/2060698525437223296/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2060697997877628928",
+              "indices": [273, 296],
+              "media_key": "3_2060697997877628928",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyZEek42tAACgACHJkSZA3bYYAAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJkR6Tja0AAKAAIcmRJkDdthgAAA",
+                  "media_key": "3_2060697997877628928"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJkR6Tja0AAZQha.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 717, "w": 1280, "x": 0, "y": 58 },
+                  { "h": 812, "w": 812, "x": 394, "y": 0 },
+                  { "h": 812, "w": 712, "x": 444, "y": 0 },
+                  { "h": 812, "w": 406, "x": 597, "y": 0 },
+                  { "h": 812, "w": 1280, "x": 0, "y": 0 }
+                ],
+                "height": 812,
+                "width": 1280
+              },
+              "sizes": { "large": { "h": 812, "w": 1280 } },
+              "type": "photo",
+              "url": "https://t.co/29vuJnieeI"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "luma.com/8s2f613x",
+              "expanded_url": "https://luma.com/8s2f613x",
+              "indices": [357, 380],
+              "url": "https://t.co/sWgTiyyO0E"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id_str": "2021520389067964416",
+              "indices": [63, 71],
+              "name": "kccf_kr",
+              "screen_name": "kccf_kr"
+            }
+          ]
+        },
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061849538168774763",
+      "url": "https://x.com/Rhythm_rere2/status/2061849538168774763",
+      "twitterUrl": "https://twitter.com/Rhythm_rere2/status/2061849538168774763",
+      "text": "르네시스 밋업 반드시 가야겠죠?!\n(가는김에 유희왕도 살거임)\nKCCF를 반드시 가 ㄷㄷㄷㄷㄷㄷㄷㄷ\n#Renaiss",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 1,
+      "likeCount": 1,
+      "quoteCount": 0,
+      "viewCount": 197,
+      "createdAt": "Tue Jun 02 16:36:51 +0000 2026",
+      "lang": "ko",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061849538168774763",
+      "displayTextRange": [0, 64],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "Rhythm_rere2",
+        "url": "https://x.com/Rhythm_rere2",
+        "twitterUrl": "https://twitter.com/Rhythm_rere2",
+        "id": "1566409015810478080",
+        "name": "RERE2(레레이)",
+        "isVerified": false,
+        "isBlueVerified": false,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1950859406507474944/EjGy8Zkp_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1566409015810478080/1768201285",
+        "description": "",
+        "location": "Akihabara",
+        "followers": 4600,
+        "following": 4385,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": true,
+        "createdAt": "Sun Sep 04 12:53:18 +0000 2022",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 49698,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2074,
+        "statusesCount": 28993,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2061255747506499598"],
+        "profile_bio": {
+          "description": "Korean Otaku Leader KOL\n韓国と日本のWeb3をつなぐ“架け橋”みたい\nweb3&subculture research。",
+          "entities": {
+            "description": {},
+            "url": {
+              "urls": [
+                {
+                  "display_url": "t.me/rere2win",
+                  "expanded_url": "http://t.me/rere2win",
+                  "indices": [0, 23],
+                  "url": "https://t.co/adMNqL6S5I"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {},
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [56, 64], "text": "Renaiss" }],
+        "symbols": [],
+        "urls": [],
+        "user_mentions": []
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2060698525437223296",
+        "url": "https://x.com/renaissxyz/status/2060698525437223296",
+        "twitterUrl": "https://twitter.com/renaissxyz/status/2060698525437223296",
+        "text": "Renaiss is heading to KCCF 🇰🇷\n\nThis June 6–7, we’ll be joining @kccf_kr KCCF 2026, one of Korea’s biggest card culture events.\n\nJoin us on-site for booth activities, community missions, content campaigns, and special moments from the event floor.\n\nCollectors, players, and builders, come meet us in Seoul.\n\n📍 Event: KCCF 2026\n📅 Date: June 6–7\n\n📝 Join here:\nhttps://t.co/sWgTiyyO0E\n\nSee you at KCCF.",
+        "source": "Twitter for iPhone",
+        "retweetCount": 39,
+        "replyCount": 32,
+        "likeCount": 153,
+        "quoteCount": 109,
+        "viewCount": 520663,
+        "createdAt": "Sat May 30 12:23:09 +0000 2026",
+        "lang": "en",
+        "bookmarkCount": 11,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2060698525437223296",
+        "displayTextRange": [0, 272],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "renaissxyz",
+          "url": "https://x.com/renaissxyz",
+          "twitterUrl": "https://twitter.com/renaissxyz",
+          "id": "1605761701806080000",
+          "name": "Renaiss Protocol",
+          "isVerified": false,
+          "isBlueVerified": false,
+          "verifiedType": "Business",
+          "profilePicture": "https://pbs.twimg.com/profile_images/2007024678469353472/Ay7MsqaN_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1605761701806080000/1762192481",
+          "description": "",
+          "location": "RWA",
+          "followers": 65905,
+          "following": 3174,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Thu Dec 22 03:06:50 +0000 2022",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 18984,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 7291,
+          "statusesCount": 10924,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["2054383644383625332"],
+          "profile_bio": {
+            "description": "First Liquidity Infrastructure of Physical Collectibles. @BNBCHAIN 🔶 Powered by @RenaissCLTB & @Renaiss_cmty, Graduated @EASYResidency S3 backed by @yzilabs.",
+            "entities": {
+              "description": {
+                "user_mentions": [
+                  {
+                    "id_str": "",
+                    "indices": [57, 66],
+                    "name": "",
+                    "screen_name": "BNBCHAIN"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [80, 92],
+                    "name": "",
+                    "screen_name": "RenaissCLTB"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [95, 108],
+                    "name": "",
+                    "screen_name": "Renaiss_cmty"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [120, 134],
+                    "name": "",
+                    "screen_name": "EASYResidency"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [148, 156],
+                    "name": "",
+                    "screen_name": "yzilabs"
+                  }
+                ]
+              },
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "linktr.ee/renaissxyz",
+                    "expanded_url": "https://linktr.ee/renaissxyz",
+                    "indices": [0, 23],
+                    "url": "https://t.co/BmCBaaiqbj"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "display_url": "pic.twitter.com/29vuJnieeI",
+              "expanded_url": "https://twitter.com/renaissxyz/status/2060698525437223296/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2060697997877628928",
+              "indices": [273, 296],
+              "media_key": "3_2060697997877628928",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyZEek42tAACgACHJkSZA3bYYAAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJkR6Tja0AAKAAIcmRJkDdthgAAA",
+                  "media_key": "3_2060697997877628928"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJkR6Tja0AAZQha.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 717, "w": 1280, "x": 0, "y": 58 },
+                  { "h": 812, "w": 812, "x": 394, "y": 0 },
+                  { "h": 812, "w": 712, "x": 444, "y": 0 },
+                  { "h": 812, "w": 406, "x": 597, "y": 0 },
+                  { "h": 812, "w": 1280, "x": 0, "y": 0 }
+                ],
+                "height": 812,
+                "width": 1280
+              },
+              "sizes": { "large": { "h": 812, "w": 1280 } },
+              "type": "photo",
+              "url": "https://t.co/29vuJnieeI"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "urls": [
+            {
+              "display_url": "luma.com/8s2f613x",
+              "expanded_url": "https://luma.com/8s2f613x",
+              "indices": [357, 380],
+              "url": "https://t.co/sWgTiyyO0E"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id_str": "2021520389067964416",
+              "indices": [63, 71],
+              "name": "kccf_kr",
+              "screen_name": "kccf_kr"
+            }
+          ]
+        },
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061845729153540340",
+      "url": "https://x.com/Renaiss_TH/status/2061845729153540340",
+      "twitterUrl": "https://twitter.com/Renaiss_TH/status/2061845729153540340",
+      "text": "ในที่สุด SBT 30+ ก็จะปล่อยให้เคลมแล้ว @renaissxyz \n\nรอบนี้เป็นเครื่องหมายใหม่สำหรับคนในคอมมูนิตี้ที่ช่วยดัน Renaiss มาตลอด\n\nไปเคลมกันได้เลย ใส่ไว้ให้เห็น แล้วสร้างกันต่อไป\n#renaiss",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 0,
+      "likeCount": 0,
+      "quoteCount": 0,
+      "viewCount": 54,
+      "createdAt": "Tue Jun 02 16:21:43 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061845729153540340",
+      "displayTextRange": [0, 180],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "Renaiss_TH",
+        "url": "https://x.com/Renaiss_TH",
+        "twitterUrl": "https://twitter.com/Renaiss_TH",
+        "id": "2056070865331134464",
+        "name": "Renaiss TCG Thailand",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2056072797869477888/E-myclJL_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/2056070865331134464/1780146462",
+        "description": "",
+        "location": "Thailand",
+        "followers": 436,
+        "following": 7,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Sun May 17 17:54:40 +0000 2026",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 187,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 65,
+        "statusesCount": 164,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": [],
+        "profile_bio": {
+          "description": "Renaiss non-official Thailand community 🇹🇭\n\nTCG-Trading-Community 🙏🏻🎁",
+          "entities": { "description": {} }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {},
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [172, 180], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [38, 49],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2061747265728139631",
+        "url": "https://x.com/renaissxyz/status/2061747265728139631",
+        "twitterUrl": "https://twitter.com/renaissxyz/status/2061747265728139631",
+        "text": "Finally — 30+ SBT is dropping.\n\nAll new marks for the community members pushing Renaiss forward.\n\nClaim it. Wear it. Keep building. https://t.co/tvcCbWrMG6",
+        "source": "Twitter for iPhone",
+        "retweetCount": 5,
+        "replyCount": 12,
+        "likeCount": 63,
+        "quoteCount": 5,
+        "viewCount": 3814,
+        "createdAt": "Tue Jun 02 09:50:28 +0000 2026",
+        "lang": "en",
+        "bookmarkCount": 4,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2061747265728139631",
+        "displayTextRange": [0, 131],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "renaissxyz",
+          "url": "https://x.com/renaissxyz",
+          "twitterUrl": "https://twitter.com/renaissxyz",
+          "id": "1605761701806080000",
+          "name": "Renaiss Protocol",
+          "isVerified": false,
+          "isBlueVerified": false,
+          "verifiedType": "Business",
+          "profilePicture": "https://pbs.twimg.com/profile_images/2007024678469353472/Ay7MsqaN_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1605761701806080000/1762192481",
+          "description": "",
+          "location": "RWA",
+          "followers": 65905,
+          "following": 3174,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Thu Dec 22 03:06:50 +0000 2022",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 18984,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 7291,
+          "statusesCount": 10924,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["2054383644383625332"],
+          "profile_bio": {
+            "description": "First Liquidity Infrastructure of Physical Collectibles. @BNBCHAIN 🔶 Powered by @RenaissCLTB & @Renaiss_cmty, Graduated @EASYResidency S3 backed by @yzilabs.",
+            "entities": {
+              "description": {
+                "user_mentions": [
+                  {
+                    "id_str": "",
+                    "indices": [57, 66],
+                    "name": "",
+                    "screen_name": "BNBCHAIN"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [80, 92],
+                    "name": "",
+                    "screen_name": "RenaissCLTB"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [95, 108],
+                    "name": "",
+                    "screen_name": "Renaiss_cmty"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [120, 134],
+                    "name": "",
+                    "screen_name": "EASYResidency"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [148, 156],
+                    "name": "",
+                    "screen_name": "yzilabs"
+                  }
+                ]
+              },
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "linktr.ee/renaissxyz",
+                    "expanded_url": "https://linktr.ee/renaissxyz",
+                    "indices": [0, 23],
+                    "url": "https://t.co/BmCBaaiqbj"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "display_url": "pic.twitter.com/tvcCbWrMG6",
+              "expanded_url": "https://twitter.com/renaissxyz/status/2061747265728139631/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2061747255665930240",
+              "indices": [132, 155],
+              "media_key": "3_2061747255665930240",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyczDSWmrAACgACHJzMNu5b0W8AAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJzMNJaasAAKAAIcnMw27lvRbwAA",
+                  "media_key": "3_2061747255665930240"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJzMNJaasAAlp1v.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 1075, "w": 1920, "x": 0, "y": 0 },
+                  { "h": 1080, "w": 1080, "x": 756, "y": 0 },
+                  { "h": 1080, "w": 947, "x": 823, "y": 0 },
+                  { "h": 1080, "w": 540, "x": 1026, "y": 0 },
+                  { "h": 1080, "w": 1920, "x": 0, "y": 0 }
+                ],
+                "height": 1080,
+                "width": 1920
+              },
+              "sizes": { "large": { "h": 1080, "w": 1920 } },
+              "type": "photo",
+              "url": "https://t.co/tvcCbWrMG6"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {},
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061829834440167821",
+      "url": "https://x.com/MKrub8/status/2061829834440167821",
+      "twitterUrl": "https://twitter.com/MKrub8/status/2061829834440167821",
+      "text": "Renaiss VLOG : Day 1\nทำภารกิจถ่ายคลิป 30 วัน เอา Vlog Badge 😆\n\nวันนี้แว้นมอไซค์คู่ใจ จุ่มโปเกมอนซักหน่อย\nได้คราบความเค็มกลับบ้าน น้ำตาจะไหล\n\n#Renaiss @renaissxyz https://t.co/XCQoo16hC7",
+      "source": "Twitter for iPhone",
+      "retweetCount": 2,
+      "replyCount": 7,
+      "likeCount": 22,
+      "quoteCount": 1,
+      "viewCount": 2158,
+      "createdAt": "Tue Jun 02 15:18:34 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 2,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061829834440167821",
+      "displayTextRange": [0, 161],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "MKrub8",
+        "url": "https://x.com/MKrub8",
+        "twitterUrl": "https://twitter.com/MKrub8",
+        "id": "1578018173835964416",
+        "name": "MarkerDoge ZAMA 🐕🐘",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2031580922685042693/ckwhpNkz_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1578018173835964416/1746029574",
+        "description": "",
+        "location": "",
+        "followers": 8522,
+        "following": 6219,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": true,
+        "createdAt": "Thu Oct 06 13:43:53 +0000 2022",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 50425,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2458,
+        "statusesCount": 31263,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2062183405777977714"],
+        "profile_bio": {
+          "description": "Math Teacher and Thailand CEX Maxi คนไทยใช้ของไทย ติดตามข่าวสารเรื่องชาวบ้านได้ที่แอคนี้จ้า",
+          "entities": {
+            "description": {},
+            "url": {
+              "urls": [
+                {
+                  "display_url": "x.com/i/chat/group_j…",
+                  "expanded_url": "https://x.com/i/chat/group_join/g2048579113330577634/d0Py5Q1136",
+                  "indices": [0, 23],
+                  "url": "https://t.co/FOnFlqatnm"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "additional_media_info": { "monetizable": true },
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/XCQoo16hC7",
+            "expanded_url": "https://twitter.com/MKrub8/status/2061829834440167821/video/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "id_str": "2061829765217320960",
+            "indices": [162, 185],
+            "media_key": "13_2061829765217320960",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARydFz9XGwAAAAA=",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAAECgABHJ0XP1cbAAAAAA==",
+                "media_key": "13_2061829765217320960"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2061829765217320960/img/ghaZM7U6qaWYMVYC.jpg",
+            "original_info": {
+              "focus_rects": [],
+              "height": 1920,
+              "width": 1080
+            },
+            "sizes": { "large": { "h": 1920, "w": 1080 } },
+            "type": "video",
+            "url": "https://t.co/XCQoo16hC7",
+            "video_info": {
+              "aspect_ratio": [9, 16],
+              "duration_millis": 12700,
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2061829765217320960/pl/ItZKkcWe-2yU4zh-.m3u8?tag=27"
+                },
+                {
+                  "bitrate": 632000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061829765217320960/vid/avc1/320x568/VHNU6X4IKeRVvXiO.mp4?tag=27"
+                },
+                {
+                  "bitrate": 950000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061829765217320960/vid/avc1/480x852/MyzTl39QaQiHVq3v.mp4?tag=27"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061829765217320960/vid/avc1/720x1280/zCjdrroQ6yutFBXO.mp4?tag=27"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061829765217320960/vid/avc1/1080x1920/M3oJaaLqSguwkA9D.mp4?tag=27"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [141, 149], "text": "Renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [150, 161],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061825892884890108",
+      "url": "https://x.com/FattyShark112/status/2061825892884890108",
+      "twitterUrl": "https://twitter.com/FattyShark112/status/2061825892884890108",
+      "text": "วันนี้ @renaissxyz แจก SBT เพิ่มแล้วนะครับ 30 กว่ารายการ\n\nซึ่งผมเก็บไปทั้งหมด 3 อันด้วยกัน เพราะผมเพิ่งมา 55555555\n\nเอาเป็นว่าช่วงนี้เขาแจกง่ายมาก ๆ ทำกิจกรรมนิดหน่อยก็ได้ 10++ แล้วครับ คนไทยคนไทยหาที่คอนทริบิ้ว หาสังคมใหม่ ๆ ผมแนะนำที่นี่เลย สนุกมาก\n\n#Renaiss https://t.co/RcrKkqMsuj",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 3,
+      "likeCount": 6,
+      "quoteCount": 0,
+      "viewCount": 403,
+      "createdAt": "Tue Jun 02 15:02:54 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 1,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061825892884890108",
+      "displayTextRange": [0, 260],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "FattyShark112",
+        "url": "https://x.com/FattyShark112",
+        "twitterUrl": "https://twitter.com/FattyShark112",
+        "id": "1600699789342932992",
+        "name": "FattyShark_Renaiss",
+        "isVerified": false,
+        "isBlueVerified": false,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2060071066081669120/7lzkbkcH_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1600699789342932992/1758622012",
+        "description": "",
+        "location": "",
+        "followers": 650,
+        "following": 937,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Thu Dec 08 03:52:34 +0000 2022",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 1135,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 172,
+        "statusesCount": 1059,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["1977783742862442956"],
+        "profile_bio": {
+          "description": "FattyShark_ Luckyman on @renaissxyz #Renaiss \n\nArtist Web3 @rialohq",
+          "entities": {
+            "description": {
+              "hashtags": [{ "indices": [36, 44], "text": "Renaiss" }],
+              "user_mentions": [
+                {
+                  "id_str": "",
+                  "indices": [24, 35],
+                  "name": "",
+                  "screen_name": "renaissxyz"
+                },
+                {
+                  "id_str": "",
+                  "indices": [59, 67],
+                  "name": "",
+                  "screen_name": "rialohq"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "display_url": "pic.twitter.com/RcrKkqMsuj",
+            "expanded_url": "https://twitter.com/FattyShark112/status/2061825892884890108/photo/1",
+            "ext_alt_text": "Pokemon Anime Evolutions GIF by Pokémon",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "id_str": "2061825888350785536",
+            "indices": [261, 284],
+            "media_key": "16_2061825888350785536",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAgoAARydE7iv2lAACgACHJ0Tub4bQfwAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAACCgABHJ0TuK/aUAAKAAIcnRO5vhtB/AAA",
+                "media_key": "16_2061825888350785536"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/HJ0TuK_aUAAASzH.jpg",
+            "original_info": { "focus_rects": [], "height": 270, "width": 480 },
+            "sizes": { "large": { "h": 270, "w": 480 } },
+            "type": "animated_gif",
+            "url": "https://t.co/RcrKkqMsuj",
+            "video_info": {
+              "aspect_ratio": [16, 9],
+              "variants": [
+                {
+                  "bitrate": 0,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/tweet_video/HJ0TuK_aUAAASzH.mp4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [252, 260], "text": "Renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [7, 18],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2061747265728139631",
+        "url": "https://x.com/renaissxyz/status/2061747265728139631",
+        "twitterUrl": "https://twitter.com/renaissxyz/status/2061747265728139631",
+        "text": "Finally — 30+ SBT is dropping.\n\nAll new marks for the community members pushing Renaiss forward.\n\nClaim it. Wear it. Keep building. https://t.co/tvcCbWrMG6",
+        "source": "Twitter for iPhone",
+        "retweetCount": 5,
+        "replyCount": 12,
+        "likeCount": 63,
+        "quoteCount": 5,
+        "viewCount": 3814,
+        "createdAt": "Tue Jun 02 09:50:28 +0000 2026",
+        "lang": "en",
+        "bookmarkCount": 4,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2061747265728139631",
+        "displayTextRange": [0, 131],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "renaissxyz",
+          "url": "https://x.com/renaissxyz",
+          "twitterUrl": "https://twitter.com/renaissxyz",
+          "id": "1605761701806080000",
+          "name": "Renaiss Protocol",
+          "isVerified": false,
+          "isBlueVerified": false,
+          "verifiedType": "Business",
+          "profilePicture": "https://pbs.twimg.com/profile_images/2007024678469353472/Ay7MsqaN_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1605761701806080000/1762192481",
+          "description": "",
+          "location": "RWA",
+          "followers": 65905,
+          "following": 3174,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Thu Dec 22 03:06:50 +0000 2022",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 18984,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 7291,
+          "statusesCount": 10924,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["2054383644383625332"],
+          "profile_bio": {
+            "description": "First Liquidity Infrastructure of Physical Collectibles. @BNBCHAIN 🔶 Powered by @RenaissCLTB & @Renaiss_cmty, Graduated @EASYResidency S3 backed by @yzilabs.",
+            "entities": {
+              "description": {
+                "user_mentions": [
+                  {
+                    "id_str": "",
+                    "indices": [57, 66],
+                    "name": "",
+                    "screen_name": "BNBCHAIN"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [80, 92],
+                    "name": "",
+                    "screen_name": "RenaissCLTB"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [95, 108],
+                    "name": "",
+                    "screen_name": "Renaiss_cmty"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [120, 134],
+                    "name": "",
+                    "screen_name": "EASYResidency"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [148, 156],
+                    "name": "",
+                    "screen_name": "yzilabs"
+                  }
+                ]
+              },
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "linktr.ee/renaissxyz",
+                    "expanded_url": "https://linktr.ee/renaissxyz",
+                    "indices": [0, 23],
+                    "url": "https://t.co/BmCBaaiqbj"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "display_url": "pic.twitter.com/tvcCbWrMG6",
+              "expanded_url": "https://twitter.com/renaissxyz/status/2061747265728139631/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2061747255665930240",
+              "indices": [132, 155],
+              "media_key": "3_2061747255665930240",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyczDSWmrAACgACHJzMNu5b0W8AAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJzMNJaasAAKAAIcnMw27lvRbwAA",
+                  "media_key": "3_2061747255665930240"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJzMNJaasAAlp1v.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 1075, "w": 1920, "x": 0, "y": 0 },
+                  { "h": 1080, "w": 1080, "x": 756, "y": 0 },
+                  { "h": 1080, "w": 947, "x": 823, "y": 0 },
+                  { "h": 1080, "w": 540, "x": 1026, "y": 0 },
+                  { "h": 1080, "w": 1920, "x": 0, "y": 0 }
+                ],
+                "height": 1080,
+                "width": 1920
+              },
+              "sizes": { "large": { "h": 1080, "w": 1920 } },
+              "type": "photo",
+              "url": "https://t.co/tvcCbWrMG6"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {},
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061823707635712325",
+      "url": "https://x.com/classicalism/status/2061823707635712325",
+      "twitterUrl": "https://twitter.com/classicalism/status/2061823707635712325",
+      "text": "I just found out about this #Renaiss badge and decided to give it a try.\n\nWill record part of my daily routine featuring all the @renaissxyz elements I have around.\n\nTBH, I didn't have any of it today, so I decided to create my own one (got the idea from @nopzty).\n\nDAY 1 👌 https://t.co/nPL4Az75oq",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 6,
+      "likeCount": 13,
+      "quoteCount": 2,
+      "viewCount": 1961,
+      "createdAt": "Tue Jun 02 14:54:13 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061823707635712325",
+      "displayTextRange": [0, 273],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "classicalism",
+        "url": "https://x.com/classicalism",
+        "twitterUrl": "https://twitter.com/classicalism",
+        "id": "132872285",
+        "name": "ibO",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1766457147486048256/xvoNhFCf_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/132872285/1750755765",
+        "description": "",
+        "location": "",
+        "followers": 9457,
+        "following": 8112,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": false,
+        "createdAt": "Wed Apr 14 11:59:57 +0000 2010",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 72537,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 4898,
+        "statusesCount": 50169,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2052257071425269821"],
+        "profile_bio": {
+          "description": "▪ ARC Stellar #774\n▪ Bought BTC (2015) | Full Time (2022)\n▪ Founded 𝗶𝗯𝗢 𝗖𝗿𝘆𝗽𝘁𝗼 (2024)\n▪ Co-hosted #MemeDay 🇹🇭 (2025)\n▪ more works in \"Highlights\"",
+          "entities": {
+            "description": {
+              "hashtags": [{ "indices": [98, 106], "text": "MemeDay" }]
+            },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "linktr.ee/classicalism_i…",
+                  "expanded_url": "https://linktr.ee/classicalism_ibo",
+                  "indices": [0, 23],
+                  "url": "https://t.co/N5MNIcWU4X"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/nPL4Az75oq",
+            "expanded_url": "https://twitter.com/classicalism/status/2061823707635712325/video/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+            "id_str": "2061820230977060864",
+            "indices": [274, 297],
+            "media_key": "3_2061820230977060864",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARydDpN6GgAACgACHJ0RvPMbAUUAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJ0Ok3oaAAAKAAIcnRG88xsBRQAA",
+                "media_key": "3_2061820230977060864"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJ0Ok3oaAAAXo_o.png",
+            "original_info": {
+              "focus_rects": [
+                { "h": 158, "w": 282, "x": 0, "y": 176 },
+                { "h": 282, "w": 282, "x": 0, "y": 71 },
+                { "h": 321, "w": 282, "x": 0, "y": 32 },
+                { "h": 353, "w": 177, "x": 53, "y": 0 },
+                { "h": 353, "w": 282, "x": 0, "y": 0 }
+              ],
+              "height": 353,
+              "width": 282
+            },
+            "sizes": { "large": { "h": 353, "w": 282 } },
+            "type": "photo",
+            "url": "https://t.co/nPL4Az75oq"
+          },
+          {
+            "additional_media_info": { "monetizable": true },
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/nPL4Az75oq",
+            "expanded_url": "https://twitter.com/classicalism/status/2061823707635712325/video/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "id_str": "2061821540363386880",
+            "indices": [274, 297],
+            "media_key": "13_2061821540363386880",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwABAoAARydD8RXm8AAAAA=",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAAECgABHJ0PxFebwAAAAA==",
+                "media_key": "13_2061821540363386880"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2061821540363386880/img/RcGvubQJRnJPqSZw.jpg",
+            "original_info": {
+              "focus_rects": [],
+              "height": 1920,
+              "width": 1080
+            },
+            "sizes": { "large": { "h": 1920, "w": 1080 } },
+            "type": "video",
+            "url": "https://t.co/nPL4Az75oq",
+            "video_info": {
+              "aspect_ratio": [9, 16],
+              "duration_millis": 14837,
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2061821540363386880/pl/rZWhxl0WrGfzeNtq.m3u8?tag=27"
+                },
+                {
+                  "bitrate": 632000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061821540363386880/vid/avc1/320x568/RmmIW-ZP7jzV-ADW.mp4?tag=27"
+                },
+                {
+                  "bitrate": 950000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061821540363386880/vid/avc1/480x852/5ehsOXu9CHxPFJYB.mp4?tag=27"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061821540363386880/vid/avc1/720x1280/8-zwTOklU46vvN6q.mp4?tag=27"
+                },
+                {
+                  "bitrate": 10368000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2061821540363386880/vid/avc1/1080x1920/FNKtpIBtQSAuYDSE.mp4?tag=27"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [28, 36], "text": "Renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [129, 140],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "776984729518166016",
+            "indices": [255, 262],
+            "name": "Nemo",
+            "screen_name": "nopzty"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2061661070281019806",
+        "url": "https://x.com/classicalism/status/2061661070281019806",
+        "twitterUrl": "https://twitter.com/classicalism/status/2061661070281019806",
+        "text": "Proud to have earned the Korea and Thai Explorer badges on @renaissxyz.\n\nCan't wait to explore more TCG culture in different countries with #Renaiss.\n\nLFG 🔥 @RenaissKrCM 🇰🇷 @Renaiss_TH 🇹🇭 https://t.co/jgKOmF47Nt",
+        "source": "Twitter for iPhone",
+        "retweetCount": 1,
+        "replyCount": 4,
+        "likeCount": 17,
+        "quoteCount": 1,
+        "viewCount": 3549,
+        "createdAt": "Tue Jun 02 04:07:57 +0000 2026",
+        "lang": "en",
+        "bookmarkCount": 0,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2061661070281019806",
+        "displayTextRange": [0, 187],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "classicalism",
+          "url": "https://x.com/classicalism",
+          "twitterUrl": "https://twitter.com/classicalism",
+          "id": "132872285",
+          "name": "ibO",
+          "isVerified": false,
+          "isBlueVerified": true,
+          "verifiedType": null,
+          "profilePicture": "https://pbs.twimg.com/profile_images/1766457147486048256/xvoNhFCf_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/132872285/1750755765",
+          "description": "",
+          "location": "",
+          "followers": 9457,
+          "following": 8112,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": false,
+          "createdAt": "Wed Apr 14 11:59:57 +0000 2010",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 72537,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 4898,
+          "statusesCount": 50169,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["2052257071425269821"],
+          "profile_bio": {
+            "description": "▪ ARC Stellar #774\n▪ Bought BTC (2015) | Full Time (2022)\n▪ Founded 𝗶𝗯𝗢 𝗖𝗿𝘆𝗽𝘁𝗼 (2024)\n▪ Co-hosted #MemeDay 🇹🇭 (2025)\n▪ more works in \"Highlights\"",
+            "entities": {
+              "description": {
+                "hashtags": [{ "indices": [98, 106], "text": "MemeDay" }]
+              },
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "linktr.ee/classicalism_i…",
+                    "expanded_url": "https://linktr.ee/classicalism_ibo",
+                    "indices": [0, 23],
+                    "url": "https://t.co/N5MNIcWU4X"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/jgKOmF47Nt",
+              "expanded_url": "https://twitter.com/classicalism/status/2061661070281019806/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2061660448680992768",
+              "indices": [188, 211],
+              "media_key": "3_2061660448680992768",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycfUFDGmAACgACHJx90f1aEZ4AAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJx9QUMaYAAKAAIcnH3R/VoRngAA",
+                  "media_key": "3_2061660448680992768"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJx9QUMaYAAo-nN.png",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 328, "w": 585, "x": 0, "y": 36 },
+                  { "h": 364, "w": 364, "x": 110, "y": 0 },
+                  { "h": 364, "w": 319, "x": 133, "y": 0 },
+                  { "h": 364, "w": 182, "x": 201, "y": 0 },
+                  { "h": 364, "w": 585, "x": 0, "y": 0 }
+                ],
+                "height": 364,
+                "width": 585
+              },
+              "sizes": { "large": { "h": 364, "w": 585 } },
+              "type": "photo",
+              "url": "https://t.co/jgKOmF47Nt"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "hashtags": [{ "indices": [140, 148], "text": "Renaiss" }],
+          "user_mentions": [
+            {
+              "id_str": "1605761701806080000",
+              "indices": [59, 70],
+              "name": "Renaiss Protocol",
+              "screen_name": "renaissxyz"
+            },
+            {
+              "id_str": "2031306334394802177",
+              "indices": [157, 169],
+              "name": "Renaiss TCG Korea",
+              "screen_name": "RenaissKrCM"
+            },
+            {
+              "id_str": "2056070865331134464",
+              "indices": [173, 184],
+              "name": "Renaiss TCG Thailand",
+              "screen_name": "Renaiss_TH"
+            }
+          ]
+        },
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061818088841199837",
+      "url": "https://x.com/MTer088114/status/2061818088841199837",
+      "twitterUrl": "https://twitter.com/MTer088114/status/2061818088841199837",
+      "text": "จุ่มรอบหน้าจัดแพ็คละ150$ นะเจ้าแม่ \nหวังว่าจะโชคดีน้าาาาาาา @Renaiss_TH  @renaissxyz #Renaiss #RenaissTH https://t.co/WOgliHdzzF",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 8,
+      "likeCount": 15,
+      "quoteCount": 0,
+      "viewCount": 763,
+      "createdAt": "Tue Jun 02 14:31:53 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061818088841199837",
+      "displayTextRange": [0, 104],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "MTer088114",
+        "url": "https://x.com/MTer088114",
+        "twitterUrl": "https://twitter.com/MTer088114",
+        "id": "1310211327646863360",
+        "name": "Ter",
+        "isVerified": false,
+        "isBlueVerified": false,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2061838260666773505/vpmj7aQZ_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1310211327646863360/1780042167",
+        "description": "",
+        "location": "",
+        "followers": 1306,
+        "following": 2792,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": false,
+        "createdAt": "Sun Sep 27 13:35:08 +0000 2020",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 19033,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 1772,
+        "statusesCount": 11050,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": [],
+        "profile_bio": { "description": "", "entities": { "description": {} } },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/WOgliHdzzF",
+            "expanded_url": "https://twitter.com/MTer088114/status/2061818088841199837/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [
+                  { "h": 72, "w": 72, "x": 752, "y": 606 },
+                  { "h": 70, "w": 70, "x": 468, "y": 916 },
+                  { "h": 72, "w": 72, "x": 1034, "y": 950 }
+                ]
+              },
+              "orig": {
+                "faces": [
+                  { "h": 72, "w": 72, "x": 752, "y": 606 },
+                  { "h": 70, "w": 70, "x": 468, "y": 916 },
+                  { "h": 72, "w": 72, "x": 1034, "y": 950 }
+                ]
+              }
+            },
+            "id_str": "2061818079085297664",
+            "indices": [105, 128],
+            "media_key": "3_2061818079085297664",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARydDJ5zW4AACgACHJ0MoLjawN0AAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJ0MnnNbgAAKAAIcnQyguNrA3QAA",
+                "media_key": "3_2061818079085297664"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJ0MnnNbgAAdSzd.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 860, "w": 1536, "x": 0, "y": 1188 },
+                { "h": 1536, "w": 1536, "x": 0, "y": 512 },
+                { "h": 1751, "w": 1536, "x": 0, "y": 297 },
+                { "h": 2048, "w": 1024, "x": 256, "y": 0 },
+                { "h": 2048, "w": 1536, "x": 0, "y": 0 }
+              ],
+              "height": 2048,
+              "width": 1536
+            },
+            "sizes": { "large": { "h": 2048, "w": 1536 } },
+            "type": "photo",
+            "url": "https://t.co/WOgliHdzzF"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [
+          { "indices": [85, 93], "text": "Renaiss" },
+          { "indices": [94, 104], "text": "RenaissTH" }
+        ],
+        "user_mentions": [
+          {
+            "id_str": "2056070865331134464",
+            "indices": [60, 71],
+            "name": "Renaiss TCG Thailand",
+            "screen_name": "Renaiss_TH"
+          },
+          {
+            "id_str": "1605761701806080000",
+            "indices": [73, 84],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061808951608651948",
+      "url": "https://x.com/NeiSudYod/status/2061808951608651948",
+      "twitterUrl": "https://twitter.com/NeiSudYod/status/2061808951608651948",
+      "text": "เน้นเข้าร่วม พอดีได้ไปงานมาด้วย เซอร์ไพส์มาก ใครได้ไปมา สามารถไป เคลม Badge กันได้ครับ 🥳\n@renaissxyz @Renaiss_TH  ของดี\nขอแท้ #renaiss https://t.co/24AxVbYVkY",
+      "source": "Twitter for iPhone",
+      "retweetCount": 2,
+      "replyCount": 6,
+      "likeCount": 10,
+      "quoteCount": 0,
+      "viewCount": 765,
+      "createdAt": "Tue Jun 02 13:55:35 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061808951608651948",
+      "displayTextRange": [0, 134],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "NeiSudYod",
+        "url": "https://x.com/NeiSudYod",
+        "twitterUrl": "https://twitter.com/NeiSudYod",
+        "id": "626236634",
+        "name": "Nei_Sud_Yod 🔰 Nexter",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2049877715428507648/iKb4gZUQ_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/626236634/1745741954",
+        "description": "",
+        "location": "",
+        "followers": 4312,
+        "following": 5768,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Wed Jul 04 07:05:36 +0000 2012",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 4319,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 207,
+        "statusesCount": 1405,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": [],
+        "profile_bio": {
+          "description": "😎พื้นที่แชร์การลงทุนเจาะลึกหุ้น/กองทุน/Crypto📊เกาะติดเทรนด์AI&DigitalArt💡เม้าท์มอยฟุตบอลและวิถีชาวด้อมติ่ง🏆เพราะชีวิตไม่ได้มีแค่เรื่องเงิน🤝 มาจอยกันฮ่ะ...",
+          "entities": { "description": {} }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/24AxVbYVkY",
+            "expanded_url": "https://twitter.com/NeiSudYod/status/2061808951608651948/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [{ "h": 607, "w": 607, "x": 633, "y": 385 }]
+              },
+              "orig": { "faces": [{ "h": 607, "w": 607, "x": 633, "y": 385 }] }
+            },
+            "id_str": "2061808942309892096",
+            "indices": [135, 158],
+            "media_key": "3_2061808942309892096",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARydBE8hGuAACgACHJ0EUUtasKwAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJ0ETyEa4AAKAAIcnQRRS1qwrAAA",
+                "media_key": "3_2061808942309892096"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJ0ETyEa4AAxP_q.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 722, "w": 1290, "x": 0, "y": 0 },
+                { "h": 1290, "w": 1290, "x": 0, "y": 0 },
+                { "h": 1335, "w": 1171, "x": 60, "y": 0 },
+                { "h": 1335, "w": 668, "x": 311, "y": 0 },
+                { "h": 1335, "w": 1290, "x": 0, "y": 0 }
+              ],
+              "height": 1335,
+              "width": 1290
+            },
+            "sizes": { "large": { "h": 1335, "w": 1290 } },
+            "type": "photo",
+            "url": "https://t.co/24AxVbYVkY"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [126, 134], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [89, 100],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "2056070865331134464",
+            "indices": [101, 112],
+            "name": "Renaiss TCG Thailand",
+            "screen_name": "Renaiss_TH"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061784699740270686",
+      "url": "https://x.com/w22py/status/2061784699740270686",
+      "twitterUrl": "https://twitter.com/w22py/status/2061784699740270686",
+      "text": "Successfully claimed my Pizza Day badge after participating in the Renaiss × Pizza Day campaign! 🏅🍕 The badge quality is so good, totally worth grinding the missions. Spent this year's Pizza Day well with @renaissxyz  \n#renaiss https://t.co/ncUFb3TaDO",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 2,
+      "likeCount": 3,
+      "quoteCount": 0,
+      "viewCount": 154,
+      "createdAt": "Tue Jun 02 12:19:13 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061784699740270686",
+      "displayTextRange": [0, 227],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "w22py",
+        "url": "https://x.com/w22py",
+        "twitterUrl": "https://twitter.com/w22py",
+        "id": "1445937604394844162",
+        "name": "weepy(❖,❖)",
+        "isVerified": false,
+        "isBlueVerified": false,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1986350962035027968/6q6vPmv8_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1445937604394844162/1725365270",
+        "description": "",
+        "location": "",
+        "followers": 774,
+        "following": 3955,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": true,
+        "createdAt": "Thu Oct 07 02:22:56 +0000 2021",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 9527,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 150,
+        "statusesCount": 7384,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": [],
+        "profile_bio": {
+          "description": "Panty Lover",
+          "entities": { "description": {} }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/ncUFb3TaDO",
+            "expanded_url": "https://twitter.com/w22py/status/2061784699740270686/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+            "id_str": "2061783483689873408",
+            "indices": [228, 251],
+            "media_key": "3_2061783483689873408",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyc7SeVGjAACgACHJzuQrdasF4AAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJztJ5UaMAAKAAIcnO5Ct1qwXgAA",
+                "media_key": "3_2061783483689873408"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJztJ5UaMAAbtHh.png",
+            "original_info": {
+              "focus_rects": [
+                { "h": 317, "w": 566, "x": 0, "y": 40 },
+                { "h": 357, "w": 357, "x": 105, "y": 0 },
+                { "h": 357, "w": 313, "x": 127, "y": 0 },
+                { "h": 357, "w": 179, "x": 194, "y": 0 },
+                { "h": 357, "w": 566, "x": 0, "y": 0 }
+              ],
+              "height": 357,
+              "width": 566
+            },
+            "sizes": { "large": { "h": 357, "w": 566 } },
+            "type": "photo",
+            "url": "https://t.co/ncUFb3TaDO"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [219, 227], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [205, 216],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2057787947857146346",
+        "url": "https://x.com/w22py/status/2057787947857146346",
+        "twitterUrl": "https://twitter.com/w22py/status/2057787947857146346",
+        "text": "Can't resist pizza lol. \nThis year's Pizza Day with @renaissxyz\nLet's all eat pizza🍕🍕🍕 https://t.co/aaLiLMVFfq",
+        "source": "Twitter for iPhone",
+        "retweetCount": 0,
+        "replyCount": 2,
+        "likeCount": 7,
+        "quoteCount": 1,
+        "viewCount": 276,
+        "createdAt": "Fri May 22 11:37:33 +0000 2026",
+        "lang": "en",
+        "bookmarkCount": 0,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2057787947857146346",
+        "displayTextRange": [0, 86],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "w22py",
+          "url": "https://x.com/w22py",
+          "twitterUrl": "https://twitter.com/w22py",
+          "id": "1445937604394844162",
+          "name": "weepy(❖,❖)",
+          "isVerified": false,
+          "isBlueVerified": false,
+          "verifiedType": null,
+          "profilePicture": "https://pbs.twimg.com/profile_images/1986350962035027968/6q6vPmv8_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1445937604394844162/1725365270",
+          "description": "",
+          "location": "",
+          "followers": 774,
+          "following": 3955,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Thu Oct 07 02:22:56 +0000 2021",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 9527,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 150,
+          "statusesCount": 7384,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": [],
+          "profile_bio": {
+            "description": "Panty Lover",
+            "entities": { "description": {} }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/aaLiLMVFfq",
+              "expanded_url": "https://twitter.com/w22py/status/2057787947857146346/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2057787943151153152",
+              "indices": [87, 110],
+              "media_key": "3_2057787943151153152",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyOuztOmzAACgACHI67PGca8eoAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHI67O06bMAAKAAIcjrs8Zxrx6gAA",
+                  "media_key": "3_2057787943151153152"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HI67O06bMAAcmLF.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 605, "w": 1080, "x": 0, "y": 475 },
+                  { "h": 1080, "w": 1080, "x": 0, "y": 0 },
+                  { "h": 1080, "w": 947, "x": 133, "y": 0 },
+                  { "h": 1080, "w": 540, "x": 540, "y": 0 },
+                  { "h": 1080, "w": 1080, "x": 0, "y": 0 }
+                ],
+                "height": 1080,
+                "width": 1080
+              },
+              "sizes": { "large": { "h": 1080, "w": 1080 } },
+              "type": "photo",
+              "url": "https://t.co/aaLiLMVFfq"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "user_mentions": [
+            {
+              "id_str": "1605761701806080000",
+              "indices": [52, 63],
+              "name": "Renaiss Protocol",
+              "screen_name": "renaissxyz"
+            }
+          ]
+        },
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061746006216372383",
+      "url": "https://x.com/daen97/status/2061746006216372383",
+      "twitterUrl": "https://twitter.com/daen97/status/2061746006216372383",
+      "text": "今天是收SBT的好日子啊 \n\n权重最好的应该就是top 10% 的 super liquid sbt了 虽然无缘前1% 但是这个 前10%的设计也是杠杠在线的 \n\n马来西亚披萨日sbt是参与项目那么久最有回忆的sbt 必须❤️起来 \n\n一口气领了6颗sbt 总数也破50颗sbt啦 \n\n#renaiss  @renaissxyz @Plus_Ultra_715 https://t.co/sfe0mJN6Xe",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 4,
+      "likeCount": 8,
+      "quoteCount": 0,
+      "viewCount": 313,
+      "createdAt": "Tue Jun 02 09:45:27 +0000 2026",
+      "lang": "zh",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061746006216372383",
+      "displayTextRange": [0, 180],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "daen97",
+        "url": "https://x.com/daen97",
+        "twitterUrl": "https://twitter.com/daen97",
+        "id": "1883143351",
+        "name": "Daen",
+        "isVerified": false,
+        "isBlueVerified": false,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1969778474006331392/05angApt_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1883143351/1529329496",
+        "description": "",
+        "location": "Malaysia",
+        "followers": 147,
+        "following": 250,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": false,
+        "createdAt": "Thu Sep 19 13:09:51 +0000 2013",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 9289,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 228,
+        "statusesCount": 13310,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["1008730509126406144"],
+        "profile_bio": {
+          "description": "H’s",
+          "entities": { "description": {} }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/sfe0mJN6Xe",
+            "expanded_url": "https://twitter.com/daen97/status/2061746006216372383/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [{ "h": 111, "w": 111, "x": 512, "y": 858 }]
+              },
+              "orig": { "faces": [{ "h": 111, "w": 111, "x": 512, "y": 858 }] }
+            },
+            "id_str": "2061745981109174272",
+            "indices": [181, 204],
+            "media_key": "3_2061745981109174272",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycywvVGgAACgACHJzLEa2bcJ8AAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJzLC9UaAAAKAAIcnMsRrZtwnwAA",
+                "media_key": "3_2061745981109174272"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJzLC9UaAAAg6fh.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 739, "w": 1320, "x": 0, "y": 582 },
+                { "h": 1320, "w": 1320, "x": 0, "y": 291 },
+                { "h": 1505, "w": 1320, "x": 0, "y": 150 },
+                { "h": 1655, "w": 828, "x": 246, "y": 0 },
+                { "h": 1655, "w": 1320, "x": 0, "y": 0 }
+              ],
+              "height": 1655,
+              "width": 1320
+            },
+            "sizes": { "large": { "h": 1655, "w": 1320 } },
+            "type": "photo",
+            "url": "https://t.co/sfe0mJN6Xe"
+          },
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/sfe0mJN6Xe",
+            "expanded_url": "https://twitter.com/daen97/status/2061746006216372383/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [
+                  { "h": 63, "w": 63, "x": 1181, "y": 533 },
+                  { "h": 74, "w": 74, "x": 649, "y": 1108 }
+                ]
+              },
+              "orig": {
+                "faces": [
+                  { "h": 63, "w": 63, "x": 1181, "y": 533 },
+                  { "h": 74, "w": 74, "x": 649, "y": 1108 }
+                ]
+              }
+            },
+            "id_str": "2061745981050560512",
+            "indices": [181, 204],
+            "media_key": "3_2061745981050560512",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycywvRm6AACgACHJzLEa2bcJ8AAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJzLC9GboAAKAAIcnMsRrZtwnwAA",
+                "media_key": "3_2061745981050560512"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJzLC9GboAAPPOn.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 739, "w": 1320, "x": 0, "y": 402 },
+                { "h": 1320, "w": 1320, "x": 0, "y": 111 },
+                { "h": 1505, "w": 1320, "x": 0, "y": 19 },
+                { "h": 1626, "w": 813, "x": 254, "y": 0 },
+                { "h": 1626, "w": 1320, "x": 0, "y": 0 }
+              ],
+              "height": 1626,
+              "width": 1320
+            },
+            "sizes": { "large": { "h": 1626, "w": 1320 } },
+            "type": "photo",
+            "url": "https://t.co/sfe0mJN6Xe"
+          },
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/sfe0mJN6Xe",
+            "expanded_url": "https://twitter.com/daen97/status/2061746006216372383/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": { "faces": [{ "h": 89, "w": 89, "x": 77, "y": 608 }] },
+              "orig": { "faces": [{ "h": 89, "w": 89, "x": 77, "y": 608 }] }
+            },
+            "id_str": "2061745981050572800",
+            "indices": [181, 204],
+            "media_key": "3_2061745981050572800",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycywvRm9AACgACHJzLEa2bcJ8AAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJzLC9Gb0AAKAAIcnMsRrZtwnwAA",
+                "media_key": "3_2061745981050572800"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJzLC9Gb0AAbgaR.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 739, "w": 1320, "x": 0, "y": 891 },
+                { "h": 1320, "w": 1320, "x": 0, "y": 310 },
+                { "h": 1505, "w": 1320, "x": 0, "y": 125 },
+                { "h": 1630, "w": 815, "x": 253, "y": 0 },
+                { "h": 1630, "w": 1320, "x": 0, "y": 0 }
+              ],
+              "height": 1630,
+              "width": 1320
+            },
+            "sizes": { "large": { "h": 1630, "w": 1320 } },
+            "type": "photo",
+            "url": "https://t.co/sfe0mJN6Xe"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [143, 151], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [153, 164],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "2788613881",
+            "indices": [165, 180],
+            "name": "Winchman@Renaiss",
+            "screen_name": "Plus_Ultra_715"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061745947739390198",
+      "url": "https://x.com/MKrub8/status/2061745947739390198",
+      "twitterUrl": "https://twitter.com/MKrub8/status/2061745947739390198",
+      "text": "ใครทำโพสท์ Pizza แล้วใส่ #Renaiss \nไปเคลมรับ Badge ฟรี ลุ้นเงินกินข้าวฟรีในอนาคตเด้อ\n\nใครสายคอนทริบิวท์ มาทำกับ @renaissxyz ได้เด้อ\nสายฟรี ทำโพสท์รับรางวัลได้นะครับ ไม่จำเป็นต้องจุ่มเสมอไป\n\nลิงค์สมัครในคอมเมนท์ โปรเจคได้ Fund จาก Binance YZI Labs อิอิ https://t.co/sUMwf5Zcrc",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 6,
+      "likeCount": 17,
+      "quoteCount": 1,
+      "viewCount": 1131,
+      "createdAt": "Tue Jun 02 09:45:13 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 1,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061745947739390198",
+      "displayTextRange": [0, 251],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "MKrub8",
+        "url": "https://x.com/MKrub8",
+        "twitterUrl": "https://twitter.com/MKrub8",
+        "id": "1578018173835964416",
+        "name": "MarkerDoge ZAMA 🐕🐘",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2031580922685042693/ckwhpNkz_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1578018173835964416/1746029574",
+        "description": "",
+        "location": "",
+        "followers": 8522,
+        "following": 6219,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": true,
+        "createdAt": "Thu Oct 06 13:43:53 +0000 2022",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 50425,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2458,
+        "statusesCount": 31263,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2062183405777977714"],
+        "profile_bio": {
+          "description": "Math Teacher and Thailand CEX Maxi คนไทยใช้ของไทย ติดตามข่าวสารเรื่องชาวบ้านได้ที่แอคนี้จ้า",
+          "entities": {
+            "description": {},
+            "url": {
+              "urls": [
+                {
+                  "display_url": "x.com/i/chat/group_j…",
+                  "expanded_url": "https://x.com/i/chat/group_join/g2048579113330577634/d0Py5Q1136",
+                  "indices": [0, 23],
+                  "url": "https://t.co/FOnFlqatnm"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/sUMwf5Zcrc",
+            "expanded_url": "https://twitter.com/MKrub8/status/2061745947739390198/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+            "id_str": "2061745939933691904",
+            "indices": [252, 275],
+            "media_key": "3_2061745939933691904",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycywI+2gAACgACHJzLBBAbgPYAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJzLAj7aAAAKAAIcnMsEEBuA9gAA",
+                "media_key": "3_2061745939933691904"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJzLAj7aAAAgeQN.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 665, "w": 1188, "x": 0, "y": 232 },
+                { "h": 1166, "w": 1166, "x": 11, "y": 0 },
+                { "h": 1166, "w": 1023, "x": 83, "y": 0 },
+                { "h": 1166, "w": 583, "x": 303, "y": 0 },
+                { "h": 1166, "w": 1188, "x": 0, "y": 0 }
+              ],
+              "height": 1166,
+              "width": 1188
+            },
+            "sizes": { "large": { "h": 1166, "w": 1188 } },
+            "type": "photo",
+            "url": "https://t.co/sUMwf5Zcrc"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [25, 33], "text": "Renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [112, 123],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2058358640592187652",
+        "url": "https://x.com/MKrub8/status/2058358640592187652",
+        "twitterUrl": "https://twitter.com/MKrub8/status/2058358640592187652",
+        "text": "Happy Pokemon TCG\n&amp; Happy Pizza Day\n\nTake time with Pizza and get lucky with @renaissxyz ahahah\n\nPika Pika Pikachuuuu #Renaiss \n\nปล. ทำโพสท์ Pizza รับ SBT ฟรีๆ ที่ต้นโพสท์นะครับ โปรเจค ได้ Fund จาก Yzilabs เด้อ https://t.co/xgVMfQWjq8",
+        "source": "Twitter for iPhone",
+        "retweetCount": 4,
+        "replyCount": 17,
+        "likeCount": 33,
+        "quoteCount": 1,
+        "viewCount": 3462,
+        "createdAt": "Sun May 24 01:25:17 +0000 2026",
+        "lang": "et",
+        "bookmarkCount": 0,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2058358640592187652",
+        "displayTextRange": [0, 214],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "MKrub8",
+          "url": "https://x.com/MKrub8",
+          "twitterUrl": "https://twitter.com/MKrub8",
+          "id": "1578018173835964416",
+          "name": "MarkerDoge ZAMA 🐕🐘",
+          "isVerified": false,
+          "isBlueVerified": true,
+          "verifiedType": null,
+          "profilePicture": "https://pbs.twimg.com/profile_images/2031580922685042693/ckwhpNkz_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1578018173835964416/1746029574",
+          "description": "",
+          "location": "",
+          "followers": 8522,
+          "following": 6219,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Thu Oct 06 13:43:53 +0000 2022",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 50425,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 2458,
+          "statusesCount": 31263,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["2062183405777977714"],
+          "profile_bio": {
+            "description": "Math Teacher and Thailand CEX Maxi คนไทยใช้ของไทย ติดตามข่าวสารเรื่องชาวบ้านได้ที่แอคนี้จ้า",
+            "entities": {
+              "description": {},
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "x.com/i/chat/group_j…",
+                    "expanded_url": "https://x.com/i/chat/group_join/g2048579113330577634/d0Py5Q1136",
+                    "indices": [0, 23],
+                    "url": "https://t.co/FOnFlqatnm"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "display_url": "pic.twitter.com/xgVMfQWjq8",
+              "expanded_url": "https://twitter.com/MKrub8/status/2058358640592187652/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2058358629921947648",
+              "indices": [215, 238],
+              "media_key": "3_2058358629921947648",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyQwkSs24AACgACHJDCRyjacQQAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJDCRKzbgAAKAAIckMJHKNpxBAAA",
+                  "media_key": "3_2058358629921947648"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJDCRKzbgAAb7QY.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 1147, "w": 2048, "x": 0, "y": 0 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 1536, "w": 1347, "x": 95, "y": 0 },
+                  { "h": 1536, "w": 768, "x": 384, "y": 0 },
+                  { "h": 1536, "w": 2048, "x": 0, "y": 0 }
+                ],
+                "height": 1536,
+                "width": 2048
+              },
+              "sizes": { "large": { "h": 1536, "w": 2048 } },
+              "type": "photo",
+              "url": "https://t.co/xgVMfQWjq8"
+            },
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/xgVMfQWjq8",
+              "expanded_url": "https://twitter.com/MKrub8/status/2058358640592187652/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": {
+                "large": {
+                  "faces": [
+                    { "h": 156, "w": 156, "x": 362, "y": 1152 },
+                    { "h": 156, "w": 156, "x": 956, "y": 492 }
+                  ]
+                },
+                "orig": {
+                  "faces": [
+                    { "h": 156, "w": 156, "x": 362, "y": 1152 },
+                    { "h": 156, "w": 156, "x": 956, "y": 492 }
+                  ]
+                }
+              },
+              "id_str": "2058358629955506176",
+              "indices": [215, 238],
+              "media_key": "3_2058358629955506176",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyQwkSu25AACgACHJDCRyjacQQAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJDCRK7bkAAKAAIckMJHKNpxBAAA",
+                  "media_key": "3_2058358629955506176"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJDCRK7bkAA1jzR.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 860, "w": 1536, "x": 0, "y": 645 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 307 },
+                  { "h": 1751, "w": 1536, "x": 0, "y": 200 },
+                  { "h": 2048, "w": 1024, "x": 51, "y": 0 },
+                  { "h": 2048, "w": 1536, "x": 0, "y": 0 }
+                ],
+                "height": 2048,
+                "width": 1536
+              },
+              "sizes": { "large": { "h": 2048, "w": 1536 } },
+              "type": "photo",
+              "url": "https://t.co/xgVMfQWjq8"
+            },
+            {
+              "display_url": "pic.twitter.com/xgVMfQWjq8",
+              "expanded_url": "https://twitter.com/MKrub8/status/2058358640592187652/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2058358629917696000",
+              "indices": [215, 238],
+              "media_key": "3_2058358629917696000",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyQwkSsmqAACgACHJDCRyjacQQAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJDCRKyaoAAKAAIckMJHKNpxBAAA",
+                  "media_key": "3_2058358629917696000"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJDCRKyaoAAdr1v.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 1147, "w": 2048, "x": 0, "y": 0 },
+                  { "h": 1536, "w": 1536, "x": 512, "y": 0 },
+                  { "h": 1536, "w": 1347, "x": 701, "y": 0 },
+                  { "h": 1536, "w": 768, "x": 1280, "y": 0 },
+                  { "h": 1536, "w": 2048, "x": 0, "y": 0 }
+                ],
+                "height": 1536,
+                "width": 2048
+              },
+              "sizes": { "large": { "h": 1536, "w": 2048 } },
+              "type": "photo",
+              "url": "https://t.co/xgVMfQWjq8"
+            },
+            {
+              "display_url": "pic.twitter.com/xgVMfQWjq8",
+              "expanded_url": "https://twitter.com/MKrub8/status/2058358640592187652/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2058358629942878208",
+              "indices": [215, 238],
+              "media_key": "3_2058358629942878208",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyQwkSuGuAACgACHJDCRyjacQQAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJDCRK4a4AAKAAIckMJHKNpxBAAA",
+                  "media_key": "3_2058358629942878208"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJDCRK4a4AADQfD.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 860, "w": 1536, "x": 0, "y": 30 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 1751, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 2048, "w": 1024, "x": 0, "y": 0 },
+                  { "h": 2048, "w": 1536, "x": 0, "y": 0 }
+                ],
+                "height": 2048,
+                "width": 1536
+              },
+              "sizes": { "large": { "h": 2048, "w": 1536 } },
+              "type": "photo",
+              "url": "https://t.co/xgVMfQWjq8"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "hashtags": [{ "indices": [122, 130], "text": "Renaiss" }],
+          "user_mentions": [
+            {
+              "id_str": "1605761701806080000",
+              "indices": [81, 92],
+              "name": "Renaiss Protocol",
+              "screen_name": "renaissxyz"
+            }
+          ]
+        },
+        "quoted_tweet": {
+          "type": "tweet",
+          "id": "2057778907320115269",
+          "url": "",
+          "twitterUrl": "",
+          "text": "",
+          "source": "Twitter for iPhone",
+          "retweetCount": 0,
+          "replyCount": 0,
+          "likeCount": 0,
+          "quoteCount": 0,
+          "viewCount": 0,
+          "createdAt": "",
+          "lang": "",
+          "bookmarkCount": 0,
+          "isReply": false,
+          "inReplyToId": null,
+          "conversationId": "",
+          "displayTextRange": [],
+          "inReplyToUserId": null,
+          "inReplyToUsername": null,
+          "author": {},
+          "extendedEntities": {},
+          "card": null,
+          "place": {},
+          "entities": {},
+          "quoted_tweet": null,
+          "retweeted_tweet": null,
+          "isLimitedReply": false,
+          "communityInfo": null,
+          "article": null
+        },
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061741957156835698",
+      "url": "https://x.com/0xKuromon/status/2061741957156835698",
+      "twitterUrl": "https://twitter.com/0xKuromon/status/2061741957156835698",
+      "text": "Superliquid 的SBT发了、上次AMA颁奖的SBT也发了\n\n大家快去仓库看看~\n\n距离80个SBT越来越近咯！\n\n@renaissxyz  @Renaiss_CN #Renaiss https://t.co/gJoiaIsbbh",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 10,
+      "likeCount": 16,
+      "quoteCount": 0,
+      "viewCount": 904,
+      "createdAt": "Tue Jun 02 09:29:22 +0000 2026",
+      "lang": "zh",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061741957156835698",
+      "displayTextRange": [0, 95],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "0xKuromon",
+        "url": "https://x.com/0xKuromon",
+        "twitterUrl": "https://twitter.com/0xKuromon",
+        "id": "1858228386818342912",
+        "name": "Kuromon|Renaiss",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1945407490646052864/ls7FwQ9b_normal.jpg",
+        "coverPicture": "",
+        "description": "",
+        "location": "",
+        "followers": 371,
+        "following": 537,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Sun Nov 17 19:19:28 +0000 2024",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 4230,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 237,
+        "statusesCount": 1667,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2025897347813933358"],
+        "profile_bio": {
+          "description": "@renaissxyz 大使 | RWA & TCG投研",
+          "entities": {
+            "description": {
+              "user_mentions": [
+                {
+                  "id_str": "",
+                  "indices": [0, 11],
+                  "name": "",
+                  "screen_name": "renaissxyz"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/gJoiaIsbbh",
+            "expanded_url": "https://twitter.com/0xKuromon/status/2061741957156835698/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [{ "h": 114, "w": 114, "x": 717, "y": 461 }]
+              },
+              "orig": { "faces": [{ "h": 114, "w": 114, "x": 717, "y": 461 }] }
+            },
+            "id_str": "2061741222298025984",
+            "indices": [96, 119],
+            "media_key": "3_2061741222298025984",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycxrfV2oAACgACHJzHYu7aEXIAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJzGt9XagAAKAAIcnMdi7toRcgAA",
+                "media_key": "3_2061741222298025984"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJzGt9XagAAQTPx.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 550, "w": 982, "x": 0, "y": 0 },
+                { "h": 794, "w": 794, "x": 0, "y": 0 },
+                { "h": 794, "w": 696, "x": 0, "y": 0 },
+                { "h": 794, "w": 397, "x": 71, "y": 0 },
+                { "h": 794, "w": 982, "x": 0, "y": 0 }
+              ],
+              "height": 794,
+              "width": 982
+            },
+            "sizes": { "large": { "h": 794, "w": 982 } },
+            "type": "photo",
+            "url": "https://t.co/gJoiaIsbbh"
+          },
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/gJoiaIsbbh",
+            "expanded_url": "https://twitter.com/0xKuromon/status/2061741957156835698/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [{ "h": 102, "w": 102, "x": 236, "y": 167 }]
+              },
+              "orig": { "faces": [{ "h": 102, "w": 102, "x": 236, "y": 167 }] }
+            },
+            "id_str": "2061741686418702336",
+            "indices": [96, 119],
+            "media_key": "3_2061741686418702336",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycxyPlmgAACgACHJzHYu7aEXIAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJzHI+WaAAAKAAIcnMdi7toRcgAA",
+                "media_key": "3_2061741686418702336"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJzHI-WaAAAEOMC.png",
+            "original_info": {
+              "focus_rects": [
+                { "h": 347, "w": 620, "x": 0, "y": 157 },
+                { "h": 620, "w": 620, "x": 0, "y": 10 },
+                { "h": 630, "w": 553, "x": 34, "y": 0 },
+                { "h": 630, "w": 315, "x": 153, "y": 0 },
+                { "h": 630, "w": 620, "x": 0, "y": 0 }
+              ],
+              "height": 630,
+              "width": 620
+            },
+            "sizes": { "large": { "h": 630, "w": 620 } },
+            "type": "photo",
+            "url": "https://t.co/gJoiaIsbbh"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [87, 95], "text": "Renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [62, 73],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "1985769976876449794",
+            "indices": [75, 86],
+            "name": "Renaiss 华语",
+            "screen_name": "Renaiss_CN"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061716288544928242",
+      "url": "https://x.com/nopzty/status/2061716288544928242",
+      "twitterUrl": "https://twitter.com/nopzty/status/2061716288544928242",
+      "text": "#Renaiss ดรอป sbtหรือ badgeอันใหม่แล้วนะ\n\n-SuperLiquid  \n-Yzi lab ama \n-Thai explorer \n\n@renaissxyz @Renaiss_TH https://t.co/TvQVsTKhcy",
+      "source": "Twitter for iPhone",
+      "retweetCount": 2,
+      "replyCount": 3,
+      "likeCount": 12,
+      "quoteCount": 0,
+      "viewCount": 555,
+      "createdAt": "Tue Jun 02 07:47:22 +0000 2026",
+      "lang": "et",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061716288544928242",
+      "displayTextRange": [0, 111],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "nopzty",
+        "url": "https://x.com/nopzty",
+        "twitterUrl": "https://twitter.com/nopzty",
+        "id": "776984729518166016",
+        "name": "Nemo",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2010276533680898048/e-4Ba0Mr_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/776984729518166016/1770929347",
+        "description": "",
+        "location": "",
+        "followers": 3109,
+        "following": 1768,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": false,
+        "createdAt": "Sat Sep 17 03:22:50 +0000 2016",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 17979,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2268,
+        "statusesCount": 11314,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2050545226469847076"],
+        "profile_bio": {
+          "description": "#Bitcoin / member of @fff_fdn/ Prev. Champion at @MantaNetwork /🧱@nz_research/ 👨‍🍳 @hibachi_xyz /🇹🇭🇨🇳/ perpdex / TCG Addict @renaissxyz /dm for work.",
+          "entities": {
+            "description": {
+              "hashtags": [{ "indices": [0, 8], "text": "Bitcoin" }],
+              "user_mentions": [
+                {
+                  "id_str": "",
+                  "indices": [21, 29],
+                  "name": "",
+                  "screen_name": "fff_fdn"
+                },
+                {
+                  "id_str": "",
+                  "indices": [49, 62],
+                  "name": "",
+                  "screen_name": "MantaNetwork"
+                },
+                {
+                  "id_str": "",
+                  "indices": [65, 77],
+                  "name": "",
+                  "screen_name": "nz_research"
+                },
+                {
+                  "id_str": "",
+                  "indices": [83, 95],
+                  "name": "",
+                  "screen_name": "hibachi_xyz"
+                },
+                {
+                  "id_str": "",
+                  "indices": [124, 135],
+                  "name": "",
+                  "screen_name": "renaissxyz"
+                }
+              ]
+            },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "t.me/findingbynemo",
+                  "expanded_url": "https://t.me/findingbynemo",
+                  "indices": [0, 23],
+                  "url": "https://t.co/6mR5CuUZFh"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/TvQVsTKhcy",
+            "expanded_url": "https://twitter.com/nopzty/status/2061716288544928242/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [
+                  { "h": 54, "w": 54, "x": 488, "y": 711 },
+                  { "h": 50, "w": 50, "x": 526, "y": 720 }
+                ]
+              },
+              "orig": {
+                "faces": [
+                  { "h": 54, "w": 54, "x": 488, "y": 711 },
+                  { "h": 50, "w": 50, "x": 526, "y": 720 }
+                ]
+              }
+            },
+            "id_str": "2061716282236641280",
+            "indices": [112, 135],
+            "media_key": "3_2061716282236641280",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycsAkGWqAACgACHJywCn5bcfIAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJywCQZaoAAKAAIcnLAKfltx8gAA",
+                "media_key": "3_2061716282236641280"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJywCQZaoAAeFv1.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 722, "w": 1290, "x": 0, "y": 187 },
+                { "h": 955, "w": 955, "x": 168, "y": 0 },
+                { "h": 955, "w": 838, "x": 226, "y": 0 },
+                { "h": 955, "w": 478, "x": 406, "y": 0 },
+                { "h": 955, "w": 1290, "x": 0, "y": 0 }
+              ],
+              "height": 955,
+              "width": 1290
+            },
+            "sizes": { "large": { "h": 955, "w": 1290 } },
+            "type": "photo",
+            "url": "https://t.co/TvQVsTKhcy"
+          },
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/TvQVsTKhcy",
+            "expanded_url": "https://twitter.com/nopzty/status/2061716288544928242/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [{ "h": 419, "w": 419, "x": 715, "y": 151 }]
+              },
+              "orig": { "faces": [{ "h": 419, "w": 419, "x": 715, "y": 151 }] }
+            },
+            "id_str": "2061716282240884736",
+            "indices": [112, 135],
+            "media_key": "3_2061716282240884736",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycsAkGm2AACgACHJywCn5bcfIAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJywCQabYAAKAAIcnLAKfltx8gAA",
+                "media_key": "3_2061716282240884736"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJywCQabYAAA4AW.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 722, "w": 1290, "x": 0, "y": 285 },
+                { "h": 1007, "w": 1007, "x": 142, "y": 0 },
+                { "h": 1007, "w": 883, "x": 204, "y": 0 },
+                { "h": 1007, "w": 504, "x": 393, "y": 0 },
+                { "h": 1007, "w": 1290, "x": 0, "y": 0 }
+              ],
+              "height": 1007,
+              "width": 1290
+            },
+            "sizes": { "large": { "h": 1007, "w": 1290 } },
+            "type": "photo",
+            "url": "https://t.co/TvQVsTKhcy"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [0, 8], "text": "Renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [88, 99],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "2056070865331134464",
+            "indices": [100, 111],
+            "name": "Renaiss TCG Thailand",
+            "screen_name": "Renaiss_TH"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061713587329233211",
+      "url": "https://x.com/Donald_mvp/status/2061713587329233211",
+      "twitterUrl": "https://twitter.com/Donald_mvp/status/2061713587329233211",
+      "text": "Yeahhh!!\nI managed to get the top 10% of @renaissxyz Superliquid campaign\n\nToday I claimed 3 + badges from the past month.\nCheck your wallet guys!\n\n#renaiss https://t.co/c5X2y02W4E",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 0,
+      "likeCount": 13,
+      "quoteCount": 0,
+      "viewCount": 390,
+      "createdAt": "Tue Jun 02 07:36:38 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061713587329233211",
+      "displayTextRange": [0, 156],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "Donald_mvp",
+        "url": "https://x.com/Donald_mvp",
+        "twitterUrl": "https://twitter.com/Donald_mvp",
+        "id": "1772162305360551936",
+        "name": "DonaldP 🏴‍☠️",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1957799728500162560/2Y08TU_y_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1772162305360551936/1760851336",
+        "description": "",
+        "location": "",
+        "followers": 6457,
+        "following": 4813,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Mon Mar 25 07:23:21 +0000 2024",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 20687,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2565,
+        "statusesCount": 12260,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["1782032675869778016"],
+        "profile_bio": {
+          "description": "Global ambassador @renaissxyz | Arc @arcthecommunity | Contributor of @Hashflow | Former Designer of @BadgerDao | MVP Creator @memeland",
+          "entities": {
+            "description": {
+              "user_mentions": [
+                {
+                  "id_str": "",
+                  "indices": [18, 29],
+                  "name": "",
+                  "screen_name": "renaissxyz"
+                },
+                {
+                  "id_str": "",
+                  "indices": [36, 52],
+                  "name": "",
+                  "screen_name": "arcthecommunity"
+                },
+                {
+                  "id_str": "",
+                  "indices": [70, 79],
+                  "name": "",
+                  "screen_name": "Hashflow"
+                },
+                {
+                  "id_str": "",
+                  "indices": [101, 111],
+                  "name": "",
+                  "screen_name": "BadgerDao"
+                },
+                {
+                  "id_str": "",
+                  "indices": [126, 135],
+                  "name": "",
+                  "screen_name": "memeland"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/c5X2y02W4E",
+            "expanded_url": "https://twitter.com/Donald_mvp/status/2061713587329233211/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [
+                  { "h": 60, "w": 60, "x": 361, "y": 272 },
+                  { "h": 60, "w": 60, "x": 256, "y": 341 }
+                ]
+              },
+              "orig": {
+                "faces": [
+                  { "h": 60, "w": 60, "x": 361, "y": 272 },
+                  { "h": 60, "w": 60, "x": 256, "y": 341 }
+                ]
+              }
+            },
+            "id_str": "2061713580706476032",
+            "indices": [157, 180],
+            "media_key": "3_2061713580706476032",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycrZQGm7AACgACHJytlZFa8TsAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJytlAabsAAKAAIcnK2VkVrxOwAA",
+                "media_key": "3_2061713580706476032"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJytlAabsAAf352.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 722, "w": 1290, "x": 0, "y": 380 },
+                { "h": 1213, "w": 1213, "x": 39, "y": 0 },
+                { "h": 1213, "w": 1064, "x": 113, "y": 0 },
+                { "h": 1213, "w": 607, "x": 342, "y": 0 },
+                { "h": 1213, "w": 1290, "x": 0, "y": 0 }
+              ],
+              "height": 1213,
+              "width": 1290
+            },
+            "sizes": { "large": { "h": 1213, "w": 1290 } },
+            "type": "photo",
+            "url": "https://t.co/c5X2y02W4E"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [148, 156], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [41, 52],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061674919264694384",
+      "url": "https://x.com/gamecmhexa/status/2061674919264694384",
+      "twitterUrl": "https://twitter.com/gamecmhexa/status/2061674919264694384",
+      "text": "ใครไปงานนี้มา ไปเคลม Badge กันครับ🎉\n\nอยู่ล่างๆ ตรงหมวด Event นะครับ\n@renaissxyz @Renaiss_TH  ของดี\n\nลุยครับ\n#renaiss https://t.co/4ioeUBIPl0",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 3,
+      "likeCount": 4,
+      "quoteCount": 0,
+      "viewCount": 247,
+      "createdAt": "Tue Jun 02 05:02:59 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061674919264694384",
+      "displayTextRange": [0, 116],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "gamecmhexa",
+        "url": "https://x.com/gamecmhexa",
+        "twitterUrl": "https://twitter.com/gamecmhexa",
+        "id": "1622940460309446656",
+        "name": "Game | CM Hexa",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2041200249746927616/8-u7PXoV_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1622940460309446656/1750171726",
+        "description": "",
+        "location": "",
+        "followers": 6010,
+        "following": 4916,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": true,
+        "createdAt": "Tue Feb 07 12:49:25 +0000 2023",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 5422,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 378,
+        "statusesCount": 4701,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": [],
+        "profile_bio": {
+          "description": "Bitcoin First // DCA-driven, long-term mindset // Living on USDT // FB https://t.co/0NEC93jmrU\nAmbassador @junoswaptrade",
+          "entities": {
+            "description": {
+              "urls": [
+                {
+                  "display_url": "facebook.com/cmhexa",
+                  "expanded_url": "https://facebook.com/cmhexa",
+                  "indices": [71, 94],
+                  "url": "https://t.co/0NEC93jmrU"
+                }
+              ],
+              "user_mentions": [
+                {
+                  "id_str": "",
+                  "indices": [106, 120],
+                  "name": "",
+                  "screen_name": "junoswaptrade"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/4ioeUBIPl0",
+            "expanded_url": "https://twitter.com/gamecmhexa/status/2061674919264694384/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+            "id_str": "2061674911073210368",
+            "indices": [117, 140],
+            "media_key": "3_2061674911073210368",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycimiM2pAACgACHJyKanUasHAAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJyKaIzakAAKAAIcnIpqdRqwcAAA",
+                "media_key": "3_2061674911073210368"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJyKaIzakAAJa5k.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 529, "w": 945, "x": 0, "y": 604 },
+                { "h": 945, "w": 945, "x": 0, "y": 396 },
+                { "h": 1077, "w": 945, "x": 0, "y": 330 },
+                { "h": 1890, "w": 945, "x": 0, "y": 0 },
+                { "h": 2048, "w": 945, "x": 0, "y": 0 }
+              ],
+              "height": 2048,
+              "width": 945
+            },
+            "sizes": { "large": { "h": 2048, "w": 945 } },
+            "type": "photo",
+            "url": "https://t.co/4ioeUBIPl0"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [108, 116], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [68, 79],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "2056070865331134464",
+            "indices": [80, 91],
+            "name": "Renaiss TCG Thailand",
+            "screen_name": "Renaiss_TH"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2057068964090728806",
+        "url": "https://x.com/gamecmhexa/status/2057068964090728806",
+        "twitterUrl": "https://twitter.com/gamecmhexa/status/2057068964090728806",
+        "text": "จุ่มการ์ด on-chain ตอนนี้ต้องยกให้ @renaissxyz ครับ คอมมูอย่างแข็ง สนุกโคตร @Renaiss_TH \n\nสมัคร https://t.co/2ur38wPegy https://t.co/hxd8fiVWg8",
+        "source": "Twitter for iPhone",
+        "retweetCount": 3,
+        "replyCount": 0,
+        "likeCount": 16,
+        "quoteCount": 1,
+        "viewCount": 1168,
+        "createdAt": "Wed May 20 12:00:34 +0000 2026",
+        "lang": "th",
+        "bookmarkCount": 0,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2057068964090728806",
+        "displayTextRange": [0, 119],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "gamecmhexa",
+          "url": "https://x.com/gamecmhexa",
+          "twitterUrl": "https://twitter.com/gamecmhexa",
+          "id": "1622940460309446656",
+          "name": "Game | CM Hexa",
+          "isVerified": false,
+          "isBlueVerified": true,
+          "verifiedType": null,
+          "profilePicture": "https://pbs.twimg.com/profile_images/2041200249746927616/8-u7PXoV_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1622940460309446656/1750171726",
+          "description": "",
+          "location": "",
+          "followers": 6010,
+          "following": 4916,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Tue Feb 07 12:49:25 +0000 2023",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 5422,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 378,
+          "statusesCount": 4701,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": [],
+          "profile_bio": {
+            "description": "Bitcoin First // DCA-driven, long-term mindset // Living on USDT // FB https://t.co/0NEC93jmrU\nAmbassador @junoswaptrade",
+            "entities": {
+              "description": {
+                "urls": [
+                  {
+                    "display_url": "facebook.com/cmhexa",
+                    "expanded_url": "https://facebook.com/cmhexa",
+                    "indices": [71, 94],
+                    "url": "https://t.co/0NEC93jmrU"
+                  }
+                ],
+                "user_mentions": [
+                  {
+                    "id_str": "",
+                    "indices": [106, 120],
+                    "name": "",
+                    "screen_name": "junoswaptrade"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/hxd8fiVWg8",
+              "expanded_url": "https://twitter.com/gamecmhexa/status/2057068964090728806/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": {
+                "large": {
+                  "faces": [
+                    { "h": 278, "w": 278, "x": 38, "y": 1006 },
+                    { "h": 568, "w": 568, "x": 260, "y": 942 }
+                  ]
+                },
+                "orig": {
+                  "faces": [
+                    { "h": 278, "w": 278, "x": 38, "y": 1006 },
+                    { "h": 568, "w": 568, "x": 260, "y": 942 }
+                  ]
+                }
+              },
+              "id_str": "2057068946327764992",
+              "indices": [120, 143],
+              "media_key": "3_2057068946327764992",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyMLU7QWoAACgACHIwtUvMb0WYAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIwtTtBagAAKAAIcjC1S8xvRZgAA",
+                  "media_key": "3_2057068946327764992"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIwtTtBagAA7_BE.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 861, "w": 1537, "x": 0, "y": 747 },
+                  { "h": 1537, "w": 1537, "x": 0, "y": 409 },
+                  { "h": 1752, "w": 1537, "x": 0, "y": 296 },
+                  { "h": 2048, "w": 1024, "x": 460, "y": 0 },
+                  { "h": 2048, "w": 1537, "x": 0, "y": 0 }
+                ],
+                "height": 2048,
+                "width": 1537
+              },
+              "sizes": { "large": { "h": 2048, "w": 1537 } },
+              "type": "photo",
+              "url": "https://t.co/hxd8fiVWg8"
+            },
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/hxd8fiVWg8",
+              "expanded_url": "https://twitter.com/gamecmhexa/status/2057068964090728806/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": {
+                "large": {
+                  "faces": [{ "h": 772, "w": 772, "x": 108, "y": 396 }]
+                },
+                "orig": {
+                  "faces": [{ "h": 772, "w": 772, "x": 108, "y": 396 }]
+                }
+              },
+              "id_str": "2057068946311004161",
+              "indices": [120, 143],
+              "media_key": "3_2057068946311004161",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyMLU7PWsABCgACHIwtUvMb0WYAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIwtTs9awAEKAAIcjC1S8xvRZgAA",
+                  "media_key": "3_2057068946311004161"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIwtTs9awAELssY.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 860, "w": 1536, "x": 0, "y": 338 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 1751, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 2048, "w": 1024, "x": 0, "y": 0 },
+                  { "h": 2048, "w": 1536, "x": 0, "y": 0 }
+                ],
+                "height": 2048,
+                "width": 1536
+              },
+              "sizes": { "large": { "h": 2048, "w": 1536 } },
+              "type": "photo",
+              "url": "https://t.co/hxd8fiVWg8"
+            },
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/hxd8fiVWg8",
+              "expanded_url": "https://twitter.com/gamecmhexa/status/2057068964090728806/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2057068946323656704",
+              "indices": [120, 143],
+              "media_key": "3_2057068946323656704",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyMLU7QG9AACgACHIwtUvMb0WYAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIwtTtAb0AAKAAIcjC1S8xvRZgAA",
+                  "media_key": "3_2057068946323656704"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIwtTtAb0AAwCHV.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 860, "w": 1536, "x": 0, "y": 952 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 512 },
+                  { "h": 1751, "w": 1536, "x": 0, "y": 297 },
+                  { "h": 2048, "w": 1024, "x": 0, "y": 0 },
+                  { "h": 2048, "w": 1536, "x": 0, "y": 0 }
+                ],
+                "height": 2048,
+                "width": 1536
+              },
+              "sizes": { "large": { "h": 2048, "w": 1536 } },
+              "type": "photo",
+              "url": "https://t.co/hxd8fiVWg8"
+            },
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/hxd8fiVWg8",
+              "expanded_url": "https://twitter.com/gamecmhexa/status/2057068964090728806/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": {
+                "large": {
+                  "faces": [
+                    { "h": 80, "w": 80, "x": 1102, "y": 1118 },
+                    { "h": 96, "w": 96, "x": 524, "y": 1064 },
+                    { "h": 126, "w": 126, "x": 626, "y": 1352 }
+                  ]
+                },
+                "orig": {
+                  "faces": [
+                    { "h": 80, "w": 80, "x": 1102, "y": 1118 },
+                    { "h": 96, "w": 96, "x": 524, "y": 1064 },
+                    { "h": 126, "w": 126, "x": 626, "y": 1352 }
+                  ]
+                }
+              },
+              "id_str": "2057068946428403712",
+              "indices": [120, 143],
+              "media_key": "3_2057068946428403712",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyMLU7WWiAACgACHIwtUvMb0WYAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIwtTtZaIAAKAAIcjC1S8xvRZgAA",
+                  "media_key": "3_2057068946428403712"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIwtTtZaIAAXA_Y.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 860, "w": 1536, "x": 0, "y": 747 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 409 },
+                  { "h": 1751, "w": 1536, "x": 0, "y": 297 },
+                  { "h": 2048, "w": 1024, "x": 358, "y": 0 },
+                  { "h": 2048, "w": 1536, "x": 0, "y": 0 }
+                ],
+                "height": 2048,
+                "width": 1536
+              },
+              "sizes": { "large": { "h": 2048, "w": 1536 } },
+              "type": "photo",
+              "url": "https://t.co/hxd8fiVWg8"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "urls": [
+            {
+              "display_url": "renaiss.xyz/ref/pugsenjoy4…",
+              "expanded_url": "https://www.renaiss.xyz/ref/pugsenjoy4649",
+              "indices": [96, 119],
+              "url": "https://t.co/2ur38wPegy"
+            }
+          ],
+          "user_mentions": [
+            {
+              "id_str": "1605761701806080000",
+              "indices": [35, 46],
+              "name": "Renaiss Protocol",
+              "screen_name": "renaissxyz"
+            },
+            {
+              "id_str": "2056070865331134464",
+              "indices": [76, 87],
+              "name": "Renaiss TCG Thailand",
+              "screen_name": "Renaiss_TH"
+            }
+          ]
+        },
+        "quoted_tweet": {
+          "type": "tweet",
+          "id": "2055997321389941052",
+          "url": "",
+          "twitterUrl": "",
+          "text": "",
+          "source": "Twitter for iPhone",
+          "retweetCount": 0,
+          "replyCount": 0,
+          "likeCount": 0,
+          "quoteCount": 0,
+          "viewCount": 0,
+          "createdAt": "",
+          "lang": "",
+          "bookmarkCount": 0,
+          "isReply": false,
+          "inReplyToId": null,
+          "conversationId": "",
+          "displayTextRange": [],
+          "inReplyToUserId": null,
+          "inReplyToUsername": null,
+          "author": {},
+          "extendedEntities": {},
+          "card": null,
+          "place": {},
+          "entities": {},
+          "quoted_tweet": null,
+          "retweeted_tweet": null,
+          "isLimitedReply": false,
+          "communityInfo": null,
+          "article": null
+        },
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061674163987968469",
+      "url": "https://x.com/Renaiss_TH/status/2061674163987968469",
+      "twitterUrl": "https://twitter.com/Renaiss_TH/status/2061674163987968469",
+      "text": "เพื่อนๆพี่ๆ ไปเคลม SBT กันครับ! \nใครที่มางานวันที่ 17 พ.ค. หรือ วันที่ 20 พ.ค. ที่ผ่านมาครับ @renaissxyz  #renaiss",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 0,
+      "likeCount": 8,
+      "quoteCount": 0,
+      "viewCount": 319,
+      "createdAt": "Tue Jun 02 04:59:59 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 1,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061674163987968469",
+      "displayTextRange": [0, 114],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "Renaiss_TH",
+        "url": "https://x.com/Renaiss_TH",
+        "twitterUrl": "https://twitter.com/Renaiss_TH",
+        "id": "2056070865331134464",
+        "name": "Renaiss TCG Thailand",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2056072797869477888/E-myclJL_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/2056070865331134464/1780146462",
+        "description": "",
+        "location": "Thailand",
+        "followers": 436,
+        "following": 7,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Sun May 17 17:54:40 +0000 2026",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 187,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 65,
+        "statusesCount": 164,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": [],
+        "profile_bio": {
+          "description": "Renaiss non-official Thailand community 🇹🇭\n\nTCG-Trading-Community 🙏🏻🎁",
+          "entities": { "description": {} }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {},
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [106, 114], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [93, 104],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2061661291643888044",
+        "url": "https://x.com/Donald_mvp/status/2061661291643888044",
+        "twitterUrl": "https://twitter.com/Donald_mvp/status/2061661291643888044",
+        "text": "Anyone who attended the Binance Thailand × @renaissxyz event in Thailand on May 17 or May 20,\nYour badge is now available to claim.\n\nThis Badge is the alpha 👀\n#renaiss https://t.co/1ksZDYMmHG",
+        "source": "Twitter for iPhone",
+        "retweetCount": 1,
+        "replyCount": 0,
+        "likeCount": 15,
+        "quoteCount": 1,
+        "viewCount": 745,
+        "createdAt": "Tue Jun 02 04:08:50 +0000 2026",
+        "lang": "en",
+        "bookmarkCount": 0,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2061661291643888044",
+        "displayTextRange": [0, 167],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "Donald_mvp",
+          "url": "https://x.com/Donald_mvp",
+          "twitterUrl": "https://twitter.com/Donald_mvp",
+          "id": "1772162305360551936",
+          "name": "DonaldP 🏴‍☠️",
+          "isVerified": false,
+          "isBlueVerified": true,
+          "verifiedType": null,
+          "profilePicture": "https://pbs.twimg.com/profile_images/1957799728500162560/2Y08TU_y_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1772162305360551936/1760851336",
+          "description": "",
+          "location": "",
+          "followers": 6457,
+          "following": 4813,
+          "status": "",
+          "canDm": false,
+          "canMediaTag": true,
+          "createdAt": "Mon Mar 25 07:23:21 +0000 2024",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 20687,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 2565,
+          "statusesCount": 12260,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["1782032675869778016"],
+          "profile_bio": {
+            "description": "Global ambassador @renaissxyz | Arc @arcthecommunity | Contributor of @Hashflow | Former Designer of @BadgerDao | MVP Creator @memeland",
+            "entities": {
+              "description": {
+                "user_mentions": [
+                  {
+                    "id_str": "",
+                    "indices": [18, 29],
+                    "name": "",
+                    "screen_name": "renaissxyz"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [36, 52],
+                    "name": "",
+                    "screen_name": "arcthecommunity"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [70, 79],
+                    "name": "",
+                    "screen_name": "Hashflow"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [101, 111],
+                    "name": "",
+                    "screen_name": "BadgerDao"
+                  },
+                  {
+                    "id_str": "",
+                    "indices": [126, 135],
+                    "name": "",
+                    "screen_name": "memeland"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "allow_download_status": { "allow_download": true },
+              "display_url": "pic.twitter.com/1ksZDYMmHG",
+              "expanded_url": "https://twitter.com/Donald_mvp/status/2061661291643888044/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": {
+                "large": {
+                  "faces": [{ "h": 650, "w": 650, "x": 154, "y": 41 }]
+                },
+                "orig": { "faces": [{ "h": 650, "w": 650, "x": 154, "y": 41 }] }
+              },
+              "id_str": "2061660762544984064",
+              "indices": [168, 191],
+              "media_key": "3_2061660762544984064",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycfYpW2tAACgACHJx+BYebYawAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHJx9ilba0AAKAAIcnH4Fh5thrAAA",
+                  "media_key": "3_2061660762544984064"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HJx9ilba0AA2BYm.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 544, "w": 971, "x": 0, "y": 229 },
+                  { "h": 773, "w": 773, "x": 99, "y": 0 },
+                  { "h": 773, "w": 678, "x": 146, "y": 0 },
+                  { "h": 773, "w": 387, "x": 292, "y": 0 },
+                  { "h": 773, "w": 971, "x": 0, "y": 0 }
+                ],
+                "height": 773,
+                "width": 971
+              },
+              "sizes": { "large": { "h": 773, "w": 971 } },
+              "type": "photo",
+              "url": "https://t.co/1ksZDYMmHG"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "hashtags": [{ "indices": [159, 167], "text": "renaiss" }],
+          "user_mentions": [
+            {
+              "id_str": "1605761701806080000",
+              "indices": [43, 54],
+              "name": "Renaiss Protocol",
+              "screen_name": "renaissxyz"
+            }
+          ]
+        },
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061673436775403950",
+      "url": "https://x.com/nopzty/status/2061673436775403950",
+      "twitterUrl": "https://twitter.com/nopzty/status/2061673436775403950",
+      "text": "Rm, there are so much queen in Eden pack😂\n\n@renaissxyz @Renaiss_TH #renaiss https://t.co/ApBtBo1wzZ",
+      "source": "Twitter for iPhone",
+      "retweetCount": 0,
+      "replyCount": 2,
+      "likeCount": 12,
+      "quoteCount": 0,
+      "viewCount": 693,
+      "createdAt": "Tue Jun 02 04:57:06 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061673436775403950",
+      "displayTextRange": [0, 75],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "nopzty",
+        "url": "https://x.com/nopzty",
+        "twitterUrl": "https://twitter.com/nopzty",
+        "id": "776984729518166016",
+        "name": "Nemo",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2010276533680898048/e-4Ba0Mr_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/776984729518166016/1770929347",
+        "description": "",
+        "location": "",
+        "followers": 3109,
+        "following": 1768,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": false,
+        "createdAt": "Sat Sep 17 03:22:50 +0000 2016",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 17979,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2268,
+        "statusesCount": 11314,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2050545226469847076"],
+        "profile_bio": {
+          "description": "#Bitcoin / member of @fff_fdn/ Prev. Champion at @MantaNetwork /🧱@nz_research/ 👨‍🍳 @hibachi_xyz /🇹🇭🇨🇳/ perpdex / TCG Addict @renaissxyz /dm for work.",
+          "entities": {
+            "description": {
+              "hashtags": [{ "indices": [0, 8], "text": "Bitcoin" }],
+              "user_mentions": [
+                {
+                  "id_str": "",
+                  "indices": [21, 29],
+                  "name": "",
+                  "screen_name": "fff_fdn"
+                },
+                {
+                  "id_str": "",
+                  "indices": [49, 62],
+                  "name": "",
+                  "screen_name": "MantaNetwork"
+                },
+                {
+                  "id_str": "",
+                  "indices": [65, 77],
+                  "name": "",
+                  "screen_name": "nz_research"
+                },
+                {
+                  "id_str": "",
+                  "indices": [83, 95],
+                  "name": "",
+                  "screen_name": "hibachi_xyz"
+                },
+                {
+                  "id_str": "",
+                  "indices": [124, 135],
+                  "name": "",
+                  "screen_name": "renaissxyz"
+                }
+              ]
+            },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "t.me/findingbynemo",
+                  "expanded_url": "https://t.me/findingbynemo",
+                  "indices": [0, 23],
+                  "url": "https://t.co/6mR5CuUZFh"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/ApBtBo1wzZ",
+            "expanded_url": "https://twitter.com/nopzty/status/2061673436775403950/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": {
+                "faces": [
+                  { "h": 144, "w": 144, "x": 390, "y": 578 },
+                  { "h": 434, "w": 434, "x": 324, "y": 518 }
+                ]
+              },
+              "orig": {
+                "faces": [
+                  { "h": 144, "w": 144, "x": 390, "y": 578 },
+                  { "h": 434, "w": 434, "x": 324, "y": 518 }
+                ]
+              }
+            },
+            "id_str": "2061673425723424768",
+            "indices": [76, 99],
+            "media_key": "3_2061673425723424768",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyciQ63G4AACgACHJyJEUnbUa4AAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJyJDrcbgAAKAAIcnIkRSdtRrgAA",
+                "media_key": "3_2061673425723424768"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJyJDrcbgAAsDgy.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 609, "w": 1087, "x": 0, "y": 974 },
+                { "h": 1087, "w": 1087, "x": 0, "y": 735 },
+                { "h": 1239, "w": 1087, "x": 0, "y": 659 },
+                { "h": 2048, "w": 1024, "x": 0, "y": 0 },
+                { "h": 2048, "w": 1087, "x": 0, "y": 0 }
+              ],
+              "height": 2048,
+              "width": 1087
+            },
+            "sizes": { "large": { "h": 2048, "w": 1087 } },
+            "type": "photo",
+            "url": "https://t.co/ApBtBo1wzZ"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [67, 75], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [43, 54],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "2056070865331134464",
+            "indices": [55, 66],
+            "name": "Renaiss TCG Thailand",
+            "screen_name": "Renaiss_TH"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061661291643888044",
+      "url": "https://x.com/Donald_mvp/status/2061661291643888044",
+      "twitterUrl": "https://twitter.com/Donald_mvp/status/2061661291643888044",
+      "text": "Anyone who attended the Binance Thailand × @renaissxyz event in Thailand on May 17 or May 20,\nYour badge is now available to claim.\n\nThis Badge is the alpha 👀\n#renaiss https://t.co/1ksZDYMmHG",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 0,
+      "likeCount": 15,
+      "quoteCount": 1,
+      "viewCount": 745,
+      "createdAt": "Tue Jun 02 04:08:50 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061661291643888044",
+      "displayTextRange": [0, 167],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "Donald_mvp",
+        "url": "https://x.com/Donald_mvp",
+        "twitterUrl": "https://twitter.com/Donald_mvp",
+        "id": "1772162305360551936",
+        "name": "DonaldP 🏴‍☠️",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1957799728500162560/2Y08TU_y_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1772162305360551936/1760851336",
+        "description": "",
+        "location": "",
+        "followers": 6457,
+        "following": 4813,
+        "status": "",
+        "canDm": false,
+        "canMediaTag": true,
+        "createdAt": "Mon Mar 25 07:23:21 +0000 2024",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 20687,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2565,
+        "statusesCount": 12260,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["1782032675869778016"],
+        "profile_bio": {
+          "description": "Global ambassador @renaissxyz | Arc @arcthecommunity | Contributor of @Hashflow | Former Designer of @BadgerDao | MVP Creator @memeland",
+          "entities": {
+            "description": {
+              "user_mentions": [
+                {
+                  "id_str": "",
+                  "indices": [18, 29],
+                  "name": "",
+                  "screen_name": "renaissxyz"
+                },
+                {
+                  "id_str": "",
+                  "indices": [36, 52],
+                  "name": "",
+                  "screen_name": "arcthecommunity"
+                },
+                {
+                  "id_str": "",
+                  "indices": [70, 79],
+                  "name": "",
+                  "screen_name": "Hashflow"
+                },
+                {
+                  "id_str": "",
+                  "indices": [101, 111],
+                  "name": "",
+                  "screen_name": "BadgerDao"
+                },
+                {
+                  "id_str": "",
+                  "indices": [126, 135],
+                  "name": "",
+                  "screen_name": "memeland"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/1ksZDYMmHG",
+            "expanded_url": "https://twitter.com/Donald_mvp/status/2061661291643888044/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": {
+              "large": { "faces": [{ "h": 650, "w": 650, "x": 154, "y": 41 }] },
+              "orig": { "faces": [{ "h": 650, "w": 650, "x": 154, "y": 41 }] }
+            },
+            "id_str": "2061660762544984064",
+            "indices": [168, 191],
+            "media_key": "3_2061660762544984064",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycfYpW2tAACgACHJx+BYebYawAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJx9ilba0AAKAAIcnH4Fh5thrAAA",
+                "media_key": "3_2061660762544984064"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJx9ilba0AA2BYm.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 544, "w": 971, "x": 0, "y": 229 },
+                { "h": 773, "w": 773, "x": 99, "y": 0 },
+                { "h": 773, "w": 678, "x": 146, "y": 0 },
+                { "h": 773, "w": 387, "x": 292, "y": 0 },
+                { "h": 773, "w": 971, "x": 0, "y": 0 }
+              ],
+              "height": 773,
+              "width": 971
+            },
+            "sizes": { "large": { "h": 773, "w": 971 } },
+            "type": "photo",
+            "url": "https://t.co/1ksZDYMmHG"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [159, 167], "text": "renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [43, 54],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061661070281019806",
+      "url": "https://x.com/classicalism/status/2061661070281019806",
+      "twitterUrl": "https://twitter.com/classicalism/status/2061661070281019806",
+      "text": "Proud to have earned the Korea and Thai Explorer badges on @renaissxyz.\n\nCan't wait to explore more TCG culture in different countries with #Renaiss.\n\nLFG 🔥 @RenaissKrCM 🇰🇷 @Renaiss_TH 🇹🇭 https://t.co/jgKOmF47Nt",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 4,
+      "likeCount": 17,
+      "quoteCount": 1,
+      "viewCount": 3549,
+      "createdAt": "Tue Jun 02 04:07:57 +0000 2026",
+      "lang": "en",
+      "bookmarkCount": 0,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061661070281019806",
+      "displayTextRange": [0, 187],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "classicalism",
+        "url": "https://x.com/classicalism",
+        "twitterUrl": "https://twitter.com/classicalism",
+        "id": "132872285",
+        "name": "ibO",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/1766457147486048256/xvoNhFCf_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/132872285/1750755765",
+        "description": "",
+        "location": "",
+        "followers": 9457,
+        "following": 8112,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": false,
+        "createdAt": "Wed Apr 14 11:59:57 +0000 2010",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 72537,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 4898,
+        "statusesCount": 50169,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2052257071425269821"],
+        "profile_bio": {
+          "description": "▪ ARC Stellar #774\n▪ Bought BTC (2015) | Full Time (2022)\n▪ Founded 𝗶𝗯𝗢 𝗖𝗿𝘆𝗽𝘁𝗼 (2024)\n▪ Co-hosted #MemeDay 🇹🇭 (2025)\n▪ more works in \"Highlights\"",
+          "entities": {
+            "description": {
+              "hashtags": [{ "indices": [98, 106], "text": "MemeDay" }]
+            },
+            "url": {
+              "urls": [
+                {
+                  "display_url": "linktr.ee/classicalism_i…",
+                  "expanded_url": "https://linktr.ee/classicalism_ibo",
+                  "indices": [0, 23],
+                  "url": "https://t.co/N5MNIcWU4X"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/jgKOmF47Nt",
+            "expanded_url": "https://twitter.com/classicalism/status/2061661070281019806/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+            "id_str": "2061660448680992768",
+            "indices": [188, 211],
+            "media_key": "3_2061660448680992768",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARycfUFDGmAACgACHJx90f1aEZ4AAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJx9QUMaYAAKAAIcnH3R/VoRngAA",
+                "media_key": "3_2061660448680992768"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJx9QUMaYAAo-nN.png",
+            "original_info": {
+              "focus_rects": [
+                { "h": 328, "w": 585, "x": 0, "y": 36 },
+                { "h": 364, "w": 364, "x": 110, "y": 0 },
+                { "h": 364, "w": 319, "x": 133, "y": 0 },
+                { "h": 364, "w": 182, "x": 201, "y": 0 },
+                { "h": 364, "w": 585, "x": 0, "y": 0 }
+              ],
+              "height": 364,
+              "width": 585
+            },
+            "sizes": { "large": { "h": 364, "w": 585 } },
+            "type": "photo",
+            "url": "https://t.co/jgKOmF47Nt"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [{ "indices": [140, 148], "text": "Renaiss" }],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [59, 70],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          },
+          {
+            "id_str": "2031306334394802177",
+            "indices": [157, 169],
+            "name": "Renaiss TCG Korea",
+            "screen_name": "RenaissKrCM"
+          },
+          {
+            "id_str": "2056070865331134464",
+            "indices": [173, 184],
+            "name": "Renaiss TCG Thailand",
+            "screen_name": "Renaiss_TH"
+          }
+        ]
+      },
+      "quoted_tweet": null,
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    },
+    {
+      "type": "tweet",
+      "id": "2061649313424687611",
+      "url": "https://x.com/MKrub8/status/2061649313424687611",
+      "twitterUrl": "https://twitter.com/MKrub8/status/2061649313424687611",
+      "text": "GM ยามเช้า สดใส\nใครหลงไป #กินฟรีมีเกียรติ งานที่ Renaiss วันที่ 17 กับ 20 เดือน พฤษภาคมที่ผ่านมา\n\nอย่าลืมไปเคลม Badge : Thai Explorer\nทุก SBT อาจทำให้เรามีข้าวกินในอนาคต อิอิ\n\n@renaissxyz #Renaiss https://t.co/FAqRuneba0",
+      "source": "Twitter for iPhone",
+      "retweetCount": 1,
+      "replyCount": 9,
+      "likeCount": 22,
+      "quoteCount": 1,
+      "viewCount": 1605,
+      "createdAt": "Tue Jun 02 03:21:14 +0000 2026",
+      "lang": "th",
+      "bookmarkCount": 1,
+      "isReply": false,
+      "inReplyToId": null,
+      "conversationId": "2061649313424687611",
+      "displayTextRange": [0, 196],
+      "inReplyToUserId": null,
+      "inReplyToUsername": null,
+      "author": {
+        "type": "user",
+        "userName": "MKrub8",
+        "url": "https://x.com/MKrub8",
+        "twitterUrl": "https://twitter.com/MKrub8",
+        "id": "1578018173835964416",
+        "name": "MarkerDoge ZAMA 🐕🐘",
+        "isVerified": false,
+        "isBlueVerified": true,
+        "verifiedType": null,
+        "profilePicture": "https://pbs.twimg.com/profile_images/2031580922685042693/ckwhpNkz_normal.jpg",
+        "coverPicture": "https://pbs.twimg.com/profile_banners/1578018173835964416/1746029574",
+        "description": "",
+        "location": "",
+        "followers": 8522,
+        "following": 6219,
+        "status": "",
+        "canDm": true,
+        "canMediaTag": true,
+        "createdAt": "Thu Oct 06 13:43:53 +0000 2022",
+        "entities": { "description": { "urls": [] }, "url": {} },
+        "fastFollowersCount": 0,
+        "favouritesCount": 50425,
+        "hasCustomTimelines": true,
+        "isTranslator": false,
+        "mediaCount": 2458,
+        "statusesCount": 31263,
+        "withheldInCountries": [],
+        "affiliatesHighlightedLabel": {},
+        "possiblySensitive": false,
+        "pinnedTweetIds": ["2062183405777977714"],
+        "profile_bio": {
+          "description": "Math Teacher and Thailand CEX Maxi คนไทยใช้ของไทย ติดตามข่าวสารเรื่องชาวบ้านได้ที่แอคนี้จ้า",
+          "entities": {
+            "description": {},
+            "url": {
+              "urls": [
+                {
+                  "display_url": "x.com/i/chat/group_j…",
+                  "expanded_url": "https://x.com/i/chat/group_join/g2048579113330577634/d0Py5Q1136",
+                  "indices": [0, 23],
+                  "url": "https://t.co/FOnFlqatnm"
+                }
+              ]
+            }
+          }
+        },
+        "isAutomated": false,
+        "automatedBy": null
+      },
+      "extendedEntities": {
+        "media": [
+          {
+            "allow_download_status": { "allow_download": true },
+            "display_url": "pic.twitter.com/FAqRuneba0",
+            "expanded_url": "https://twitter.com/MKrub8/status/2061649313424687611/photo/1",
+            "ext_master_playlist_only": [],
+            "ext_media_availability": { "status": "Available" },
+            "ext_playlists": [],
+            "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+            "id_str": "2061649305661054976",
+            "indices": [197, 220],
+            "media_key": "3_2061649305661054976",
+            "media_results": {
+              "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyccx7TW6AACgACHJxzIKIbQfsAAA==",
+              "result": {
+                "__typename": "ApiMedia",
+                "id": "QXBpTWVkaWE6DAABCgABHJxzHtNboAAKAAIcnHMgohtB+wAA",
+                "media_key": "3_2061649305661054976"
+              }
+            },
+            "media_url_https": "https://pbs.twimg.com/media/HJxzHtNboAAhd8h.jpg",
+            "original_info": {
+              "focus_rects": [
+                { "h": 739, "w": 1320, "x": 0, "y": 339 },
+                { "h": 1320, "w": 1320, "x": 0, "y": 48 },
+                { "h": 1505, "w": 1320, "x": 0, "y": 0 },
+                { "h": 1668, "w": 834, "x": 243, "y": 0 },
+                { "h": 1668, "w": 1320, "x": 0, "y": 0 }
+              ],
+              "height": 1668,
+              "width": 1320
+            },
+            "sizes": { "large": { "h": 1668, "w": 1320 } },
+            "type": "photo",
+            "url": "https://t.co/FAqRuneba0"
+          }
+        ]
+      },
+      "card": null,
+      "place": {},
+      "entities": {
+        "hashtags": [
+          { "indices": [25, 41], "text": "กินฟรีมีเกียรติ" },
+          { "indices": [188, 196], "text": "Renaiss" }
+        ],
+        "user_mentions": [
+          {
+            "id_str": "1605761701806080000",
+            "indices": [176, 187],
+            "name": "Renaiss Protocol",
+            "screen_name": "renaissxyz"
+          }
+        ]
+      },
+      "quoted_tweet": {
+        "type": "tweet",
+        "id": "2055914969125048754",
+        "url": "https://x.com/MKrub8/status/2055914969125048754",
+        "twitterUrl": "https://twitter.com/MKrub8/status/2055914969125048754",
+        "text": "วันนี้แวะมางาน The Alternative Asset Class: RWA Edition🏢\n\nได้การ์ดโปเกมอน SAR กลับบ้านด้วย\n\nRWA อีกรูปแบบที่น่าจับตา\nจากการ์ดธรรมดาๆ บางใบก็มีมูลค่าหลักล้านเรียบร้อย\n\nในงานได้พบกับ  @Plus_Ultra_715 CEO สุดหล่อจาก @renaissxyz \n\nขอบคุณสำหรับ SBT ฟรีๆ อิอิ\n#Renaissbkk\n#BinanceTH_Academy #RWA #TCG #Renaiss",
+        "source": "Twitter for iPhone",
+        "retweetCount": 11,
+        "replyCount": 21,
+        "likeCount": 47,
+        "quoteCount": 1,
+        "viewCount": 4576,
+        "createdAt": "Sun May 17 07:35:00 +0000 2026",
+        "lang": "th",
+        "bookmarkCount": 0,
+        "isReply": false,
+        "inReplyToId": null,
+        "conversationId": "2055914969125048754",
+        "displayTextRange": [0, 265],
+        "inReplyToUserId": null,
+        "inReplyToUsername": null,
+        "author": {
+          "type": "user",
+          "userName": "MKrub8",
+          "url": "https://x.com/MKrub8",
+          "twitterUrl": "https://twitter.com/MKrub8",
+          "id": "1578018173835964416",
+          "name": "MarkerDoge ZAMA 🐕🐘",
+          "isVerified": false,
+          "isBlueVerified": true,
+          "verifiedType": null,
+          "profilePicture": "https://pbs.twimg.com/profile_images/2031580922685042693/ckwhpNkz_normal.jpg",
+          "coverPicture": "https://pbs.twimg.com/profile_banners/1578018173835964416/1746029574",
+          "description": "",
+          "location": "",
+          "followers": 8522,
+          "following": 6219,
+          "status": "",
+          "canDm": true,
+          "canMediaTag": true,
+          "createdAt": "Thu Oct 06 13:43:53 +0000 2022",
+          "entities": { "description": { "urls": [] }, "url": {} },
+          "fastFollowersCount": 0,
+          "favouritesCount": 50425,
+          "hasCustomTimelines": true,
+          "isTranslator": false,
+          "mediaCount": 2458,
+          "statusesCount": 31263,
+          "withheldInCountries": [],
+          "affiliatesHighlightedLabel": {},
+          "possiblySensitive": false,
+          "pinnedTweetIds": ["2062183405777977714"],
+          "profile_bio": {
+            "description": "Math Teacher and Thailand CEX Maxi คนไทยใช้ของไทย ติดตามข่าวสารเรื่องชาวบ้านได้ที่แอคนี้จ้า",
+            "entities": {
+              "description": {},
+              "url": {
+                "urls": [
+                  {
+                    "display_url": "x.com/i/chat/group_j…",
+                    "expanded_url": "https://x.com/i/chat/group_join/g2048579113330577634/d0Py5Q1136",
+                    "indices": [0, 23],
+                    "url": "https://t.co/FOnFlqatnm"
+                  }
+                ]
+              }
+            }
+          },
+          "isAutomated": false,
+          "automatedBy": null
+        },
+        "extendedEntities": {
+          "media": [
+            {
+              "display_url": "pic.twitter.com/X2zmaIuca7",
+              "expanded_url": "https://twitter.com/MKrub8/status/2055914969125048754/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2055914956986740736",
+              "indices": [266, 289],
+              "media_key": "3_2055914956986740736",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyIE8K7m3AACgACHIgTxY8bUbIAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIgTwrubcAAKAAIciBPFjxtRsgAA",
+                  "media_key": "3_2055914956986740736"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIgTwrubcAAYSd6.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 860, "w": 1536, "x": 0, "y": 338 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 1751, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 2048, "w": 1024, "x": 0, "y": 0 },
+                  { "h": 2048, "w": 1536, "x": 0, "y": 0 }
+                ],
+                "height": 2048,
+                "width": 1536
+              },
+              "sizes": { "large": { "h": 2048, "w": 1536 } },
+              "type": "photo",
+              "url": "https://t.co/X2zmaIuca7"
+            },
+            {
+              "display_url": "pic.twitter.com/X2zmaIuca7",
+              "expanded_url": "https://twitter.com/MKrub8/status/2055914969125048754/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": {
+                "large": {
+                  "faces": [
+                    { "h": 80, "w": 80, "x": 1804, "y": 324 },
+                    { "h": 78, "w": 78, "x": 902, "y": 386 }
+                  ]
+                },
+                "orig": {
+                  "faces": [
+                    { "h": 80, "w": 80, "x": 1804, "y": 324 },
+                    { "h": 78, "w": 78, "x": 902, "y": 386 }
+                  ]
+                }
+              },
+              "id_str": "2055914956974112768",
+              "indices": [266, 289],
+              "media_key": "3_2055914956974112768",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyIE8K62sAACgACHIgTxY8bUbIAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIgTwrrawAAKAAIciBPFjxtRsgAA",
+                  "media_key": "3_2055914956974112768"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIgTwrrawAAfWmC.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 1147, "w": 2048, "x": 0, "y": 195 },
+                  { "h": 1536, "w": 1536, "x": 307, "y": 0 },
+                  { "h": 1536, "w": 1347, "x": 402, "y": 0 },
+                  { "h": 1536, "w": 768, "x": 691, "y": 0 },
+                  { "h": 1536, "w": 2048, "x": 0, "y": 0 }
+                ],
+                "height": 1536,
+                "width": 2048
+              },
+              "sizes": { "large": { "h": 1536, "w": 2048 } },
+              "type": "photo",
+              "url": "https://t.co/X2zmaIuca7"
+            },
+            {
+              "display_url": "pic.twitter.com/X2zmaIuca7",
+              "expanded_url": "https://twitter.com/MKrub8/status/2055914969125048754/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2055914956990844928",
+              "indices": [266, 289],
+              "media_key": "3_2055914956990844928",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyIE8K72hAACgACHIgTxY8bUbIAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIgTwrvaEAAKAAIciBPFjxtRsgAA",
+                  "media_key": "3_2055914956990844928"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIgTwrvaEAA6qY6.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 1147, "w": 2048, "x": 0, "y": 92 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 1536, "w": 1347, "x": 0, "y": 0 },
+                  { "h": 1536, "w": 768, "x": 179, "y": 0 },
+                  { "h": 1536, "w": 2048, "x": 0, "y": 0 }
+                ],
+                "height": 1536,
+                "width": 2048
+              },
+              "sizes": { "large": { "h": 1536, "w": 2048 } },
+              "type": "photo",
+              "url": "https://t.co/X2zmaIuca7"
+            },
+            {
+              "display_url": "pic.twitter.com/X2zmaIuca7",
+              "expanded_url": "https://twitter.com/MKrub8/status/2055914969125048754/photo/1",
+              "ext_master_playlist_only": [],
+              "ext_media_availability": { "status": "Available" },
+              "ext_playlists": [],
+              "features": { "large": { "faces": [] }, "orig": { "faces": [] } },
+              "id_str": "2055914956995121152",
+              "indices": [266, 289],
+              "media_key": "3_2055914956995121152",
+              "media_results": {
+                "id": "QXBpTWVkaWFSZXN1bHRzOgwAAQoAARyIE8K8G1AACgACHIgTxY8bUbIAAA==",
+                "result": {
+                  "__typename": "ApiMedia",
+                  "id": "QXBpTWVkaWE6DAABCgABHIgTwrwbUAAKAAIciBPFjxtRsgAA",
+                  "media_key": "3_2055914956995121152"
+                }
+              },
+              "media_url_https": "https://pbs.twimg.com/media/HIgTwrwbUAAjOYo.jpg",
+              "original_info": {
+                "focus_rects": [
+                  { "h": 1147, "w": 2048, "x": 0, "y": 0 },
+                  { "h": 1536, "w": 1536, "x": 0, "y": 0 },
+                  { "h": 1536, "w": 1347, "x": 95, "y": 0 },
+                  { "h": 1536, "w": 768, "x": 384, "y": 0 },
+                  { "h": 1536, "w": 2048, "x": 0, "y": 0 }
+                ],
+                "height": 1536,
+                "width": 2048
+              },
+              "sizes": { "large": { "h": 1536, "w": 2048 } },
+              "type": "photo",
+              "url": "https://t.co/X2zmaIuca7"
+            }
+          ]
+        },
+        "card": null,
+        "place": {},
+        "entities": {
+          "hashtags": [
+            { "indices": [254, 265], "text": "Renaissbkk" },
+            { "indices": [266, 284], "text": "BinanceTH_Academy" },
+            { "indices": [285, 289], "text": "RWA" },
+            { "indices": [290, 294], "text": "TCG" },
+            { "indices": [295, 303], "text": "Renaiss" }
+          ],
+          "symbols": [],
+          "urls": [],
+          "user_mentions": [
+            {
+              "id_str": "2788613881",
+              "indices": [182, 197],
+              "name": "Winchman@Renaiss",
+              "screen_name": "Plus_Ultra_715"
+            },
+            {
+              "id_str": "1605761701806080000",
+              "indices": [213, 224],
+              "name": "Renaiss Protocol",
+              "screen_name": "renaissxyz"
+            }
+          ]
+        },
+        "quoted_tweet": null,
+        "retweeted_tweet": null,
+        "isLimitedReply": false,
+        "communityInfo": null,
+        "article": null
+      },
+      "retweeted_tweet": null,
+      "isLimitedReply": false,
+      "communityInfo": null,
+      "article": null
+    }
+  ],
+  "has_next_page": true,
+  "next_cursor": "DAADDAABCgABHJ8-8soaQEQKAAIcnHMgohtB-wAIAAIAAAACCAADAAAAAAgABAAAAAEKAAUcn0VdD4AnEAoABhyfRV0Pf7HgAAA"
+}
