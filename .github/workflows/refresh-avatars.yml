@@ -1,0 +1,37 @@
+name: Refresh Avatars
+
+# Run manually from the Actions tab, or automatically every Monday at 02:00 UTC.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 1'
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch avatars
+        run: npm run fetch:avatars
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet src/data/avatars.json; then
+            git add src/data/avatars.json
+            git commit -m "chore: refresh avatars"
+            git push
+          else
+            echo "avatars.json unchanged, skipping commit"
+          fi

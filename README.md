@@ -106,14 +106,46 @@ map. Missing avatars fall back at runtime to `https://unavatar.io/x/{author_user
 
 For static hosts (Vercel, Netlify, Cloudflare Pages):
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- Node version: 18 or newer
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Node version | 18 or newer |
 
-Recommended flow after a CSV update:
+**Do not** add `fetch:avatars` to the platform build command. The script hits
+`nitter.net` over the network, which is unreliable in cloud build sandboxes and
+will cause random build failures. `avatars.json` is already committed to the
+repo and is bundled during the build — the deployed app always has avatars.
+
+### Keeping avatars fresh
+
+Avatars are refreshed separately, **not** as part of every build:
+
+**Option A — manually (fastest):** run locally, commit, push.
 
 ```bash
-npm install
 npm run fetch:avatars
-npm run build
+git add src/data/avatars.json
+git commit -m "chore: refresh avatars"
+git push
+```
+
+The deploy platform auto-deploys on push and picks up the new avatars.
+
+**Option B — automated via GitHub Actions:** the workflow at
+`.github/workflows/refresh-avatars.yml` runs every Monday at 02:00 UTC. It
+fetches avatars, commits `src/data/avatars.json` only if it changed, then
+pushes. That push triggers the normal deploy pipeline.
+
+You can also trigger it on demand from the **Actions → Refresh Avatars →
+Run workflow** button in the GitHub UI — no need to pull locally.
+
+### After a CSV update
+
+```bash
+# Update public/renaiss_posts.csv (or other CSVs), then:
+npm run fetch:avatars   # pick up any new authors
+git add public/ src/data/avatars.json
+git commit -m "data: update posts + avatars"
+git push
 ```
