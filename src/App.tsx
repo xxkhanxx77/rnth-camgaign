@@ -231,7 +231,7 @@ async function loadCsv<T extends Record<string, string>>(path: string): Promise<
 }
 
 export default function App() {
-  // SPA route: vercel.json rewrites all paths to index.html, so we check pathname here
+  // SPA route: vercel.json rewrites all paths to index.html, so we check pathname here bro
   if (window.location.pathname === "/admin-renaiss") {
     return <AdminRenaissDashboard />;
   }
