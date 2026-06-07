@@ -4,6 +4,7 @@ dist/
 .DS_Store
 .cursor/
 .playwright-cli/
+output/
 src/App 2.tsx
 vite.config.js
 vite.config.d.ts

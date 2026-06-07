@@ -330,6 +330,180 @@ body {
     }
 }
 
+@layer components {
+    .streak-block {
+        --heat-gap: clamp(3px, 0.4vw, 6px);
+        --heat-gutter: 36px;
+        --heat-row-gap: clamp(8px, 1vw, 14px);
+        --heat-cell-h: clamp(20px, 2.3vw, 34px);
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .streak-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .streak-total {
+        font-size: 0.95rem;
+        font-weight: 800;
+        color: oklch(var(--foreground));
+    }
+
+    .streak-years {
+        display: inline-flex;
+        gap: 6px;
+    }
+
+    .streak-years button {
+        min-height: 34px;
+        padding: 0 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.22);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        color: oklch(var(--muted-foreground));
+        cursor: pointer;
+        transition:
+            color 150ms ease,
+            background 150ms ease;
+    }
+
+    .streak-years button:hover {
+        color: oklch(var(--foreground));
+        background: rgba(255, 255, 255, 0.34);
+    }
+
+    .streak-years button.active {
+        color: oklch(var(--primary-foreground));
+        background: oklch(var(--primary) / 0.92);
+        border-color: transparent;
+    }
+
+    .heatmap-cal {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .heatmap-scroll {
+        min-width: 0;
+    }
+
+    .heatmap-months {
+        display: flex;
+        gap: var(--heat-gap);
+        margin-left: calc(var(--heat-gutter) + var(--heat-row-gap));
+    }
+
+    .heatmap-month {
+        flex: 1 1 0;
+        min-width: 0;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: oklch(var(--muted-foreground));
+        white-space: nowrap;
+        overflow: visible;
+    }
+
+    .heatmap-grid-row {
+        display: flex;
+        gap: var(--heat-row-gap);
+        align-items: stretch;
+    }
+
+    .heatmap-weekdays {
+        display: grid;
+        grid-template-rows: repeat(7, 1fr);
+        gap: var(--heat-gap);
+        width: var(--heat-gutter);
+        flex: none;
+    }
+
+    .heatmap-weekdays span {
+        display: flex;
+        align-items: center;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: oklch(var(--muted-foreground));
+    }
+
+    .heatmap {
+        display: flex;
+        gap: var(--heat-gap);
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .heatmap-week {
+        display: grid;
+        grid-template-rows: repeat(7, var(--heat-cell-h));
+        gap: var(--heat-gap);
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .heatmap-cell {
+        width: 100%;
+        height: var(--heat-cell-h);
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 1px rgba(33, 30, 27, 0.05);
+    }
+
+    .heatmap-cell.empty {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .heatmap-cell.future {
+        background: rgba(33, 30, 27, 0.03);
+    }
+
+    .heatmap-cell.lvl-0 {
+        background: rgba(33, 30, 27, 0.07);
+    }
+
+    .heatmap-cell.lvl-1 {
+        background: oklch(var(--renaiss-orange) / 0.32);
+    }
+
+    .heatmap-cell.lvl-2 {
+        background: oklch(var(--renaiss-orange) / 0.52);
+    }
+
+    .heatmap-cell.lvl-3 {
+        background: oklch(var(--renaiss-orange) / 0.74);
+    }
+
+    .heatmap-cell.lvl-4 {
+        background: oklch(var(--renaiss-orange) / 0.96);
+    }
+
+    .heatmap-legend {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: oklch(var(--muted-foreground));
+    }
+
+    .heatmap-legend .heatmap-cell {
+        width: 15px;
+        height: 15px;
+        flex: none;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 1px rgba(33, 30, 27, 0.05);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .taste-reveal {
         animation: none;
