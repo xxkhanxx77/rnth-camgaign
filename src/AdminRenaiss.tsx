@@ -1,6 +1,7 @@
 import { type ReactNode, useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
+  AlertTriangle,
   ArrowLeft,
   ArrowUpRight,
   Ban,
@@ -13,6 +14,7 @@ import {
   Download,
   Eye,
   Flag,
+  Hand,
   Heart,
   MessageCircle,
   Repeat2,
@@ -51,6 +53,11 @@ import {
   readBotFlags,
   writeBotFlags,
 } from "./lib/renaissBotFlags";
+import {
+  type HoldFlags,
+  readHoldFlags,
+  writeHoldFlags,
+} from "./lib/renaissHoldFlags";
 import { cn } from "./lib/utils";
 
 type CsvRow = Record<string, string>;
@@ -188,6 +195,7 @@ type RankedAdminAuthor = {
   rawScore: number;
   score: number;
   botFlagged: boolean;
+  held: boolean;
   followers: number | null;
   priorPosts: number | null;
   profile: RenaissProfileSummary | null;
@@ -371,6 +379,7 @@ export default function AdminRenaissDashboard() {
   const [selectedAuthorKey, setSelectedAuthorKey] = useState("");
   const [selectedParticipantId, setSelectedParticipantId] = useState("");
   const [botFlags, setBotFlags] = useState<BotFlags>(() => readBotFlags());
+  const [holdFlags, setHoldFlags] = useState<HoldFlags>(() => readHoldFlags());
 
   const {
     data,
@@ -388,9 +397,10 @@ export default function AdminRenaissDashboard() {
         seasonConfigs.season0,
         data?.season0Posts ?? [],
         botFlags,
+        holdFlags,
         data?.profiles,
       ),
-    [botFlags, data?.profiles, data?.season0Posts],
+    [botFlags, holdFlags, data?.profiles, data?.season0Posts],
   );
   const season1Board = useMemo(
     () =>
@@ -398,9 +408,10 @@ export default function AdminRenaissDashboard() {
         seasonConfigs.season1,
         data?.season1Posts ?? [],
         botFlags,
+        holdFlags,
         data?.profiles,
       ),
-    [botFlags, data?.profiles, data?.season1Posts],
+    [botFlags, holdFlags, data?.profiles, data?.season1Posts],
   );
   const campaignBoard = useMemo(
     () =>
@@ -433,6 +444,21 @@ export default function AdminRenaissDashboard() {
       }
 
       writeBotFlags(next);
+      return next;
+    });
+  }
+
+  function toggleHold(flagKey: string) {
+    setHoldFlags((current) => {
+      const next = { ...current };
+
+      if (next[flagKey]) {
+        delete next[flagKey];
+      } else {
+        next[flagKey] = true;
+      }
+
+      writeHoldFlags(next);
       return next;
     });
   }
@@ -533,6 +559,7 @@ export default function AdminRenaissDashboard() {
             setQuery={setQuery}
             setSelectedAuthorKey={setSelectedAuthorKey}
             toggleBotFlag={toggleBotFlag}
+            toggleHold={toggleHold}
           />
         )}
       </section>
@@ -548,6 +575,7 @@ function SeasonPanel({
   setQuery,
   setSelectedAuthorKey,
   toggleBotFlag,
+  toggleHold,
 }: {
   board: SeasonBoard;
   isLoading: boolean;
@@ -556,6 +584,7 @@ function SeasonPanel({
   setQuery: (value: string) => void;
   setSelectedAuthorKey: (value: string) => void;
   toggleBotFlag: (flagKey: string) => void;
+  toggleHold: (flagKey: string) => void;
 }) {
   const [page, setPage] = useState(1);
   const [sortBy, setSortBy] = useState<AdminSortKey>("rank");
@@ -572,7 +601,8 @@ function SeasonPanel({
         author.authorName,
         author.authorUsername,
         author.topTag,
-        author.eligible ? "eligible" : "hold",
+        author.held ? "hold held" : "released",
+        author.eligibilityKnown && !author.eligible ? "high risk" : "eligible",
         author.riskFlags > 0 ? "review flags risk" : "clear",
         author.botFlagged ? "bot flagged" : "clear",
       ]
@@ -723,7 +753,7 @@ function SeasonPanel({
 
       <div className="grid gap-5 2xl:grid-cols-[minmax(0,1.22fr)_minmax(420px,0.78fr)]">
         <div className="glass-panel min-w-0 overflow-hidden rounded-md">
-          <div className="glass-row hidden grid-cols-[76px_minmax(0,1.8fr)_140px_170px_96px_118px] items-center gap-4 border-b border-white/20 px-5 py-3 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:grid">
+          <div className="glass-row hidden grid-cols-[76px_minmax(0,1.7fr)_130px_150px_84px_196px] items-center gap-4 border-b border-white/20 px-5 py-3 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:grid">
             <span>Rank</span>
             <span>Account</span>
             <span className="text-right">Score</span>
@@ -752,6 +782,7 @@ function SeasonPanel({
                 selected={selectedAuthor?.key === author.key}
                 onSelect={setSelectedAuthorKey}
                 onToggleBot={toggleBotFlag}
+                onToggleHold={toggleHold}
               />
             ))}
 
@@ -792,6 +823,7 @@ function SeasonPanel({
           author={selectedAuthor}
           isLoading={isLoading}
           onToggleBot={toggleBotFlag}
+          onToggleHold={toggleHold}
         />
       </div>
     </div>
@@ -803,16 +835,18 @@ function AdminAuthorRow({
   selected,
   onSelect,
   onToggleBot,
+  onToggleHold,
 }: {
   author: RankedAdminAuthor;
   selected: boolean;
   onSelect: (key: string) => void;
   onToggleBot: (flagKey: string) => void;
+  onToggleHold: (flagKey: string) => void;
 }) {
   return (
     <article
       className={cn(
-        "glass-row grid min-w-0 gap-4 border-b border-white/20 px-4 py-4 last:border-b-0 sm:px-5 lg:grid-cols-[76px_minmax(0,1.8fr)_140px_170px_96px_118px] lg:items-center",
+        "glass-row grid min-w-0 gap-4 border-b border-white/20 px-4 py-4 last:border-b-0 sm:px-5 lg:grid-cols-[76px_minmax(0,1.7fr)_130px_150px_84px_196px] lg:items-center",
         selected && "bg-white/32",
       )}
     >
@@ -901,16 +935,23 @@ function AdminAuthorRow({
       <div className="flex items-center justify-between gap-2 lg:justify-end">
         <ReviewBadge
           flagged={author.botFlagged}
+          held={author.held}
           eligible={author.eligible}
           eligibilityKnown={author.eligibilityKnown}
           redFlags={author.redFlags}
           riskFlags={author.riskFlags}
+          ineligibleLabel="highRisk"
+        />
+        <HoldToggleButton
+          held={author.held}
+          onToggle={() => onToggleHold(author.flagKey)}
+          username={author.authorUsername || author.authorName}
         />
         <button
           type="button"
           onClick={() => onToggleBot(author.flagKey)}
           className={cn(
-            "grid h-10 w-10 place-items-center rounded-md transition-colors",
+            "grid h-10 w-10 shrink-0 place-items-center rounded-md transition-colors",
             author.botFlagged
               ? "glass-fill-primary"
               : "glass-control text-muted-foreground hover:text-foreground",
@@ -932,10 +973,12 @@ function AdminAuthorDetail({
   author,
   isLoading,
   onToggleBot,
+  onToggleHold,
 }: {
   author: RankedAdminAuthor | undefined;
   isLoading: boolean;
   onToggleBot: (flagKey: string) => void;
+  onToggleHold: (flagKey: string) => void;
 }) {
   if (isLoading) {
     return (
@@ -986,23 +1029,31 @@ function AdminAuthorDetail({
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={() => onToggleBot(author.flagKey)}
-              className={cn(
-                "grid h-11 w-11 shrink-0 place-items-center rounded-md transition-colors",
-                author.botFlagged
-                  ? "glass-fill-primary"
-                  : "glass-control text-muted-foreground hover:text-foreground",
-              )}
-              aria-label="Toggle bot flag"
-            >
-              {author.botFlagged ? (
-                <Ban className="h-5 w-5" />
-              ) : (
-                <Flag className="h-5 w-5" />
-              )}
-            </button>
+            <div className="flex shrink-0 items-center gap-2">
+              <HoldToggleButton
+                held={author.held}
+                onToggle={() => onToggleHold(author.flagKey)}
+                username={author.authorUsername || author.authorName}
+                size="lg"
+              />
+              <button
+                type="button"
+                onClick={() => onToggleBot(author.flagKey)}
+                className={cn(
+                  "grid h-11 w-11 shrink-0 place-items-center rounded-md transition-colors",
+                  author.botFlagged
+                    ? "glass-fill-primary"
+                    : "glass-control text-muted-foreground hover:text-foreground",
+                )}
+                aria-label="Toggle bot flag"
+              >
+                {author.botFlagged ? (
+                  <Ban className="h-5 w-5" />
+                ) : (
+                  <Flag className="h-5 w-5" />
+                )}
+              </button>
+            </div>
           </div>
 
           <div className="mt-5 flex flex-wrap gap-2">
@@ -1011,6 +1062,14 @@ function AdminAuthorDetail({
                 Official
               </Badge>
             ) : null}
+            <Badge variant={author.held ? "default" : "outline"} className="gap-1">
+              {author.held ? (
+                <XCircle className="h-3.5 w-3.5" />
+              ) : (
+                <Hand className="h-3.5 w-3.5" />
+              )}
+              {author.held ? "On hold" : "Released"}
+            </Badge>
             <Badge variant={author.botFlagged ? "default" : "outline"}>
               {author.botFlagged ? "Bot flagged" : "Clear"}
             </Badge>
@@ -1018,7 +1077,7 @@ function AdminAuthorDetail({
               {author.eligibilityKnown
                 ? author.eligible
                   ? "Eligible"
-                  : "Not eligible"
+                  : "High risk"
                 : "Eligibility pending"}
             </Badge>
             <Badge variant={author.redFlags > 0 ? "default" : "outline"}>
@@ -1715,60 +1774,101 @@ function MiniMetric({ icon, value }: { icon: ReactNode; value: string }) {
   );
 }
 
-function ReviewBadge({
+type ReviewState = "bot" | "hold" | "highRisk" | "check" | "risk" | "flag" | "clear";
+
+function resolveReviewState({
   flagged,
+  held = false,
   eligible,
   eligibilityKnown,
-  redFlags,
-  riskFlags,
+  redFlags = 0,
+  riskFlags = 0,
+  ineligibleLabel = "hold",
 }: {
   flagged: boolean;
+  held?: boolean;
   eligible: boolean;
   eligibilityKnown: boolean;
   redFlags?: number;
   riskFlags?: number;
-}) {
-  if (flagged) {
-    return (
-      <Badge variant="default" className="gap-1">
-        <Bot className="h-3.5 w-3.5" />
-        Bot
-      </Badge>
-    );
-  }
-
+  ineligibleLabel?: "hold" | "highRisk";
+}): ReviewState {
+  if (flagged) return "bot";
+  if (held) return "hold";
   if (eligibilityKnown && !eligible) {
-    return (
-      <Badge variant="default" className="gap-1">
-        <XCircle className="h-3.5 w-3.5" />
-        Hold
-      </Badge>
-    );
+    return ineligibleLabel === "highRisk" ? "highRisk" : "hold";
   }
+  if (!eligibilityKnown) return "check";
+  if (riskFlags > 0) return redFlags > 0 ? "risk" : "flag";
+  return "clear";
+}
 
-  if (!eligibilityKnown) {
-    return (
-      <Badge variant="secondary" className="gap-1">
-        <ShieldCheck className="h-3.5 w-3.5" />
-        Check
-      </Badge>
-    );
-  }
+const reviewStateMeta: Record<
+  ReviewState,
+  { label: string; variant: "default" | "secondary" | "outline"; icon: ReactNode }
+> = {
+  bot: { label: "Bot", variant: "default", icon: <Bot className="h-3.5 w-3.5" /> },
+  hold: { label: "Hold", variant: "default", icon: <XCircle className="h-3.5 w-3.5" /> },
+  highRisk: {
+    label: "High Risk",
+    variant: "secondary",
+    icon: <AlertTriangle className="h-3.5 w-3.5" />,
+  },
+  check: { label: "Check", variant: "secondary", icon: <ShieldCheck className="h-3.5 w-3.5" /> },
+  risk: { label: "Risk", variant: "default", icon: <Flag className="h-3.5 w-3.5" /> },
+  flag: { label: "Flag", variant: "secondary", icon: <Flag className="h-3.5 w-3.5" /> },
+  clear: { label: "Clear", variant: "outline", icon: <ShieldCheck className="h-3.5 w-3.5" /> },
+};
 
-  if ((riskFlags ?? 0) > 0) {
-    return (
-      <Badge variant={(redFlags ?? 0) > 0 ? "default" : "secondary"} className="gap-1">
-        <Flag className="h-3.5 w-3.5" />
-        {(redFlags ?? 0) > 0 ? "Risk" : "Flag"}
-      </Badge>
-    );
-  }
+function ReviewBadge(props: {
+  flagged: boolean;
+  held?: boolean;
+  eligible: boolean;
+  eligibilityKnown: boolean;
+  redFlags?: number;
+  riskFlags?: number;
+  ineligibleLabel?: "hold" | "highRisk";
+}) {
+  const meta = reviewStateMeta[resolveReviewState(props)];
 
   return (
-    <Badge variant="outline" className="gap-1">
-      <ShieldCheck className="h-3.5 w-3.5" />
-      Clear
+    <Badge variant={meta.variant} className="gap-1">
+      {meta.icon}
+      {meta.label}
     </Badge>
+  );
+}
+
+function HoldToggleButton({
+  held,
+  onToggle,
+  username,
+  size = "sm",
+}: {
+  held: boolean;
+  onToggle: () => void;
+  username: string;
+  size?: "sm" | "lg";
+}) {
+  const sizeClass = size === "lg" ? "h-11 w-11" : "h-10 w-10";
+  const iconClass = size === "lg" ? "h-5 w-5" : "h-4 w-4";
+
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      className={cn(
+        "grid shrink-0 place-items-center rounded-md transition-colors",
+        sizeClass,
+        held
+          ? "glass-fill-primary"
+          : "glass-control text-muted-foreground hover:text-foreground",
+      )}
+      aria-label={held ? `Release hold on ${username}` : `Hold ${username}`}
+      title={held ? "Release hold" : "Hold account"}
+    >
+      <Hand className={iconClass} />
+    </button>
   );
 }
 
@@ -1882,6 +1982,8 @@ function downloadSeasonReviewCsv(board: SeasonBoard) {
     "yellow_flags",
     "latest_post_url",
     "bot_flag",
+    "hold",
+    "review_state",
   ];
   const rows = board.authors.map((author) => [
     author.rank,
@@ -1902,6 +2004,18 @@ function downloadSeasonReviewCsv(board: SeasonBoard) {
     author.yellowFlags,
     author.latestPostUrl,
     author.botFlagged ? "TRUE" : "FALSE",
+    author.held ? "TRUE" : "FALSE",
+    reviewStateMeta[
+      resolveReviewState({
+        flagged: author.botFlagged,
+        held: author.held,
+        eligible: author.eligible,
+        eligibilityKnown: author.eligibilityKnown,
+        redFlags: author.redFlags,
+        riskFlags: author.riskFlags,
+        ineligibleLabel: "highRisk",
+      })
+    ].label,
   ]);
 
   downloadCsv(
@@ -1945,6 +2059,7 @@ function buildSeasonBoard(
   config: SeasonConfig,
   rows: PostCsvRow[],
   botFlags: BotFlags,
+  holdFlags: HoldFlags,
   profiles: RenaissProfileMap = new Map(),
 ): SeasonBoard {
   const normalizedPosts = rows.map((row) => normalizePostRow(row, profiles));
@@ -2003,7 +2118,10 @@ function buildSeasonBoard(
     );
     const flagKey = getBotFlagKey(authorUsername || authorName);
     const botFlagged = Boolean(botFlags[flagKey]);
-    const accountFactor = botFlagged || !eligibility.eligible ? 0 : 1;
+    const held = Boolean(holdFlags[flagKey]);
+    // Eligibility no longer auto-zeros the score — ineligible accounts surface as
+    // "High risk" instead. Only a bot flag or an explicit admin hold removes score.
+    const accountFactor = botFlagged || held ? 0 : 1;
     const tags = [...(tagCounts.get(key)?.entries() ?? [])].sort(
       (first, second) => second[1] - first[1],
     );
@@ -2029,6 +2147,7 @@ function buildSeasonBoard(
       rawScore,
       score: rawScore * accountFactor,
       botFlagged,
+      held,
       followers,
       priorPosts,
       profile,
