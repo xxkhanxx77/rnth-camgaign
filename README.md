@@ -60,10 +60,10 @@ The app is client-only; all data ships as static files in `public/` and is fetch
 
 | File | Used by | Purpose |
 | --- | --- | --- |
-| `public/renaiss_season0.csv` | public + admin | Season 0 posts (archive, before Jun 1 2026) |
-| `public/renaiss_posts.csv` | public + admin | Season 1 posts (filtered to ≥ Jun 1 2026) |
-| `public/renaiss_profile_mar_may_2026.csv` | public + admin | Per-author profile (followers, baselines) |
-| `public/renaiss_profile_mar_may_2026_prior_posts.csv` | public + admin | Prior-post history for baselines |
+| `public/renaiss_mar_may_2026_combined.csv` | public + admin | Season 0 Mar-May 2026 combined posts |
+| `public/renaiss_season0.csv` | admin | Season 0 post archive |
+| `public/renaiss_profile_mar_may_2026.csv` | admin | Per-author profile (followers, baselines) |
+| `public/renaiss_profile_mar_may_2026_prior_posts.csv` | admin | Prior-post history for baselines |
 | `public/renaiss_th_Tier_C_Protection.csv` | admin | Campaign participants / payouts |
 | `public/renaiss_tweet.json` | admin | Optional raw tweet payload |
 
@@ -143,7 +143,7 @@ Run workflow** button in the GitHub UI — no need to pull locally.
 ### After a CSV update
 
 ```bash
-# Update public/renaiss_posts.csv (or other CSVs), then:
+# Update public/renaiss_mar_may_2026_combined.csv (or other CSVs), then:
 npm run fetch:avatars   # pick up any new authors
 git add public/ src/data/avatars.json
 git commit -m "data: update posts + avatars"

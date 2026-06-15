@@ -2,7 +2,6 @@ import { type ReactNode, useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
   ArrowLeft,
-  ArrowDownRight,
   ArrowUpRight,
   Download,
   Eye,
@@ -22,14 +21,8 @@ import avatarMap from "./data/avatars.json";
 import { parseCsv } from "./lib/csv";
 import {
   calculateRenaissStage4PostScore,
-  createRenaissProfileMap,
-  evaluateRenaissEligibility,
   getRenaissPostMetrics,
   getRenaissProfile,
-  getRenaissRiskFlags,
-  summarizeRenaissRiskFlags,
-  type RenaissPriorPostCsvRow,
-  type RenaissProfileCsvRow,
   type RenaissProfileMap,
   type RenaissProfileSummary,
   type RenaissRiskFlag,
@@ -131,7 +124,7 @@ type AuthorPost = {
   hashtags: string[];
 };
 
-type PublicSeasonKey = "season0" | "season1";
+type PublicSeasonKey = "season0";
 
 type PublicPosts = Record<PublicSeasonKey, PostRow[]>;
 
@@ -148,13 +141,6 @@ type PublicSeason = {
   fact: string;
 };
 
-const sortOptions: Array<{ key: SortKey; label: string }> = [
-  { key: "score", label: "Score" },
-  { key: "views", label: "Views" },
-  { key: "likes", label: "Likes" },
-  { key: "posts", label: "Posts" },
-];
-
 const postSortOptions: Array<{ key: PostSortKey; label: string }> = [
   { key: "latest", label: "Latest" },
   { key: "views", label: "Views" },
@@ -167,52 +153,27 @@ const compactFormatter = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 1,
 });
 
-const metricLabels: Record<SortKey, string> = {
-  score: "Formula score",
-  views: "Views",
-  likes: "Likes",
-  posts: "Posts",
-};
-
 const publicSeasons: Record<PublicSeasonKey, PublicSeason> = {
   season0: {
     key: "season0",
     label: "Season 0",
-    badge: "Season 0 archive",
-    source: "/renaiss_season0.csv",
-    fact: "Before Jun 1, 2026",
-  },
-  season1: {
-    key: "season1",
-    label: "Season 1",
-    badge: "Season 1 live",
-    source: "/renaiss_posts.csv",
-    fact: "Jun 1, 2026 onward",
+    badge: "Mar-May 2026",
+    source: "/renaiss_mar_may_2026_combined.csv",
+    fact: "Mar-May 2026",
   },
 };
 
-const seasonOneStart = Date.UTC(2026, 5, 1);
 const emptyPosts: PostRow[] = [];
 const emptyProfiles: RenaissProfileMap = new Map();
 
 async function loadPosts(): Promise<PublicData> {
-  const [season0, season1, profileRows, priorRows] = await Promise.all([
-    loadPostCsv(publicSeasons.season0.source),
-    loadPostCsv(publicSeasons.season1.source),
-    loadCsv<RenaissProfileCsvRow>("/renaiss_profile_mar_may_2026.csv"),
-    loadCsv<RenaissPriorPostCsvRow>(
-      "/renaiss_profile_mar_may_2026_prior_posts.csv",
-    ),
-  ]);
+  const season0 = await loadPostCsv(publicSeasons.season0.source);
 
   return {
     posts: {
       season0,
-      season1: season1.filter(
-        (post) => parsePostDate(post.created_at) >= seasonOneStart,
-      ),
     },
-    profiles: createRenaissProfileMap(profileRows, priorRows),
+    profiles: emptyProfiles,
   };
 }
 
@@ -240,10 +201,7 @@ export default function App() {
 }
 
 function PublicRenaissDashboard() {
-  const [activeSeason, setActiveSeason] =
-    useState<PublicSeasonKey>("season0");
   const [query, setQuery] = useState("");
-  const [sortBy, setSortBy] = useState<SortKey>("score");
   const [postSortBy, setPostSortBy] = useState<PostSortKey>("latest");
   const [selectedUsername, setSelectedUsername] = useState(() =>
     getUsernameFromHash(),
@@ -260,9 +218,9 @@ function PublicRenaissDashboard() {
     staleTime: Infinity,
   });
 
-  const activePosts = data?.posts[activeSeason] ?? emptyPosts;
+  const activePosts = data?.posts.season0 ?? emptyPosts;
   const profiles = data?.profiles ?? emptyProfiles;
-  const activeSeasonConfig = publicSeasons[activeSeason];
+  const activeSeasonConfig = publicSeasons.season0;
   const authors = useMemo(
     () =>
       aggregateAuthors(activePosts, profiles).filter(
@@ -273,8 +231,8 @@ function PublicRenaissDashboard() {
     [activePosts, botFlags, profiles],
   );
   const rankedAuthors = useMemo(
-    () => rankAuthors(authors, sortBy),
-    [authors, sortBy],
+    () => rankAuthors(authors, "score"),
+    [authors],
   );
   const selectedAuthor = useMemo(
     () =>
@@ -305,55 +263,7 @@ function PublicRenaissDashboard() {
     );
   }, [normalizedQuery, rankedAuthors]);
 
-  const totals = useMemo(() => {
-    return authors.reduce(
-      (summary, author) => ({
-        posts: summary.posts + author.posts,
-        views: summary.views + author.views,
-        likes: summary.likes + author.likes,
-        replies: summary.replies + author.replies,
-        reposts: summary.reposts + author.reposts,
-        quotes: summary.quotes + author.quotes,
-        weightedEngagement:
-          summary.weightedEngagement + author.weightedEngagement,
-        score: summary.score + author.score,
-        rawScore: summary.rawScore + author.rawScore,
-        followerKnownPosts:
-          summary.followerKnownPosts + (author.followers === null ? 0 : author.posts),
-        eligibleAuthors:
-          summary.eligibleAuthors + (author.eligible ? 1 : 0),
-        riskAuthors:
-          summary.riskAuthors + (author.riskFlags > 0 ? 1 : 0),
-        redFlags: summary.redFlags + author.redFlags,
-        yellowFlags: summary.yellowFlags + author.yellowFlags,
-      }),
-      {
-        posts: 0,
-        views: 0,
-        likes: 0,
-        replies: 0,
-        reposts: 0,
-        quotes: 0,
-        weightedEngagement: 0,
-        score: 0,
-        rawScore: 0,
-        followerKnownPosts: 0,
-        eligibleAuthors: 0,
-        riskAuthors: 0,
-        redFlags: 0,
-        yellowFlags: 0,
-      },
-    );
-  }, [authors]);
-
   const topAuthor = rankedAuthors[0];
-  const maxSignalScore = Math.max(
-    0,
-    ...rankedAuthors.map((author) => author.score),
-  );
-  const latestPostDate = useMemo(() => formatLatestDate(authors), [authors]);
-  const followerCoverage =
-    totals.posts > 0 ? (totals.followerKnownPosts / totals.posts) * 100 : 0;
 
   useEffect(() => {
     const syncFromHash = () => setSelectedUsername(getUsernameFromHash());
@@ -386,14 +296,6 @@ function PublicRenaissDashboard() {
 
   function clearSelectedAuthor() {
     setSelectedUsername("");
-    window.history.pushState(null, "", window.location.pathname);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
-  function changeSeason(season: PublicSeasonKey) {
-    setActiveSeason(season);
-    setSelectedUsername("");
-    setQuery("");
     window.history.pushState(null, "", window.location.pathname);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -431,9 +333,8 @@ function PublicRenaissDashboard() {
               </h1>
 
               <p className="mt-3 max-w-full text-base font-semibold leading-7 text-muted-foreground sm:max-w-xl">
-                {activeSeasonConfig.label} public community posts ranked by the
-                Stage 4 formula, with eligibility and review flags visible for
-                context.
+                {activeSeasonConfig.label} public community posts ranked by
+                calculated score from the Mar-May combined CSV.
               </p>
             </div>
 
@@ -465,14 +366,10 @@ function PublicRenaissDashboard() {
                     <Trophy className="h-8 w-8" />
                   </div>
                 </div>
-                <div className="mt-6 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
+                <div className="mt-6 grid grid-cols-1 gap-3 text-sm">
                   <TopSignalMetric
-                    label="Formula score"
+                    label="Score"
                     value={formatScore(topAuthor?.score ?? 0)}
-                  />
-                  <TopSignalMetric
-                    label="Views"
-                    value={formatCompact(topAuthor?.views ?? 0)}
                   />
                 </div>
               </div>
@@ -483,51 +380,6 @@ function PublicRenaissDashboard() {
       )}
 
       <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        {!selectedUsername && (
-        <>
-        <div className="glass-panel mb-5 rounded-md p-2">
-          <div className="grid gap-2 sm:grid-cols-2">
-            {Object.values(publicSeasons).map((season) => (
-              <button
-                key={season.key}
-                type="button"
-                onClick={() => changeSeason(season.key)}
-                className={cn(
-                  "flex min-h-12 flex-col items-start justify-center rounded-[5px] px-4 py-3 text-left transition-colors sm:min-h-14",
-                  activeSeason === season.key
-                    ? "glass-fill-primary"
-                    : "text-muted-foreground hover:bg-white/24 hover:text-foreground",
-                )}
-              >
-                <span className="text-sm font-black uppercase tracking-[0.12em]">
-                  {season.label}
-                </span>
-                <span className="mt-1 text-xs font-bold">{season.fact}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-          <StatTile
-            icon={<Eye />}
-            label="Total views"
-            value={formatCompact(totals.views)}
-          />
-          <StatTile
-            icon={<Heart />}
-            label="Total likes"
-            value={formatCompact(totals.likes)}
-          />
-          <StatTile
-            icon={<Users />}
-            label="Ranked authors"
-            value={formatNumber(authors.length)}
-          />
-        </div>
-        </>
-        )}
-
         {isError ? (
           <div className="glass-panel mt-5 rounded-md p-4 text-sm font-semibold text-foreground">
             Failed to load{" "}
@@ -567,47 +419,15 @@ function PublicRenaissDashboard() {
                       className="pl-9"
                     />
                   </div>
-
-                  <div className="glass-control grid grid-cols-4 gap-1 rounded-md p-1">
-                    {sortOptions.map((option) => (
-                      <button
-                        key={option.key}
-                        type="button"
-                        onClick={() => setSortBy(option.key)}
-                        className={cn(
-                          "h-11 rounded-[5px] px-3 text-xs font-extrabold uppercase tracking-[0.08em] transition-colors sm:h-10",
-                          sortBy === option.key
-                            ? "glass-fill-primary"
-                            : "text-muted-foreground hover:bg-white/24 hover:text-foreground",
-                        )}
-                      >
-                        {option.label}
-                      </button>
-                    ))}
-                  </div>
                 </div>
-              </div>
-
-              <div className="mt-4 grid gap-3 border-t border-white/20 pt-4 text-sm font-semibold text-muted-foreground sm:grid-cols-2 xl:grid-cols-4">
-                <InlineFact
-                  label="CSV posts"
-                  value={formatNumber(totals.posts)}
-                />
-                <InlineFact label="Latest post" value={latestPostDate} />
-                <InlineFact
-                  label="Follower coverage"
-                  value={`${followerCoverage.toFixed(0)}%`}
-                />
               </div>
             </div>
 
             <div className="glass-panel taste-reveal mt-5 overflow-hidden rounded-md [animation-delay:180ms]">
-              <div className="glass-row hidden grid-cols-[76px_minmax(260px,1fr)_160px_320px_96px] items-center border-b border-white/20 px-4 py-3 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:grid">
+              <div className="glass-row hidden grid-cols-[76px_minmax(0,1fr)_160px] items-center gap-4 border-b border-white/20 px-4 py-3 text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:grid">
                 <span>Rank</span>
-                <span>Author</span>
-                <span className="text-right">{metricLabels[sortBy]}</span>
-                <span className="text-right">Reach mix</span>
-                <span className="text-right">Posts</span>
+                <span>Account</span>
+                <span className="text-right">Score</span>
               </div>
 
               {isLoading ? (
@@ -627,8 +447,6 @@ function PublicRenaissDashboard() {
                   <AuthorRow
                     key={author.authorUsername || author.authorName}
                     author={author}
-                    sortBy={sortBy}
-                    maxSignalScore={maxSignalScore}
                     onSelect={selectAuthor}
                   />
                 ))}
@@ -676,14 +494,10 @@ function aggregateAuthors(
       sortedPosts.find((post) => post.author_username.trim())?.author_username ??
         key,
     );
-    const eligibility = evaluateRenaissEligibility(profile);
     const followerCount = profile?.followers ?? null;
     const priorPosts = profile?.baselinePostsFound ?? null;
     const scoredPosts = sortedPosts.map((post, index) =>
       scorePublicPost(post, profile, index + 1),
-    );
-    const accountRisk = summarizeRenaissRiskFlags(
-      scoredPosts.flatMap((post) => post.riskFlags),
     );
     const author = sortedPosts.reduce(
       (summary, post, index) => {
@@ -730,15 +544,15 @@ function aggregateAuthors(
         weightedEngagement: 0,
         followers: followerCount,
         priorPosts,
-        eligibilityKnown: eligibility.known,
-        eligible: eligibility.eligible,
-        eligibilityReasons: eligibility.reasons,
+        eligibilityKnown: true,
+        eligible: true,
+        eligibilityReasons: ["Score only"],
         baselineWeMax: profile?.baselineWeMax ?? null,
         baselineImpMax: profile?.baselineImpMax ?? null,
-        riskFlags: accountRisk.total,
-        yellowFlags: accountRisk.yellow,
-        redFlags: accountRisk.red,
-        riskLevel: accountRisk.level,
+        riskFlags: 0,
+        yellowFlags: 0,
+        redFlags: 0,
+        riskLevel: "clear" as const,
         profile,
         latestTimestamp: 0,
         topTag: "Renaiss",
@@ -749,7 +563,7 @@ function aggregateAuthors(
     );
     return {
       ...author,
-      score: eligibility.eligible ? author.rawScore : 0,
+      score: author.rawScore,
       topTag: tags[0]?.[0] ?? author.topTag,
     };
   });
@@ -800,7 +614,6 @@ function buildAuthorPosts(
     .map((post) => {
       const lifetimeIndex = lifetimeOrder.get(post.id || post.url) ?? 1;
       const scored = scorePublicPost(post, profile, lifetimeIndex);
-      const riskSummary = summarizeRenaissRiskFlags(scored.riskFlags);
 
       return {
         id: post.id,
@@ -823,7 +636,7 @@ function buildAuthorPosts(
         postCapFactor: scored.breakdown.postCapFactor,
         lifetimeIndex,
         riskFlags: scored.riskFlags,
-        riskLevel: riskSummary.level,
+        riskLevel: "clear" as const,
         hashtags: post.hashtags
           .split(",")
           .map((tag) => tag.trim())
@@ -854,12 +667,11 @@ function scorePublicPost(
     followers: profile?.followers ?? null,
     lifetimeIndex,
   });
-  const riskFlags = getRenaissRiskFlags(metrics, profile);
 
   return {
     metrics,
     breakdown,
-    riskFlags,
+    riskFlags: [],
     score: breakdown.score,
   };
 }
@@ -1071,10 +883,6 @@ function PostCard({ post }: { post: AuthorPost }) {
             {formatPostDate(post.timestamp)}
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
-            <Badge variant="secondary">Score {formatScore(post.score)}</Badge>
-            {post.postCapFactor < 1 ? (
-              <Badge variant="default">Cap 0.3x</Badge>
-            ) : null}
             {post.hashtags.slice(0, 3).map((tag) => (
               <Badge key={tag} variant="outline">
                 #{tag}
@@ -1109,22 +917,15 @@ function PostCard({ post }: { post: AuthorPost }) {
 
 function AuthorRow({
   author,
-  maxSignalScore,
-  sortBy,
   onSelect,
 }: {
   author: RankedAuthor;
-  maxSignalScore: number;
-  sortBy: SortKey;
   onSelect: (username: string) => void;
 }) {
   const rankTone = getRankTone(author.rank);
-  const scoreWidth =
-    maxSignalScore > 0 ? Math.max(5, (author.score / maxSignalScore) * 100) : 0;
-  const metricValue = getMetric(author, sortBy);
 
   return (
-    <article className="glass-row grid gap-4 border-b border-white/20 px-4 py-4 last:border-b-0 lg:grid-cols-[76px_minmax(260px,1fr)_160px_320px_96px] lg:items-center">
+    <article className="glass-row grid gap-4 border-b border-white/20 px-4 py-4 last:border-b-0 lg:grid-cols-[76px_minmax(0,1fr)_160px] lg:items-center">
       <div className="flex items-center justify-between gap-3 lg:block">
         <div
           className={cn(
@@ -1135,9 +936,6 @@ function AuthorRow({
         >
           {author.rank}
         </div>
-        <Badge variant="outline" className="lg:hidden">
-          {metricLabels[sortBy]}
-        </Badge>
       </div>
 
       <div className="min-w-0">
@@ -1147,71 +945,24 @@ function AuthorRow({
           className="group flex min-w-0 items-center gap-3 text-left"
         >
           <Avatar author={author} />
-          <div className="min-w-0">
-            <span className="inline-flex max-w-full items-center gap-2 font-display text-xl font-black leading-tight group-hover:text-accent">
-              <span className="truncate">{author.authorName}</span>
-              <ArrowDownRight className="h-4 w-4 shrink-0 opacity-0 transition-opacity group-hover:opacity-100" />
+          <div className="min-w-0 flex-1 overflow-hidden">
+            <span className="block max-w-full truncate font-display text-xl font-black leading-tight group-hover:text-accent">
+              {author.authorName}
+            </span>
+            <span className="mt-1 block max-w-full truncate text-sm font-semibold text-muted-foreground">
+              @{author.authorUsername || "unknown"} · #{author.topTag}
             </span>
           </div>
         </button>
-        <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 pl-14 text-sm font-semibold text-muted-foreground">
-          <span>@{author.authorUsername}</span>
-          <span>#{author.topTag}</span>
-          <a
-            href={author.latestPostUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1 hover:text-foreground"
-          >
-            Latest post
-            <ArrowUpRight className="h-3.5 w-3.5" />
-          </a>
-        </div>
       </div>
 
       <div className="text-left lg:text-right">
         <p className="text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:hidden">
-          {metricLabels[sortBy]}
+          Score
         </p>
         <p className="font-display text-2xl font-black">
-          {sortBy === "score"
-            ? formatScore(metricValue)
-            : formatCompact(metricValue)}
+          {formatScore(author.score)}
         </p>
-        <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">
-          Raw {formatScore(author.rawScore)}
-        </p>
-      </div>
-
-      <div className="space-y-2">
-        <div className="glass-control h-2 overflow-hidden rounded-full">
-          <div
-            className="h-full rounded-full bg-orange"
-            style={{ width: `${scoreWidth}%` }}
-          />
-        </div>
-        <div className="grid grid-cols-4 gap-2 text-right text-xs font-bold text-muted-foreground">
-          <MiniMetric icon={<Eye />} value={formatCompact(author.views)} />
-          <MiniMetric icon={<Heart />} value={formatCompact(author.likes)} />
-          <MiniMetric
-            icon={<Repeat2 />}
-            value={formatCompact(author.reposts + author.quotes)}
-          />
-          <MiniMetric
-            icon={<MessageCircle />}
-            value={formatCompact(author.replies)}
-          />
-        </div>
-      </div>
-
-      <div className="flex items-center justify-between gap-3 lg:justify-end">
-        <div className="text-left lg:text-right">
-          <p className="text-xs font-black uppercase tracking-[0.12em] text-muted-foreground lg:hidden">
-            Posts
-          </p>
-          <p className="font-display text-2xl font-black">{author.posts}</p>
-        </div>
-        <ArrowDownRight className="hidden h-4 w-4 text-muted-foreground lg:block" />
       </div>
     </article>
   );
@@ -1264,16 +1015,6 @@ function StatTile({
     </div>
   );
 }
-
-function InlineFact({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="glass-control flex items-center justify-between gap-3 rounded-md px-3 py-2">
-      <span>{label}</span>
-      <span className="font-black text-foreground">{value}</span>
-    </div>
-  );
-}
-
 
 function MiniMetric({ icon, value }: { icon: ReactNode; value: string }) {
   return (
@@ -1380,23 +1121,6 @@ function parsePostDate(value: string) {
   const timestamp = Date.parse(value.replace(/\s+·\s+/, " "));
 
   return Number.isFinite(timestamp) ? timestamp : 0;
-}
-
-function formatLatestDate(authors: AuthorStat[]) {
-  const latest = Math.max(
-    0,
-    ...authors.map((author) => author.latestTimestamp),
-  );
-
-  if (!latest) {
-    return "Pending";
-  }
-
-  return new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  }).format(latest);
 }
 
 function formatPostDate(timestamp: number) {

@@ -267,7 +267,6 @@ type CampaignBoard = {
 };
 
 
-const SEASON_ONE_START = Date.UTC(2026, 5, 1);
 const DEFAULT_QUALITY_MULTIPLIER = 1;
 
 const seasonConfigs: Record<"season0" | "season1", SeasonConfig> = {
@@ -280,8 +279,8 @@ const seasonConfigs: Record<"season0" | "season1", SeasonConfig> = {
   season1: {
     key: "season1",
     label: "Season 1",
-    source: "/renaiss_posts.csv",
-    startLabel: "Jun 1, 2026 onward",
+    source: "/renaiss_mar_may_2026_combined.csv",
+    startLabel: "Mar-May 2026 combined",
   },
 };
 
@@ -331,8 +330,8 @@ async function loadAdminData(): Promise<AdminData> {
     tweetPayload,
   ] =
     await Promise.all([
-      loadText("/renaiss_season0.csv"),
-      loadText("/renaiss_posts.csv"),
+      loadText(seasonConfigs.season0.source),
+      loadText(seasonConfigs.season1.source),
       loadText("/renaiss_th_Tier_C_Protection.csv"),
       loadText("/renaiss_profile_mar_may_2026.csv"),
       loadText("/renaiss_profile_mar_may_2026_prior_posts.csv"),
@@ -343,10 +342,7 @@ async function loadAdminData(): Promise<AdminData> {
 
   return {
     season0Posts: parseCsv<PostCsvRow>(season0Text),
-    season1Posts: parseCsv<PostCsvRow>(season1Text).filter((post) => {
-      const timestamp = parsePostDate(post.created_at);
-      return timestamp >= SEASON_ONE_START;
-    }),
+    season1Posts: parseCsv<PostCsvRow>(season1Text),
     campaignRows: parseCsv<CampaignCsvRow>(campaignText),
     tweets: tweetPayload?.tweets ?? [],
     profiles: createRenaissProfileMap(profileRows, priorRows),
@@ -501,9 +497,9 @@ export default function AdminRenaissDashboard() {
                 </a>
               </Button>
               <Button asChild variant="default" size="sm">
-                <a href="/renaiss_posts.csv" download>
+                <a href={seasonConfigs.season1.source} download>
                   <Download />
-                  Season 1 CSV
+                  Mar-May CSV
                 </a>
               </Button>
             </div>
@@ -2520,4 +2516,3 @@ function getAvatarUrl(username: string) {
     `https://unavatar.io/x/${encodeURIComponent(handle)}`
   );
 }
-

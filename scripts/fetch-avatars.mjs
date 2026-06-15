@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 
-const csvPath = new URL('../public/renaiss_posts.csv', import.meta.url)
+const csvPath = new URL('../public/renaiss_mar_may_2026_combined.csv', import.meta.url)
 const outputPath = new URL('../src/data/avatars.json', import.meta.url)
 const execFileAsync = promisify(execFile)
 

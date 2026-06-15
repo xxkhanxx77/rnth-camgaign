@@ -52,26 +52,24 @@ index.html → src/main.tsx → <App/>
 ## 4. Data flow
 
 ```
-public/*.csv ──fetch()──► parseCsv<T>()  ──► createRenaissProfileMap()
- (TanStack Query)         (src/lib/csv.ts)    (src/lib/renaissScoring.ts)
-        │                                              │
-        ▼                                              ▼
-  raw post rows ───────────► scorePost / aggregateAuthors ───────────► ranked authors
-                              (Stage-4 formula + eligibility + flags)        │
-                                                                             ▼
-                                            Public filters out official + bot accounts
-                                                                             │
-                                                                             ▼
-                                                       Leaderboard / Profile / Heatmap / PNG
+public/*.csv ──fetch()──► parseCsv<T>() ──► scorePost / aggregateAuthors ──► ranked authors
+ (TanStack Query)         (src/lib/csv.ts)     (Stage-4 formula)
+        │                                                                     │
+        ▼                                                                     ▼
+  raw post rows                                      Public filters out official + bot accounts
+                                                                              │
+                                                                              ▼
+                                                        Leaderboard / Profile / Heatmap / PNG
 ```
 
 **Files the public app loads** (`loadPosts` in `App.tsx`):
-- `/renaiss_season0.csv` → **Season 0** (archive, before Jun 1 2026)
-- `/renaiss_posts.csv` → **Season 1** (filtered to ≥ Jun 1 2026)
-- `/renaiss_profile_mar_may_2026.csv` + `/renaiss_profile_mar_may_2026_prior_posts.csv`
-  → per-author profile (followers, baseline max, prior-post history)
+- `/renaiss_mar_may_2026_combined.csv` → **Season 0** (Mar-May 2026), score-only public ranking
 
 **Extra files the admin app loads** (`loadAdminData` in `AdminRenaiss.tsx`):
+- `/renaiss_mar_may_2026_combined.csv` → admin Season 1 view
+- `/renaiss_season0.csv` → admin Season 0 post archive
+- `/renaiss_profile_mar_may_2026.csv` + `/renaiss_profile_mar_may_2026_prior_posts.csv`
+  → per-author profile (followers, baseline max, prior-post history)
 - `/renaiss_th_Tier_C_Protection.csv` → campaign participants/payouts
 - `/renaiss_tweet.json` → optional raw tweet payload (loaded best-effort)
 
@@ -161,6 +159,6 @@ After updating the CSVs, re-run `npm run fetch:avatars` then `npm run build` bef
 - **Two dashboards, one bundle.** A change to a shared lib affects both `/` and `/admin-renaiss`.
 - **Username keying is normalized** (`normalizeRenaissUsername`: trim, strip leading `@`,
   lowercase). Always compare via the helpers, never raw strings.
-- **Season 1 is date-filtered** to `≥ 2026-06-01`; Season 0 is the raw archive CSV.
+- **Public leaderboard is Season 0 only** and loads the Mar-May 2026 archive CSV.
 - **Heatmap logic lives once** in `lib/renaissCalendar.ts` — change it there and both the
   on-screen grid and the PNG update together.
